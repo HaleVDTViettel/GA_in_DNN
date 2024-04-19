@@ -1,42 +1,2529 @@
-04/17/2024 01:08:56 PM - INFO - ***Evolving 10 generations with population 32***
-04/17/2024 01:08:56 PM - INFO - ***Doing generation 1 of 10***
-04/17/2024 01:53:42 PM - INFO - Generation average: 44.95%
-04/17/2024 01:53:42 PM - INFO - --------------------------------------------------------------------------------
-04/17/2024 01:53:42 PM - INFO - ***Doing generation 2 of 10***
-04/17/2024 02:05:06 PM - INFO - Generation average: 47.14%
-04/17/2024 02:05:06 PM - INFO - --------------------------------------------------------------------------------
-04/17/2024 02:05:06 PM - INFO - ***Doing generation 3 of 10***
-04/17/2024 02:08:30 PM - INFO - Generation average: 52.56%
-04/17/2024 02:08:30 PM - INFO - --------------------------------------------------------------------------------
-04/17/2024 02:08:30 PM - INFO - ***Doing generation 4 of 10***
-04/17/2024 02:12:59 PM - INFO - Generation average: 54.44%
-04/17/2024 02:12:59 PM - INFO - --------------------------------------------------------------------------------
-04/17/2024 02:12:59 PM - INFO - ***Doing generation 5 of 10***
-04/17/2024 02:16:48 PM - INFO - Generation average: 55.10%
-04/17/2024 02:16:48 PM - INFO - --------------------------------------------------------------------------------
-04/17/2024 02:16:48 PM - INFO - ***Doing generation 6 of 10***
-04/17/2024 02:20:23 PM - INFO - Generation average: 55.52%
-04/17/2024 02:20:23 PM - INFO - --------------------------------------------------------------------------------
-04/17/2024 02:20:23 PM - INFO - ***Doing generation 7 of 10***
-04/17/2024 02:24:44 PM - INFO - Generation average: 55.68%
-04/17/2024 02:24:44 PM - INFO - --------------------------------------------------------------------------------
-04/17/2024 02:24:44 PM - INFO - ***Doing generation 8 of 10***
-04/17/2024 02:29:04 PM - INFO - Generation average: 56.21%
-04/17/2024 02:29:04 PM - INFO - --------------------------------------------------------------------------------
-04/17/2024 02:29:04 PM - INFO - ***Doing generation 9 of 10***
-04/17/2024 02:32:43 PM - INFO - Generation average: 55.78%
-04/17/2024 02:32:43 PM - INFO - --------------------------------------------------------------------------------
-04/17/2024 02:32:43 PM - INFO - ***Doing generation 10 of 10***
-04/17/2024 02:36:45 PM - INFO - Generation average: 55.52%
-04/17/2024 02:36:45 PM - INFO - --------------------------------------------------------------------------------
-04/17/2024 02:36:45 PM - INFO - --------------------------------------------------------------------------------
-04/17/2024 02:36:45 PM - INFO - {'nb_neurons': 512, 'nb_layers': 3, 'activation': 'elu', 'optimizer': 'nadam'}
-04/17/2024 02:36:45 PM - INFO - Network accuracy: 58.23%
-04/17/2024 02:36:45 PM - INFO - {'nb_neurons': 512, 'nb_layers': 5, 'activation': 'elu', 'optimizer': 'adamax'}
-04/17/2024 02:36:45 PM - INFO - Network accuracy: 58.21%
-04/17/2024 02:36:45 PM - INFO - {'nb_neurons': 256, 'nb_layers': 3, 'activation': 'elu', 'optimizer': 'nadam'}
-04/17/2024 02:36:45 PM - INFO - Network accuracy: 57.89%
-04/17/2024 02:36:45 PM - INFO - {'nb_neurons': 256, 'nb_layers': 3, 'activation': 'elu', 'optimizer': 'nadam'}
-04/17/2024 02:36:45 PM - INFO - Network accuracy: 57.38%
-04/17/2024 02:36:45 PM - INFO - {'nb_neurons': 512, 'nb_layers': 5, 'activation': 'elu', 'optimizer': 'nadam'}
-04/17/2024 02:36:45 PM - INFO - Network accuracy: 57.36%
+2024-04-17 17:45:32,481 - INFO - ***generate(generations, population, all_possible_genes, dataset)***
+2024-04-17 17:45:32,489 - INFO - ***Now in generation 1 of 10***
+2024-04-17 17:45:32,489 - INFO - --------------------------------------------------------------------------------
+2024-04-17 17:45:32,489 - INFO - {'nb_layers': 2, 'regulizer': 0.0001, 'activation': 'softplus', 'optimizer': 'sgd', 'nb_neurons': [128, 256, 512, 128, 128, 256]}
+2024-04-17 17:45:32,489 - INFO - Acc: 0.00%
+2024-04-17 17:45:32,489 - INFO - UniID: 1
+2024-04-17 17:45:32,489 - INFO - Mom and Dad: 0 0
+2024-04-17 17:45:32,489 - INFO - Gen: 1
+2024-04-17 17:45:32,489 - INFO - Hash: b462dd16a0cc550c821815853e519354
+2024-04-17 17:45:32,489 - INFO - {'nb_layers': 2, 'regulizer': 0.0, 'activation': 'elu', 'optimizer': 'adagrad', 'nb_neurons': [128, 64, 256, 512, 64, 64]}
+2024-04-17 17:45:32,489 - INFO - Acc: 0.00%
+2024-04-17 17:45:32,489 - INFO - UniID: 2
+2024-04-17 17:45:32,489 - INFO - Mom and Dad: 0 0
+2024-04-17 17:45:32,489 - INFO - Gen: 1
+2024-04-17 17:45:32,489 - INFO - Hash: 1ec044f1159a54e36c194e7ec8228bfa
+2024-04-17 17:45:32,489 - INFO - {'nb_layers': 3, 'regulizer': 0.001, 'activation': 'tanh', 'optimizer': 'nadam', 'nb_neurons': [512, 512, 512, 512, 512, 64]}
+2024-04-17 17:45:32,489 - INFO - Acc: 0.00%
+2024-04-17 17:45:32,489 - INFO - UniID: 3
+2024-04-17 17:45:32,489 - INFO - Mom and Dad: 0 0
+2024-04-17 17:45:32,489 - INFO - Gen: 1
+2024-04-17 17:45:32,489 - INFO - Hash: f5b7feb8c4db2d5adcc4cde81dc6966c
+2024-04-17 17:45:32,490 - INFO - {'nb_layers': 3, 'regulizer': 0.001, 'activation': 'tanh', 'optimizer': 'adamax', 'nb_neurons': [128, 512, 128, 512, 64, 256]}
+2024-04-17 17:45:32,490 - INFO - Acc: 0.00%
+2024-04-17 17:45:32,490 - INFO - UniID: 4
+2024-04-17 17:45:32,490 - INFO - Mom and Dad: 0 0
+2024-04-17 17:45:32,490 - INFO - Gen: 1
+2024-04-17 17:45:32,490 - INFO - Hash: 6adee2145d2c69cbf51caeacfed82c03
+2024-04-17 17:45:32,490 - INFO - {'nb_layers': 5, 'regulizer': 0.0001, 'activation': 'elu', 'optimizer': 'adadelta', 'nb_neurons': [256, 128, 64, 128, 64, 512]}
+2024-04-17 17:45:32,490 - INFO - Acc: 0.00%
+2024-04-17 17:45:32,490 - INFO - UniID: 5
+2024-04-17 17:45:32,490 - INFO - Mom and Dad: 0 0
+2024-04-17 17:45:32,490 - INFO - Gen: 1
+2024-04-17 17:45:32,490 - INFO - Hash: 3ba4c156d73c0f34f45d27b8fef6cd49
+2024-04-17 17:45:32,490 - INFO - {'nb_layers': 4, 'regulizer': 0.0001, 'activation': 'relu', 'optimizer': 'adamax', 'nb_neurons': [512, 512, 512, 64, 64, 256]}
+2024-04-17 17:45:32,490 - INFO - Acc: 0.00%
+2024-04-17 17:45:32,490 - INFO - UniID: 6
+2024-04-17 17:45:32,490 - INFO - Mom and Dad: 0 0
+2024-04-17 17:45:32,490 - INFO - Gen: 1
+2024-04-17 17:45:32,490 - INFO - Hash: b30d680ef8988574d9e6984e781690c1
+2024-04-17 17:45:32,490 - INFO - {'nb_layers': 4, 'regulizer': 0.01, 'activation': 'elu', 'optimizer': 'adagrad', 'nb_neurons': [128, 256, 128, 256, 512, 512]}
+2024-04-17 17:45:32,490 - INFO - Acc: 0.00%
+2024-04-17 17:45:32,490 - INFO - UniID: 7
+2024-04-17 17:45:32,490 - INFO - Mom and Dad: 0 0
+2024-04-17 17:45:32,490 - INFO - Gen: 1
+2024-04-17 17:45:32,490 - INFO - Hash: 81f1803166100a45faf5a83a91c6a21a
+2024-04-17 17:45:32,490 - INFO - {'nb_layers': 3, 'regulizer': 0.001, 'activation': 'relu', 'optimizer': 'adagrad', 'nb_neurons': [64, 64, 256, 64, 512, 128]}
+2024-04-17 17:45:32,490 - INFO - Acc: 0.00%
+2024-04-17 17:45:32,490 - INFO - UniID: 8
+2024-04-17 17:45:32,490 - INFO - Mom and Dad: 0 0
+2024-04-17 17:45:32,490 - INFO - Gen: 1
+2024-04-17 17:45:32,490 - INFO - Hash: 22fb9c55b849bf09be2392cac7a22706
+2024-04-17 17:45:32,490 - INFO - {'nb_layers': 1, 'regulizer': 0.0001, 'activation': 'softplus', 'optimizer': 'nadam', 'nb_neurons': [128, 256, 256, 128, 128, 256]}
+2024-04-17 17:45:32,490 - INFO - Acc: 0.00%
+2024-04-17 17:45:32,490 - INFO - UniID: 9
+2024-04-17 17:45:32,490 - INFO - Mom and Dad: 0 0
+2024-04-17 17:45:32,490 - INFO - Gen: 1
+2024-04-17 17:45:32,490 - INFO - Hash: 9136610b2f65aa2e6d2191238a5ece7d
+2024-04-17 17:45:32,490 - INFO - {'nb_layers': 4, 'regulizer': 0.0001, 'activation': 'linear', 'optimizer': 'nadam', 'nb_neurons': [256, 64, 128, 128, 128, 128]}
+2024-04-17 17:45:32,490 - INFO - Acc: 0.00%
+2024-04-17 17:45:32,490 - INFO - UniID: 10
+2024-04-17 17:45:32,490 - INFO - Mom and Dad: 0 0
+2024-04-17 17:45:32,490 - INFO - Gen: 1
+2024-04-17 17:45:32,490 - INFO - Hash: a535524b3ea32475d801aa7fbda54757
+2024-04-17 17:45:32,490 - INFO - {'nb_layers': 5, 'regulizer': 0.001, 'activation': 'softplus', 'optimizer': 'rmsprop', 'nb_neurons': [256, 256, 128, 512, 512, 64]}
+2024-04-17 17:45:32,490 - INFO - Acc: 0.00%
+2024-04-17 17:45:32,490 - INFO - UniID: 11
+2024-04-17 17:45:32,490 - INFO - Mom and Dad: 0 0
+2024-04-17 17:45:32,490 - INFO - Gen: 1
+2024-04-17 17:45:32,490 - INFO - Hash: 3dd34996835710db2b2b85cc09f4659d
+2024-04-17 17:45:32,490 - INFO - {'nb_layers': 4, 'regulizer': 0.01, 'activation': 'relu', 'optimizer': 'nadam', 'nb_neurons': [128, 128, 256, 128, 512, 256]}
+2024-04-17 17:45:32,490 - INFO - Acc: 0.00%
+2024-04-17 17:45:32,490 - INFO - UniID: 12
+2024-04-17 17:45:32,490 - INFO - Mom and Dad: 0 0
+2024-04-17 17:45:32,490 - INFO - Gen: 1
+2024-04-17 17:45:32,490 - INFO - Hash: c3acc2c9a57f5aa686f96323a70a8093
+2024-04-17 17:45:32,490 - INFO - {'nb_layers': 3, 'regulizer': 0.001, 'activation': 'tanh', 'optimizer': 'adadelta', 'nb_neurons': [64, 64, 256, 256, 64, 128]}
+2024-04-17 17:45:32,490 - INFO - Acc: 0.00%
+2024-04-17 17:45:32,490 - INFO - UniID: 13
+2024-04-17 17:45:32,490 - INFO - Mom and Dad: 0 0
+2024-04-17 17:45:32,490 - INFO - Gen: 1
+2024-04-17 17:45:32,490 - INFO - Hash: 27623c9421687d3e6ce316d813f1e65a
+2024-04-17 17:45:32,490 - INFO - {'nb_layers': 3, 'regulizer': 0.001, 'activation': 'tanh', 'optimizer': 'rmsprop', 'nb_neurons': [64, 256, 512, 64, 256, 512]}
+2024-04-17 17:45:32,490 - INFO - Acc: 0.00%
+2024-04-17 17:45:32,490 - INFO - UniID: 14
+2024-04-17 17:45:32,490 - INFO - Mom and Dad: 0 0
+2024-04-17 17:45:32,490 - INFO - Gen: 1
+2024-04-17 17:45:32,490 - INFO - Hash: bb29910a2a32127358a6118480b4eb47
+2024-04-17 17:45:32,490 - INFO - {'nb_layers': 1, 'regulizer': 0.0001, 'activation': 'softplus', 'optimizer': 'adagrad', 'nb_neurons': [256, 512, 64, 64, 128, 512]}
+2024-04-17 17:45:32,490 - INFO - Acc: 0.00%
+2024-04-17 17:45:32,490 - INFO - UniID: 15
+2024-04-17 17:45:32,490 - INFO - Mom and Dad: 0 0
+2024-04-17 17:45:32,490 - INFO - Gen: 1
+2024-04-17 17:45:32,490 - INFO - Hash: 2ac65c65c8121a26f41e02ae1f5a07f4
+2024-04-17 17:45:32,490 - INFO - {'nb_layers': 5, 'regulizer': 0.0, 'activation': 'tanh', 'optimizer': 'adam', 'nb_neurons': [512, 128, 64, 64, 512, 512]}
+2024-04-17 17:45:32,490 - INFO - Acc: 0.00%
+2024-04-17 17:45:32,490 - INFO - UniID: 16
+2024-04-17 17:45:32,490 - INFO - Mom and Dad: 0 0
+2024-04-17 17:45:32,490 - INFO - Gen: 1
+2024-04-17 17:45:32,490 - INFO - Hash: e6eb706dfcb023dae6c1e345f98cf509
+2024-04-17 17:45:32,490 - INFO - {'nb_layers': 3, 'regulizer': 0.0001, 'activation': 'tanh', 'optimizer': 'rmsprop', 'nb_neurons': [64, 64, 512, 512, 256, 512]}
+2024-04-17 17:45:32,490 - INFO - Acc: 0.00%
+2024-04-17 17:45:32,490 - INFO - UniID: 17
+2024-04-17 17:45:32,490 - INFO - Mom and Dad: 0 0
+2024-04-17 17:45:32,490 - INFO - Gen: 1
+2024-04-17 17:45:32,490 - INFO - Hash: ee0757c32bbd10313e855cc391caa9d9
+2024-04-17 17:45:32,490 - INFO - {'nb_layers': 1, 'regulizer': 0.001, 'activation': 'linear', 'optimizer': 'adadelta', 'nb_neurons': [512, 256, 256, 256, 512, 128]}
+2024-04-17 17:45:32,490 - INFO - Acc: 0.00%
+2024-04-17 17:45:32,490 - INFO - UniID: 18
+2024-04-17 17:45:32,490 - INFO - Mom and Dad: 0 0
+2024-04-17 17:45:32,490 - INFO - Gen: 1
+2024-04-17 17:45:32,490 - INFO - Hash: 4e7f36af8354ee5c4e2e64e7ddb11a31
+2024-04-17 17:45:32,490 - INFO - {'nb_layers': 3, 'regulizer': 0.0, 'activation': 'relu', 'optimizer': 'adagrad', 'nb_neurons': [512, 256, 256, 256, 512, 128]}
+2024-04-17 17:45:32,490 - INFO - Acc: 0.00%
+2024-04-17 17:45:32,490 - INFO - UniID: 19
+2024-04-17 17:45:32,490 - INFO - Mom and Dad: 0 0
+2024-04-17 17:45:32,490 - INFO - Gen: 1
+2024-04-17 17:45:32,490 - INFO - Hash: 0e2efc86227e22325afc2909261f34ee
+2024-04-17 17:45:32,490 - INFO - {'nb_layers': 5, 'regulizer': 0.01, 'activation': 'linear', 'optimizer': 'rmsprop', 'nb_neurons': [512, 512, 64, 512, 128, 512]}
+2024-04-17 17:45:32,490 - INFO - Acc: 0.00%
+2024-04-17 17:45:32,490 - INFO - UniID: 20
+2024-04-17 17:45:32,490 - INFO - Mom and Dad: 0 0
+2024-04-17 17:45:32,490 - INFO - Gen: 1
+2024-04-17 17:45:32,490 - INFO - Hash: 7873787e7a1ee1d59e339b78180ab733
+2024-04-17 17:45:32,490 - INFO - {'nb_layers': 1, 'regulizer': 0.0, 'activation': 'linear', 'optimizer': 'adamax', 'nb_neurons': [256, 64, 64, 256, 64, 256]}
+2024-04-17 17:45:32,490 - INFO - Acc: 0.00%
+2024-04-17 17:45:32,490 - INFO - UniID: 21
+2024-04-17 17:45:32,490 - INFO - Mom and Dad: 0 0
+2024-04-17 17:45:32,490 - INFO - Gen: 1
+2024-04-17 17:45:32,490 - INFO - Hash: d0d1b29abd7e1e1061dd8df84b35fd4b
+2024-04-17 17:45:32,490 - INFO - {'nb_layers': 5, 'regulizer': 0.0001, 'activation': 'elu', 'optimizer': 'rmsprop', 'nb_neurons': [512, 256, 128, 128, 128, 512]}
+2024-04-17 17:45:32,490 - INFO - Acc: 0.00%
+2024-04-17 17:45:32,490 - INFO - UniID: 22
+2024-04-17 17:45:32,490 - INFO - Mom and Dad: 0 0
+2024-04-17 17:45:32,490 - INFO - Gen: 1
+2024-04-17 17:45:32,490 - INFO - Hash: 4f20a500f15662d319a586541ed277ff
+2024-04-17 17:45:32,490 - INFO - {'nb_layers': 2, 'regulizer': 0.01, 'activation': 'hard_sigmoid', 'optimizer': 'rmsprop', 'nb_neurons': [512, 256, 64, 64, 512, 256]}
+2024-04-17 17:45:32,490 - INFO - Acc: 0.00%
+2024-04-17 17:45:32,490 - INFO - UniID: 23
+2024-04-17 17:45:32,490 - INFO - Mom and Dad: 0 0
+2024-04-17 17:45:32,490 - INFO - Gen: 1
+2024-04-17 17:45:32,490 - INFO - Hash: afd6c16a97f50372636f54793a458e28
+2024-04-17 17:45:32,490 - INFO - {'nb_layers': 4, 'regulizer': 0.0001, 'activation': 'elu', 'optimizer': 'sgd', 'nb_neurons': [256, 256, 64, 512, 256, 256]}
+2024-04-17 17:45:32,490 - INFO - Acc: 0.00%
+2024-04-17 17:45:32,490 - INFO - UniID: 24
+2024-04-17 17:45:32,490 - INFO - Mom and Dad: 0 0
+2024-04-17 17:45:32,490 - INFO - Gen: 1
+2024-04-17 17:45:32,490 - INFO - Hash: 1448fa5222b7664737a62a26e26f1cd6
+2024-04-17 17:45:32,490 - INFO - {'nb_layers': 3, 'regulizer': 0.0, 'activation': 'relu', 'optimizer': 'rmsprop', 'nb_neurons': [128, 256, 256, 128, 64, 64]}
+2024-04-17 17:45:32,490 - INFO - Acc: 0.00%
+2024-04-17 17:45:32,490 - INFO - UniID: 25
+2024-04-17 17:45:32,490 - INFO - Mom and Dad: 0 0
+2024-04-17 17:45:32,490 - INFO - Gen: 1
+2024-04-17 17:45:32,490 - INFO - Hash: 79939ac7706cff8db3b1ca2a18fc8ca1
+2024-04-17 17:45:32,490 - INFO - {'nb_layers': 1, 'regulizer': 0.0001, 'activation': 'linear', 'optimizer': 'sgd', 'nb_neurons': [256, 128, 512, 512, 256, 512]}
+2024-04-17 17:45:32,490 - INFO - Acc: 0.00%
+2024-04-17 17:45:32,490 - INFO - UniID: 26
+2024-04-17 17:45:32,490 - INFO - Mom and Dad: 0 0
+2024-04-17 17:45:32,490 - INFO - Gen: 1
+2024-04-17 17:45:32,490 - INFO - Hash: 3d71cb390193aa7240b9274997f5b3d7
+2024-04-17 17:45:32,490 - INFO - {'nb_layers': 3, 'regulizer': 0.001, 'activation': 'elu', 'optimizer': 'rmsprop', 'nb_neurons': [128, 512, 256, 64, 64, 128]}
+2024-04-17 17:45:32,491 - INFO - Acc: 0.00%
+2024-04-17 17:45:32,491 - INFO - UniID: 27
+2024-04-17 17:45:32,491 - INFO - Mom and Dad: 0 0
+2024-04-17 17:45:32,491 - INFO - Gen: 1
+2024-04-17 17:45:32,491 - INFO - Hash: c2e0db0eec010c3c069e0174873dc8e4
+2024-04-17 17:45:32,491 - INFO - {'nb_layers': 5, 'regulizer': 0.001, 'activation': 'hard_sigmoid', 'optimizer': 'adamax', 'nb_neurons': [512, 64, 64, 256, 256, 64]}
+2024-04-17 17:45:32,491 - INFO - Acc: 0.00%
+2024-04-17 17:45:32,491 - INFO - UniID: 28
+2024-04-17 17:45:32,491 - INFO - Mom and Dad: 0 0
+2024-04-17 17:45:32,491 - INFO - Gen: 1
+2024-04-17 17:45:32,491 - INFO - Hash: 1268e2ea29c49997d2e2a66e10bff44c
+2024-04-17 17:45:32,491 - INFO - {'nb_layers': 5, 'regulizer': 0.0, 'activation': 'elu', 'optimizer': 'adadelta', 'nb_neurons': [256, 64, 512, 512, 512, 512]}
+2024-04-17 17:45:32,491 - INFO - Acc: 0.00%
+2024-04-17 17:45:32,491 - INFO - UniID: 29
+2024-04-17 17:45:32,491 - INFO - Mom and Dad: 0 0
+2024-04-17 17:45:32,491 - INFO - Gen: 1
+2024-04-17 17:45:32,491 - INFO - Hash: 370b504d45de4e8cf6ebfaed2d734fd7
+2024-04-17 17:45:32,491 - INFO - {'nb_layers': 3, 'regulizer': 0.0, 'activation': 'sigmoid', 'optimizer': 'adagrad', 'nb_neurons': [64, 64, 512, 128, 128, 512]}
+2024-04-17 17:45:32,491 - INFO - Acc: 0.00%
+2024-04-17 17:45:32,491 - INFO - UniID: 30
+2024-04-17 17:45:32,491 - INFO - Mom and Dad: 0 0
+2024-04-17 17:45:32,491 - INFO - Gen: 1
+2024-04-17 17:45:32,491 - INFO - Hash: 82eb7fe613425488f7e2b92ae6563dd1
+2024-04-17 17:45:32,491 - INFO - ***train_networks(networks, dataset)***
+2024-04-17 17:45:32,491 - INFO - Getting Keras datasets
+2024-04-17 17:45:32,792 - INFO - Compling Keras model
+2024-04-17 17:45:32,792 - INFO - Architecture:[128, 256, 512, 128, 128, 256],softplus,sgd,2
+2024-04-17 17:46:12,830 - INFO - ***generate(generations, population, all_possible_genes, dataset)***
+2024-04-17 17:46:12,831 - INFO - ***Now in generation 1 of 10***
+2024-04-17 17:46:12,831 - INFO - --------------------------------------------------------------------------------
+2024-04-17 17:46:12,831 - INFO - {'nb_layers': 3, 'regulizer': 0.0, 'activation': 'relu', 'optimizer': 'adamax', 'nb_neurons': [128, 64, 512, 256, 128, 256]}
+2024-04-17 17:46:12,831 - INFO - Acc: 0.00%
+2024-04-17 17:46:12,831 - INFO - UniID: 1
+2024-04-17 17:46:12,831 - INFO - Mom and Dad: 0 0
+2024-04-17 17:46:12,831 - INFO - Gen: 1
+2024-04-17 17:46:12,831 - INFO - Hash: 6698e01aa1b70d6bbe3540d2750b15be
+2024-04-17 17:46:12,831 - INFO - {'nb_layers': 4, 'regulizer': 0.01, 'activation': 'softplus', 'optimizer': 'nadam', 'nb_neurons': [256, 64, 128, 64, 128, 128]}
+2024-04-17 17:46:12,831 - INFO - Acc: 0.00%
+2024-04-17 17:46:12,831 - INFO - UniID: 2
+2024-04-17 17:46:12,831 - INFO - Mom and Dad: 0 0
+2024-04-17 17:46:12,831 - INFO - Gen: 1
+2024-04-17 17:46:12,831 - INFO - Hash: 5abdc3926771276e1b52bd429efc54c0
+2024-04-17 17:46:12,831 - INFO - {'nb_layers': 1, 'regulizer': 0.001, 'activation': 'relu', 'optimizer': 'adagrad', 'nb_neurons': [256, 128, 128, 64, 256, 64]}
+2024-04-17 17:46:12,831 - INFO - Acc: 0.00%
+2024-04-17 17:46:12,831 - INFO - UniID: 3
+2024-04-17 17:46:12,831 - INFO - Mom and Dad: 0 0
+2024-04-17 17:46:12,831 - INFO - Gen: 1
+2024-04-17 17:46:12,831 - INFO - Hash: a27c37b5bbe7d1c5720cb21a3c7a3533
+2024-04-17 17:46:12,831 - INFO - {'nb_layers': 2, 'regulizer': 0.0, 'activation': 'linear', 'optimizer': 'adagrad', 'nb_neurons': [64, 512, 128, 128, 128, 512]}
+2024-04-17 17:46:12,831 - INFO - Acc: 0.00%
+2024-04-17 17:46:12,831 - INFO - UniID: 4
+2024-04-17 17:46:12,831 - INFO - Mom and Dad: 0 0
+2024-04-17 17:46:12,831 - INFO - Gen: 1
+2024-04-17 17:46:12,831 - INFO - Hash: 45c1263b1edd791f87c600c6c1853d4c
+2024-04-17 17:46:12,831 - INFO - {'nb_layers': 1, 'regulizer': 0.0, 'activation': 'softplus', 'optimizer': 'adamax', 'nb_neurons': [512, 256, 256, 512, 64, 512]}
+2024-04-17 17:46:12,831 - INFO - Acc: 0.00%
+2024-04-17 17:46:12,831 - INFO - UniID: 5
+2024-04-17 17:46:12,831 - INFO - Mom and Dad: 0 0
+2024-04-17 17:46:12,831 - INFO - Gen: 1
+2024-04-17 17:46:12,831 - INFO - Hash: 24d251a6df0c4d0c8c3d6659b82141ce
+2024-04-17 17:46:12,831 - INFO - {'nb_layers': 5, 'regulizer': 0.001, 'activation': 'hard_sigmoid', 'optimizer': 'adamax', 'nb_neurons': [256, 64, 64, 128, 512, 512]}
+2024-04-17 17:46:12,831 - INFO - Acc: 0.00%
+2024-04-17 17:46:12,831 - INFO - UniID: 6
+2024-04-17 17:46:12,831 - INFO - Mom and Dad: 0 0
+2024-04-17 17:46:12,831 - INFO - Gen: 1
+2024-04-17 17:46:12,831 - INFO - Hash: 2fae9b62a6d2a16eb2e476ebafc172cb
+2024-04-17 17:46:12,831 - INFO - {'nb_layers': 5, 'regulizer': 0.0, 'activation': 'hard_sigmoid', 'optimizer': 'adam', 'nb_neurons': [256, 256, 64, 512, 512, 256]}
+2024-04-17 17:46:12,831 - INFO - Acc: 0.00%
+2024-04-17 17:46:12,831 - INFO - UniID: 7
+2024-04-17 17:46:12,831 - INFO - Mom and Dad: 0 0
+2024-04-17 17:46:12,831 - INFO - Gen: 1
+2024-04-17 17:46:12,831 - INFO - Hash: f82c0ca9fe53e9211189dc344c080058
+2024-04-17 17:46:12,831 - INFO - {'nb_layers': 3, 'regulizer': 0.01, 'activation': 'softplus', 'optimizer': 'adamax', 'nb_neurons': [128, 256, 128, 64, 128, 512]}
+2024-04-17 17:46:12,831 - INFO - Acc: 0.00%
+2024-04-17 17:46:12,831 - INFO - UniID: 8
+2024-04-17 17:46:12,831 - INFO - Mom and Dad: 0 0
+2024-04-17 17:46:12,831 - INFO - Gen: 1
+2024-04-17 17:46:12,831 - INFO - Hash: 2ba26dedfb2b654db2c23b1ec1fca148
+2024-04-17 17:46:12,831 - INFO - {'nb_layers': 5, 'regulizer': 0.001, 'activation': 'relu', 'optimizer': 'rmsprop', 'nb_neurons': [64, 64, 128, 256, 256, 64]}
+2024-04-17 17:46:12,831 - INFO - Acc: 0.00%
+2024-04-17 17:46:12,831 - INFO - UniID: 9
+2024-04-17 17:46:12,831 - INFO - Mom and Dad: 0 0
+2024-04-17 17:46:12,831 - INFO - Gen: 1
+2024-04-17 17:46:12,831 - INFO - Hash: 15ece669ede2a44759e50db7cb1cd28e
+2024-04-17 17:46:12,831 - INFO - {'nb_layers': 4, 'regulizer': 0.01, 'activation': 'elu', 'optimizer': 'adam', 'nb_neurons': [128, 512, 512, 128, 64, 64]}
+2024-04-17 17:46:12,831 - INFO - Acc: 0.00%
+2024-04-17 17:46:12,831 - INFO - UniID: 10
+2024-04-17 17:46:12,831 - INFO - Mom and Dad: 0 0
+2024-04-17 17:46:12,831 - INFO - Gen: 1
+2024-04-17 17:46:12,831 - INFO - Hash: d24ec32e133abd48220912992f438716
+2024-04-17 17:46:12,831 - INFO - {'nb_layers': 1, 'regulizer': 0.0001, 'activation': 'linear', 'optimizer': 'sgd', 'nb_neurons': [128, 512, 512, 128, 256, 512]}
+2024-04-17 17:46:12,831 - INFO - Acc: 0.00%
+2024-04-17 17:46:12,831 - INFO - UniID: 11
+2024-04-17 17:46:12,831 - INFO - Mom and Dad: 0 0
+2024-04-17 17:46:12,831 - INFO - Gen: 1
+2024-04-17 17:46:12,831 - INFO - Hash: a6158696e81742145c1c1f1c5d176a79
+2024-04-17 17:46:12,831 - INFO - {'nb_layers': 2, 'regulizer': 0.01, 'activation': 'sigmoid', 'optimizer': 'nadam', 'nb_neurons': [256, 64, 512, 128, 64, 256]}
+2024-04-17 17:46:12,831 - INFO - Acc: 0.00%
+2024-04-17 17:46:12,831 - INFO - UniID: 12
+2024-04-17 17:46:12,831 - INFO - Mom and Dad: 0 0
+2024-04-17 17:46:12,831 - INFO - Gen: 1
+2024-04-17 17:46:12,831 - INFO - Hash: 96d48b2904f5380b9b9a2f7bf1a0a5f7
+2024-04-17 17:46:12,831 - INFO - {'nb_layers': 3, 'regulizer': 0.0, 'activation': 'softplus', 'optimizer': 'adamax', 'nb_neurons': [512, 128, 256, 256, 512, 64]}
+2024-04-17 17:46:12,831 - INFO - Acc: 0.00%
+2024-04-17 17:46:12,831 - INFO - UniID: 13
+2024-04-17 17:46:12,831 - INFO - Mom and Dad: 0 0
+2024-04-17 17:46:12,831 - INFO - Gen: 1
+2024-04-17 17:46:12,831 - INFO - Hash: 31a491c6bdb93338ca5b3ed4f76e3782
+2024-04-17 17:46:12,831 - INFO - {'nb_layers': 4, 'regulizer': 0.01, 'activation': 'sigmoid', 'optimizer': 'rmsprop', 'nb_neurons': [512, 256, 256, 128, 64, 128]}
+2024-04-17 17:46:12,831 - INFO - Acc: 0.00%
+2024-04-17 17:46:12,831 - INFO - UniID: 14
+2024-04-17 17:46:12,831 - INFO - Mom and Dad: 0 0
+2024-04-17 17:46:12,831 - INFO - Gen: 1
+2024-04-17 17:46:12,831 - INFO - Hash: 9680dd6131b1daa3f494b69b3c32b532
+2024-04-17 17:46:12,831 - INFO - {'nb_layers': 3, 'regulizer': 0.0, 'activation': 'softplus', 'optimizer': 'adagrad', 'nb_neurons': [256, 512, 128, 512, 128, 256]}
+2024-04-17 17:46:12,831 - INFO - Acc: 0.00%
+2024-04-17 17:46:12,831 - INFO - UniID: 15
+2024-04-17 17:46:12,831 - INFO - Mom and Dad: 0 0
+2024-04-17 17:46:12,831 - INFO - Gen: 1
+2024-04-17 17:46:12,831 - INFO - Hash: 7c7fede76a2c6b7cc342abe44801e8b6
+2024-04-17 17:46:12,831 - INFO - {'nb_layers': 1, 'regulizer': 0.01, 'activation': 'softplus', 'optimizer': 'sgd', 'nb_neurons': [512, 256, 64, 64, 64, 512]}
+2024-04-17 17:46:12,831 - INFO - Acc: 0.00%
+2024-04-17 17:46:12,831 - INFO - UniID: 16
+2024-04-17 17:46:12,831 - INFO - Mom and Dad: 0 0
+2024-04-17 17:46:12,831 - INFO - Gen: 1
+2024-04-17 17:46:12,831 - INFO - Hash: 408ee0b79c0676e37be3c48163c17a35
+2024-04-17 17:46:12,831 - INFO - {'nb_layers': 5, 'regulizer': 0.001, 'activation': 'elu', 'optimizer': 'adamax', 'nb_neurons': [64, 256, 512, 256, 128, 64]}
+2024-04-17 17:46:12,831 - INFO - Acc: 0.00%
+2024-04-17 17:46:12,831 - INFO - UniID: 17
+2024-04-17 17:46:12,831 - INFO - Mom and Dad: 0 0
+2024-04-17 17:46:12,831 - INFO - Gen: 1
+2024-04-17 17:46:12,831 - INFO - Hash: 6869c30d22128d06f02e1436755d2aa8
+2024-04-17 17:46:12,831 - INFO - {'nb_layers': 5, 'regulizer': 0.001, 'activation': 'sigmoid', 'optimizer': 'nadam', 'nb_neurons': [128, 512, 512, 128, 256, 256]}
+2024-04-17 17:46:12,831 - INFO - Acc: 0.00%
+2024-04-17 17:46:12,831 - INFO - UniID: 18
+2024-04-17 17:46:12,831 - INFO - Mom and Dad: 0 0
+2024-04-17 17:46:12,831 - INFO - Gen: 1
+2024-04-17 17:46:12,831 - INFO - Hash: 8febaa35b25d7fadfaa704d1804fccb2
+2024-04-17 17:46:12,831 - INFO - {'nb_layers': 3, 'regulizer': 0.001, 'activation': 'hard_sigmoid', 'optimizer': 'rmsprop', 'nb_neurons': [512, 128, 256, 256, 512, 128]}
+2024-04-17 17:46:12,832 - INFO - Acc: 0.00%
+2024-04-17 17:46:12,832 - INFO - UniID: 19
+2024-04-17 17:46:12,832 - INFO - Mom and Dad: 0 0
+2024-04-17 17:46:12,832 - INFO - Gen: 1
+2024-04-17 17:46:12,832 - INFO - Hash: b05e690f11bd6178b22e999613c4bc09
+2024-04-17 17:46:12,832 - INFO - {'nb_layers': 5, 'regulizer': 0.0001, 'activation': 'tanh', 'optimizer': 'adamax', 'nb_neurons': [64, 256, 256, 64, 64, 512]}
+2024-04-17 17:46:12,832 - INFO - Acc: 0.00%
+2024-04-17 17:46:12,832 - INFO - UniID: 20
+2024-04-17 17:46:12,832 - INFO - Mom and Dad: 0 0
+2024-04-17 17:46:12,832 - INFO - Gen: 1
+2024-04-17 17:46:12,832 - INFO - Hash: 893e5f3e9a6b5274c6159a48a22ae13a
+2024-04-17 17:46:12,832 - INFO - {'nb_layers': 2, 'regulizer': 0.01, 'activation': 'sigmoid', 'optimizer': 'adagrad', 'nb_neurons': [64, 512, 128, 256, 512, 256]}
+2024-04-17 17:46:12,832 - INFO - Acc: 0.00%
+2024-04-17 17:46:12,832 - INFO - UniID: 21
+2024-04-17 17:46:12,832 - INFO - Mom and Dad: 0 0
+2024-04-17 17:46:12,832 - INFO - Gen: 1
+2024-04-17 17:46:12,832 - INFO - Hash: 21e7a98c6c04a24028ec059effe48117
+2024-04-17 17:46:12,832 - INFO - {'nb_layers': 3, 'regulizer': 0.01, 'activation': 'sigmoid', 'optimizer': 'rmsprop', 'nb_neurons': [64, 256, 128, 512, 512, 64]}
+2024-04-17 17:46:12,832 - INFO - Acc: 0.00%
+2024-04-17 17:46:12,832 - INFO - UniID: 22
+2024-04-17 17:46:12,832 - INFO - Mom and Dad: 0 0
+2024-04-17 17:46:12,832 - INFO - Gen: 1
+2024-04-17 17:46:12,832 - INFO - Hash: 427615d20f4b08de964237ac064239f6
+2024-04-17 17:46:12,832 - INFO - {'nb_layers': 4, 'regulizer': 0.01, 'activation': 'linear', 'optimizer': 'adadelta', 'nb_neurons': [256, 128, 256, 64, 128, 512]}
+2024-04-17 17:46:12,832 - INFO - Acc: 0.00%
+2024-04-17 17:46:12,832 - INFO - UniID: 23
+2024-04-17 17:46:12,832 - INFO - Mom and Dad: 0 0
+2024-04-17 17:46:12,832 - INFO - Gen: 1
+2024-04-17 17:46:12,832 - INFO - Hash: 80853e58190a4a6f97e512f166700d22
+2024-04-17 17:46:12,832 - INFO - {'nb_layers': 4, 'regulizer': 0.01, 'activation': 'relu', 'optimizer': 'rmsprop', 'nb_neurons': [64, 128, 512, 256, 64, 256]}
+2024-04-17 17:46:12,832 - INFO - Acc: 0.00%
+2024-04-17 17:46:12,832 - INFO - UniID: 24
+2024-04-17 17:46:12,832 - INFO - Mom and Dad: 0 0
+2024-04-17 17:46:12,832 - INFO - Gen: 1
+2024-04-17 17:46:12,832 - INFO - Hash: f5e002c9b93680db9910e735cf001486
+2024-04-17 17:46:12,832 - INFO - {'nb_layers': 2, 'regulizer': 0.0001, 'activation': 'tanh', 'optimizer': 'adamax', 'nb_neurons': [64, 512, 256, 64, 512, 512]}
+2024-04-17 17:46:12,832 - INFO - Acc: 0.00%
+2024-04-17 17:46:12,832 - INFO - UniID: 25
+2024-04-17 17:46:12,832 - INFO - Mom and Dad: 0 0
+2024-04-17 17:46:12,832 - INFO - Gen: 1
+2024-04-17 17:46:12,832 - INFO - Hash: bfea99b1e567c29ffe47a6871b0d17a8
+2024-04-17 17:46:12,832 - INFO - {'nb_layers': 4, 'regulizer': 0.001, 'activation': 'hard_sigmoid', 'optimizer': 'rmsprop', 'nb_neurons': [128, 128, 128, 256, 512, 512]}
+2024-04-17 17:46:12,832 - INFO - Acc: 0.00%
+2024-04-17 17:46:12,832 - INFO - UniID: 26
+2024-04-17 17:46:12,832 - INFO - Mom and Dad: 0 0
+2024-04-17 17:46:12,832 - INFO - Gen: 1
+2024-04-17 17:46:12,832 - INFO - Hash: 87e664d1890a26a754dca5e6f504148d
+2024-04-17 17:46:12,832 - INFO - {'nb_layers': 4, 'regulizer': 0.001, 'activation': 'hard_sigmoid', 'optimizer': 'adagrad', 'nb_neurons': [512, 64, 64, 512, 512, 64]}
+2024-04-17 17:46:12,832 - INFO - Acc: 0.00%
+2024-04-17 17:46:12,832 - INFO - UniID: 27
+2024-04-17 17:46:12,832 - INFO - Mom and Dad: 0 0
+2024-04-17 17:46:12,832 - INFO - Gen: 1
+2024-04-17 17:46:12,832 - INFO - Hash: c4a38d63c6ec51d04fa42206d8541738
+2024-04-17 17:46:12,832 - INFO - {'nb_layers': 5, 'regulizer': 0.0, 'activation': 'elu', 'optimizer': 'sgd', 'nb_neurons': [128, 256, 256, 128, 512, 256]}
+2024-04-17 17:46:12,832 - INFO - Acc: 0.00%
+2024-04-17 17:46:12,832 - INFO - UniID: 28
+2024-04-17 17:46:12,832 - INFO - Mom and Dad: 0 0
+2024-04-17 17:46:12,832 - INFO - Gen: 1
+2024-04-17 17:46:12,832 - INFO - Hash: e9f6cb08b5eba1654e2838d268663ad0
+2024-04-17 17:46:12,832 - INFO - {'nb_layers': 4, 'regulizer': 0.0, 'activation': 'sigmoid', 'optimizer': 'nadam', 'nb_neurons': [64, 512, 64, 256, 128, 512]}
+2024-04-17 17:46:12,832 - INFO - Acc: 0.00%
+2024-04-17 17:46:12,832 - INFO - UniID: 29
+2024-04-17 17:46:12,832 - INFO - Mom and Dad: 0 0
+2024-04-17 17:46:12,832 - INFO - Gen: 1
+2024-04-17 17:46:12,832 - INFO - Hash: cc8153f4bad9380a828d41bad3ac35bf
+2024-04-17 17:46:12,832 - INFO - {'nb_layers': 5, 'regulizer': 0.0, 'activation': 'tanh', 'optimizer': 'adamax', 'nb_neurons': [256, 512, 64, 256, 128, 64]}
+2024-04-17 17:46:12,832 - INFO - Acc: 0.00%
+2024-04-17 17:46:12,832 - INFO - UniID: 30
+2024-04-17 17:46:12,832 - INFO - Mom and Dad: 0 0
+2024-04-17 17:46:12,832 - INFO - Gen: 1
+2024-04-17 17:46:12,832 - INFO - Hash: 48deeeef79c954a3300b95dbcf3602dc
+2024-04-17 17:46:12,832 - INFO - ***train_networks(networks, dataset)***
+2024-04-17 17:46:12,833 - INFO - Getting Keras datasets
+2024-04-17 17:46:13,131 - INFO - Compling Keras model
+2024-04-17 17:46:13,131 - INFO - Architecture:[128, 64, 512, 256, 128, 256],relu,adamax,3
+2024-04-17 17:46:23,915 - INFO - Getting Keras datasets
+2024-04-17 17:46:24,211 - INFO - Compling Keras model
+2024-04-17 17:46:24,212 - INFO - Architecture:[256, 64, 128, 64, 128, 128],softplus,nadam,4
+2024-04-17 17:46:43,127 - INFO - Getting Keras datasets
+2024-04-17 17:46:43,419 - INFO - Compling Keras model
+2024-04-17 17:46:43,419 - INFO - Architecture:[256, 128, 128, 64, 256, 64],relu,adagrad,1
+2024-04-17 17:46:53,314 - INFO - Getting Keras datasets
+2024-04-17 17:46:53,605 - INFO - Compling Keras model
+2024-04-17 17:46:53,605 - INFO - Architecture:[64, 512, 128, 128, 128, 512],linear,adagrad,2
+2024-04-17 17:47:18,240 - INFO - Getting Keras datasets
+2024-04-17 17:47:18,536 - INFO - Compling Keras model
+2024-04-17 17:47:18,536 - INFO - Architecture:[512, 256, 256, 512, 64, 512],softplus,adamax,1
+2024-04-17 17:47:39,972 - INFO - Getting Keras datasets
+2024-04-17 17:47:40,263 - INFO - Compling Keras model
+2024-04-17 17:47:40,263 - INFO - Architecture:[256, 64, 64, 128, 512, 512],hard_sigmoid,adamax,5
+2024-04-17 17:47:57,359 - INFO - Getting Keras datasets
+2024-04-17 17:47:57,651 - INFO - Compling Keras model
+2024-04-17 17:47:57,652 - INFO - Architecture:[256, 256, 64, 512, 512, 256],hard_sigmoid,adam,5
+2024-04-17 17:48:21,497 - INFO - Getting Keras datasets
+2024-04-17 17:48:21,786 - INFO - Compling Keras model
+2024-04-17 17:48:21,786 - INFO - Architecture:[128, 256, 128, 64, 128, 512],softplus,adamax,3
+2024-04-17 17:48:37,658 - INFO - Getting Keras datasets
+2024-04-17 17:48:37,952 - INFO - Compling Keras model
+2024-04-17 17:48:37,952 - INFO - Architecture:[64, 64, 128, 256, 256, 64],relu,rmsprop,5
+2024-04-17 17:48:44,762 - INFO - Getting Keras datasets
+2024-04-17 17:48:45,055 - INFO - Compling Keras model
+2024-04-17 17:48:45,055 - INFO - Architecture:[128, 512, 512, 128, 64, 64],elu,adam,4
+2024-04-17 17:49:06,566 - INFO - Getting Keras datasets
+2024-04-17 17:49:06,857 - INFO - Compling Keras model
+2024-04-17 17:49:06,858 - INFO - Architecture:[128, 512, 512, 128, 256, 512],linear,sgd,1
+2024-04-17 17:49:12,077 - INFO - Getting Keras datasets
+2024-04-17 17:49:12,366 - INFO - Compling Keras model
+2024-04-17 17:49:12,366 - INFO - Architecture:[256, 64, 512, 128, 64, 256],sigmoid,nadam,2
+2024-04-17 17:49:24,758 - INFO - Getting Keras datasets
+2024-04-17 17:49:25,051 - INFO - Compling Keras model
+2024-04-17 17:49:25,051 - INFO - Architecture:[512, 128, 256, 256, 512, 64],softplus,adamax,3
+2024-04-17 17:49:59,843 - INFO - Getting Keras datasets
+2024-04-17 17:50:00,134 - INFO - Compling Keras model
+2024-04-17 17:50:00,134 - INFO - Architecture:[512, 256, 256, 128, 64, 128],sigmoid,rmsprop,4
+2024-04-17 17:50:33,360 - INFO - Getting Keras datasets
+2024-04-17 17:50:33,651 - INFO - Compling Keras model
+2024-04-17 17:50:33,651 - INFO - Architecture:[256, 512, 128, 512, 128, 256],softplus,adagrad,3
+2024-04-17 17:51:44,349 - INFO - Getting Keras datasets
+2024-04-17 17:51:44,639 - INFO - Compling Keras model
+2024-04-17 17:51:44,639 - INFO - Architecture:[512, 256, 64, 64, 64, 512],softplus,sgd,1
+2024-04-17 17:52:03,493 - INFO - Getting Keras datasets
+2024-04-17 17:52:03,782 - INFO - Compling Keras model
+2024-04-17 17:52:03,782 - INFO - Architecture:[64, 256, 512, 256, 128, 64],elu,adamax,5
+2024-04-17 17:52:34,379 - INFO - Getting Keras datasets
+2024-04-17 17:52:34,675 - INFO - Compling Keras model
+2024-04-17 17:52:34,675 - INFO - Architecture:[128, 512, 512, 128, 256, 256],sigmoid,nadam,5
+2024-04-17 17:52:52,915 - INFO - Getting Keras datasets
+2024-04-17 17:52:53,208 - INFO - Compling Keras model
+2024-04-17 17:52:53,208 - INFO - Architecture:[512, 128, 256, 256, 512, 128],hard_sigmoid,rmsprop,3
+2024-04-17 17:53:22,645 - INFO - Getting Keras datasets
+2024-04-17 17:53:22,934 - INFO - Compling Keras model
+2024-04-17 17:53:22,934 - INFO - Architecture:[64, 256, 256, 64, 64, 512],tanh,adamax,5
+2024-04-17 17:53:31,897 - INFO - Getting Keras datasets
+2024-04-17 17:53:32,190 - INFO - Compling Keras model
+2024-04-17 17:53:32,191 - INFO - Architecture:[64, 512, 128, 256, 512, 256],sigmoid,adagrad,2
+2024-04-17 17:53:41,261 - INFO - Getting Keras datasets
+2024-04-17 17:53:41,566 - INFO - Compling Keras model
+2024-04-17 17:53:41,567 - INFO - Architecture:[64, 256, 128, 512, 512, 64],sigmoid,rmsprop,3
+2024-04-17 17:53:48,959 - INFO - Getting Keras datasets
+2024-04-17 17:53:49,259 - INFO - Compling Keras model
+2024-04-17 17:53:49,259 - INFO - Architecture:[256, 128, 256, 64, 128, 512],linear,adadelta,4
+2024-04-17 17:54:03,788 - INFO - Getting Keras datasets
+2024-04-17 17:54:04,105 - INFO - Compling Keras model
+2024-04-17 17:54:04,105 - INFO - Architecture:[64, 128, 512, 256, 64, 256],relu,rmsprop,4
+2024-04-17 17:54:12,473 - INFO - Getting Keras datasets
+2024-04-17 17:54:12,778 - INFO - Compling Keras model
+2024-04-17 17:54:12,778 - INFO - Architecture:[64, 512, 256, 64, 512, 512],tanh,adamax,2
+2024-04-17 17:54:21,960 - INFO - Getting Keras datasets
+2024-04-17 17:54:22,262 - INFO - Compling Keras model
+2024-04-17 17:54:22,262 - INFO - Architecture:[128, 128, 128, 256, 512, 512],hard_sigmoid,rmsprop,4
+2024-04-17 17:54:34,599 - INFO - Getting Keras datasets
+2024-04-17 17:54:34,899 - INFO - Compling Keras model
+2024-04-17 17:54:34,899 - INFO - Architecture:[512, 64, 64, 512, 512, 64],hard_sigmoid,adagrad,4
+2024-04-17 17:55:04,822 - INFO - Getting Keras datasets
+2024-04-17 17:55:05,121 - INFO - Compling Keras model
+2024-04-17 17:55:05,122 - INFO - Architecture:[128, 256, 256, 128, 512, 256],elu,sgd,5
+2024-04-17 17:55:16,119 - INFO - Getting Keras datasets
+2024-04-17 17:55:16,421 - INFO - Compling Keras model
+2024-04-17 17:55:16,421 - INFO - Architecture:[64, 512, 64, 256, 128, 512],sigmoid,nadam,4
+2024-04-17 17:55:29,484 - INFO - Getting Keras datasets
+2024-04-17 17:55:29,784 - INFO - Compling Keras model
+2024-04-17 17:55:29,784 - INFO - Architecture:[256, 512, 64, 256, 128, 64],tanh,adamax,5
+2024-04-17 17:55:50,864 - INFO - Generation average: 3.26%
+2024-04-17 17:55:50,865 - INFO - --------------------------------------------------------------------------------
+2024-04-17 17:55:50,865 - INFO - ***Now in generation 2 of 10***
+2024-04-17 17:55:50,865 - INFO - --------------------------------------------------------------------------------
+2024-04-17 17:55:50,865 - INFO - {'nb_layers': 5, 'regulizer': 0.001, 'activation': 'elu', 'optimizer': 'adamax', 'nb_neurons': [64, 256, 512, 256, 128, 64]}
+2024-04-17 17:55:50,865 - INFO - Acc: 29.98%
+2024-04-17 17:55:50,865 - INFO - UniID: 17
+2024-04-17 17:55:50,865 - INFO - Mom and Dad: 0 0
+2024-04-17 17:55:50,865 - INFO - Gen: 1
+2024-04-17 17:55:50,865 - INFO - Hash: 6869c30d22128d06f02e1436755d2aa8
+2024-04-17 17:55:50,865 - INFO - {'nb_layers': 3, 'regulizer': 0.0, 'activation': 'softplus', 'optimizer': 'adagrad', 'nb_neurons': [256, 512, 128, 512, 128, 256]}
+2024-04-17 17:55:50,865 - INFO - Acc: 9.67%
+2024-04-17 17:55:50,865 - INFO - UniID: 15
+2024-04-17 17:55:50,865 - INFO - Mom and Dad: 0 0
+2024-04-17 17:55:50,865 - INFO - Gen: 1
+2024-04-17 17:55:50,865 - INFO - Hash: 7c7fede76a2c6b7cc342abe44801e8b6
+2024-04-17 17:55:50,865 - INFO - {'nb_layers': 2, 'regulizer': 0.0, 'activation': 'linear', 'optimizer': 'adagrad', 'nb_neurons': [64, 512, 128, 128, 128, 512]}
+2024-04-17 17:55:50,865 - INFO - Acc: 8.83%
+2024-04-17 17:55:50,865 - INFO - UniID: 4
+2024-04-17 17:55:50,865 - INFO - Mom and Dad: 0 0
+2024-04-17 17:55:50,865 - INFO - Gen: 1
+2024-04-17 17:55:50,865 - INFO - Hash: 45c1263b1edd791f87c600c6c1853d4c
+2024-04-17 17:55:50,865 - INFO - {'nb_layers': 1, 'regulizer': 0.0001, 'activation': 'linear', 'optimizer': 'sgd', 'nb_neurons': [128, 512, 512, 128, 256, 512]}
+2024-04-17 17:55:50,866 - INFO - Acc: 4.30%
+2024-04-17 17:55:50,866 - INFO - UniID: 11
+2024-04-17 17:55:50,866 - INFO - Mom and Dad: 0 0
+2024-04-17 17:55:50,866 - INFO - Gen: 1
+2024-04-17 17:55:50,866 - INFO - Hash: a6158696e81742145c1c1f1c5d176a79
+2024-04-17 17:55:50,866 - INFO - {'nb_layers': 2, 'regulizer': 0.0001, 'activation': 'sigmoid', 'optimizer': 'adagrad', 'nb_neurons': [64, 512, 128, 256, 256, 256]}
+2024-04-17 17:55:50,866 - INFO - Acc: 0.00%
+2024-04-17 17:55:50,866 - INFO - UniID: 21
+2024-04-17 17:55:50,866 - INFO - Mom and Dad: 0 0
+2024-04-17 17:55:50,866 - INFO - Gen: 2
+2024-04-17 17:55:50,866 - INFO - Hash: 2c655b9006ac1393120269c576d6d273
+2024-04-17 17:55:50,866 - INFO - {'nb_layers': 4, 'regulizer': 0.01, 'activation': 'linear', 'optimizer': 'adadelta', 'nb_neurons': [256, 128, 256, 512, 128, 512]}
+2024-04-17 17:55:50,866 - INFO - Acc: 0.00%
+2024-04-17 17:55:50,866 - INFO - UniID: 23
+2024-04-17 17:55:50,866 - INFO - Mom and Dad: 0 0
+2024-04-17 17:55:50,866 - INFO - Gen: 2
+2024-04-17 17:55:50,866 - INFO - Hash: aca623b373dac7de974329e0da5f2a42
+2024-04-17 17:55:50,866 - INFO - {'activation': 'sigmoid', 'nb_layers': 3, 'optimizer': 'adagrad', 'regulizer': 0.0, 'nb_neurons': [64, 512, 128, 256, 256, 256]}
+2024-04-17 17:55:50,866 - INFO - Acc: 0.00%
+2024-04-17 17:55:50,866 - INFO - UniID: 31
+2024-04-17 17:55:50,866 - INFO - Mom and Dad: 21 15
+2024-04-17 17:55:50,866 - INFO - Gen: 2
+2024-04-17 17:55:50,866 - INFO - Hash: 20e6da7117141d961ee58ea9cfadf132
+2024-04-17 17:55:50,866 - INFO - {'activation': 'softplus', 'nb_layers': 2, 'optimizer': 'adagrad', 'regulizer': 0.0001, 'nb_neurons': [256, 512, 128, 512, 128, 256]}
+2024-04-17 17:55:50,866 - INFO - Acc: 0.00%
+2024-04-17 17:55:50,866 - INFO - UniID: 32
+2024-04-17 17:55:50,866 - INFO - Mom and Dad: 21 15
+2024-04-17 17:55:50,866 - INFO - Gen: 2
+2024-04-17 17:55:50,866 - INFO - Hash: 3727af0774a279cc5c185d1b79fb561a
+2024-04-17 17:55:50,866 - INFO - {'activation': 'sigmoid', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [64, 256, 512, 256, 128, 64]}
+2024-04-17 17:55:50,866 - INFO - Acc: 0.00%
+2024-04-17 17:55:50,866 - INFO - UniID: 33
+2024-04-17 17:55:50,866 - INFO - Mom and Dad: 21 17
+2024-04-17 17:55:50,866 - INFO - Gen: 2
+2024-04-17 17:55:50,866 - INFO - Hash: 26a5da8190719e338706a1891a548ed6
+2024-04-17 17:55:50,866 - INFO - {'activation': 'elu', 'nb_layers': 2, 'optimizer': 'adagrad', 'regulizer': 0.0001, 'nb_neurons': [64, 64, 128, 256, 256, 256]}
+2024-04-17 17:55:50,866 - INFO - Acc: 0.00%
+2024-04-17 17:55:50,866 - INFO - UniID: 34
+2024-04-17 17:55:50,866 - INFO - Mom and Dad: 21 17
+2024-04-17 17:55:50,866 - INFO - Gen: 2
+2024-04-17 17:55:50,866 - INFO - Hash: 103ae6b3fe2b4d681e8efb776202c25a
+2024-04-17 17:55:50,866 - INFO - {'activation': 'hard_sigmoid', 'nb_layers': 3, 'optimizer': 'adagrad', 'regulizer': 0.001, 'nb_neurons': [64, 512, 128, 256, 256, 256]}
+2024-04-17 17:55:50,866 - INFO - Acc: 0.00%
+2024-04-17 17:55:50,866 - INFO - UniID: 35
+2024-04-17 17:55:50,866 - INFO - Mom and Dad: 21 17
+2024-04-17 17:55:50,866 - INFO - Gen: 2
+2024-04-17 17:55:50,866 - INFO - Hash: 9d7c3690dfffe46a14d312f9e92658f7
+2024-04-17 17:55:50,866 - INFO - {'activation': 'sigmoid', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 256, 128, 256, 128, 64]}
+2024-04-17 17:55:50,866 - INFO - Acc: 0.00%
+2024-04-17 17:55:50,866 - INFO - UniID: 36
+2024-04-17 17:55:50,866 - INFO - Mom and Dad: 21 17
+2024-04-17 17:55:50,866 - INFO - Gen: 2
+2024-04-17 17:55:50,866 - INFO - Hash: 31f06f5f17bdf66634eda1664f6413e7
+2024-04-17 17:55:50,866 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adagrad', 'regulizer': 0.0, 'nb_neurons': [64, 256, 512, 256, 128, 256]}
+2024-04-17 17:55:50,866 - INFO - Acc: 0.00%
+2024-04-17 17:55:50,866 - INFO - UniID: 37
+2024-04-17 17:55:50,866 - INFO - Mom and Dad: 17 15
+2024-04-17 17:55:50,866 - INFO - Gen: 2
+2024-04-17 17:55:50,866 - INFO - Hash: 79d987bf200dc53db4f9c6614a370396
+2024-04-17 17:55:50,866 - INFO - {'activation': 'softplus', 'nb_layers': 3, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [256, 512, 128, 512, 128, 64]}
+2024-04-17 17:55:50,866 - INFO - Acc: 0.00%
+2024-04-17 17:55:50,866 - INFO - UniID: 38
+2024-04-17 17:55:50,866 - INFO - Mom and Dad: 17 15
+2024-04-17 17:55:50,866 - INFO - Gen: 2
+2024-04-17 17:55:50,866 - INFO - Hash: a1c7f369889e57b776964d4d93440c55
+2024-04-17 17:55:50,866 - INFO - {'activation': 'linear', 'nb_layers': 2, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [128, 512, 512, 128, 256, 512]}
+2024-04-17 17:55:50,866 - INFO - Acc: 0.00%
+2024-04-17 17:55:50,866 - INFO - UniID: 39
+2024-04-17 17:55:50,866 - INFO - Mom and Dad: 11 17
+2024-04-17 17:55:50,866 - INFO - Gen: 2
+2024-04-17 17:55:50,866 - INFO - Hash: 3569cc559270d6e320881e154badde9d
+2024-04-17 17:55:50,866 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'sgd', 'regulizer': 0.0001, 'nb_neurons': [64, 256, 512, 256, 128, 64]}
+2024-04-17 17:55:50,866 - INFO - Acc: 0.00%
+2024-04-17 17:55:50,866 - INFO - UniID: 40
+2024-04-17 17:55:50,866 - INFO - Mom and Dad: 11 17
+2024-04-17 17:55:50,866 - INFO - Gen: 2
+2024-04-17 17:55:50,866 - INFO - Hash: 38514725d15af69863e8238d09e17e92
+2024-04-17 17:55:50,866 - INFO - {'activation': 'softplus', 'nb_layers': 3, 'optimizer': 'adagrad', 'regulizer': 0.0001, 'nb_neurons': [256, 512, 128, 256, 256, 256]}
+2024-04-17 17:55:50,866 - INFO - Acc: 0.00%
+2024-04-17 17:55:50,866 - INFO - UniID: 41
+2024-04-17 17:55:50,866 - INFO - Mom and Dad: 15 21
+2024-04-17 17:55:50,866 - INFO - Gen: 2
+2024-04-17 17:55:50,866 - INFO - Hash: 7bc45e744ac51b3a1c528dd380058227
+2024-04-17 17:55:50,866 - INFO - {'activation': 'sigmoid', 'nb_layers': 2, 'optimizer': 'adagrad', 'regulizer': 0.0, 'nb_neurons': [64, 512, 128, 512, 128, 256]}
+2024-04-17 17:55:50,866 - INFO - Acc: 0.00%
+2024-04-17 17:55:50,866 - INFO - UniID: 42
+2024-04-17 17:55:50,866 - INFO - Mom and Dad: 15 21
+2024-04-17 17:55:50,866 - INFO - Gen: 2
+2024-04-17 17:55:50,866 - INFO - Hash: 3f0f16a7d89e5bb7af93c8fed776d542
+2024-04-17 17:55:50,866 - INFO - {'activation': 'sigmoid', 'nb_layers': 3, 'optimizer': 'adagrad', 'regulizer': 0.001, 'nb_neurons': [256, 512, 128, 512, 128, 256]}
+2024-04-17 17:55:50,866 - INFO - Acc: 0.00%
+2024-04-17 17:55:50,866 - INFO - UniID: 43
+2024-04-17 17:55:50,866 - INFO - Mom and Dad: 15 17
+2024-04-17 17:55:50,866 - INFO - Gen: 2
+2024-04-17 17:55:50,866 - INFO - Hash: b9574fcba3d561a7447df1fd30303ab7
+2024-04-17 17:55:50,866 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adam', 'regulizer': 0.0, 'nb_neurons': [64, 256, 512, 256, 128, 64]}
+2024-04-17 17:55:50,866 - INFO - Acc: 0.00%
+2024-04-17 17:55:50,866 - INFO - UniID: 44
+2024-04-17 17:55:50,866 - INFO - Mom and Dad: 15 17
+2024-04-17 17:55:50,866 - INFO - Gen: 2
+2024-04-17 17:55:50,866 - INFO - Hash: a2312753eed2f543a9d04ad6961f4d3d
+2024-04-17 17:55:50,866 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adagrad', 'regulizer': 0.0001, 'nb_neurons': [512, 256, 512, 256, 128, 256]}
+2024-04-17 17:55:50,866 - INFO - Acc: 0.00%
+2024-04-17 17:55:50,866 - INFO - UniID: 45
+2024-04-17 17:55:50,866 - INFO - Mom and Dad: 17 21
+2024-04-17 17:55:50,866 - INFO - Gen: 2
+2024-04-17 17:55:50,866 - INFO - Hash: 06eca3a201323495050b0f91d886bca7
+2024-04-17 17:55:50,866 - INFO - {'activation': 'tanh', 'nb_layers': 2, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [64, 512, 128, 256, 256, 64]}
+2024-04-17 17:55:50,866 - INFO - Acc: 0.00%
+2024-04-17 17:55:50,866 - INFO - UniID: 46
+2024-04-17 17:55:50,866 - INFO - Mom and Dad: 17 21
+2024-04-17 17:55:50,866 - INFO - Gen: 2
+2024-04-17 17:55:50,866 - INFO - Hash: d9a5d10cc9c8d8826d9386b1114cec0a
+2024-04-17 17:55:50,866 - INFO - {'activation': 'sigmoid', 'nb_layers': 2, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [64, 512, 128, 256, 256, 256]}
+2024-04-17 17:55:50,866 - INFO - Acc: 0.00%
+2024-04-17 17:55:50,866 - INFO - UniID: 47
+2024-04-17 17:55:50,866 - INFO - Mom and Dad: 21 17
+2024-04-17 17:55:50,866 - INFO - Gen: 2
+2024-04-17 17:55:50,866 - INFO - Hash: 0ff0c8341b2b3f87973be8d47408c74f
+2024-04-17 17:55:50,866 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adagrad', 'regulizer': 0.0001, 'nb_neurons': [64, 256, 512, 256, 128, 64]}
+2024-04-17 17:55:50,866 - INFO - Acc: 0.00%
+2024-04-17 17:55:50,866 - INFO - UniID: 48
+2024-04-17 17:55:50,866 - INFO - Mom and Dad: 21 17
+2024-04-17 17:55:50,866 - INFO - Gen: 2
+2024-04-17 17:55:50,866 - INFO - Hash: c49bf891e5542160931200773d72ccfc
+2024-04-17 17:55:50,866 - INFO - {'activation': 'linear', 'nb_layers': 1, 'optimizer': 'adagrad', 'regulizer': 0.0, 'nb_neurons': [128, 512, 512, 128, 128, 256]}
+2024-04-17 17:55:50,866 - INFO - Acc: 0.00%
+2024-04-17 17:55:50,866 - INFO - UniID: 49
+2024-04-17 17:55:50,866 - INFO - Mom and Dad: 11 15
+2024-04-17 17:55:50,866 - INFO - Gen: 2
+2024-04-17 17:55:50,866 - INFO - Hash: dcbb13a4b343cf365ff7881f894215d4
+2024-04-17 17:55:50,866 - INFO - {'activation': 'elu', 'nb_layers': 3, 'optimizer': 'sgd', 'regulizer': 0.0001, 'nb_neurons': [256, 512, 128, 512, 256, 512]}
+2024-04-17 17:55:50,866 - INFO - Acc: 0.00%
+2024-04-17 17:55:50,866 - INFO - UniID: 50
+2024-04-17 17:55:50,866 - INFO - Mom and Dad: 11 15
+2024-04-17 17:55:50,866 - INFO - Gen: 2
+2024-04-17 17:55:50,866 - INFO - Hash: 1021e7b6494dca0166b8610de6bf77e5
+2024-04-17 17:55:50,866 - INFO - {'activation': 'softplus', 'nb_layers': 1, 'optimizer': 'sgd', 'regulizer': 0.0001, 'nb_neurons': [128, 512, 512, 128, 256, 512]}
+2024-04-17 17:55:50,866 - INFO - Acc: 0.00%
+2024-04-17 17:55:50,866 - INFO - UniID: 51
+2024-04-17 17:55:50,866 - INFO - Mom and Dad: 15 11
+2024-04-17 17:55:50,866 - INFO - Gen: 2
+2024-04-17 17:55:50,866 - INFO - Hash: 79b07271c1eb8f97f5afdd03739c2668
+2024-04-17 17:55:50,866 - INFO - {'activation': 'linear', 'nb_layers': 3, 'optimizer': 'adagrad', 'regulizer': 0.0, 'nb_neurons': [256, 512, 128, 512, 128, 256]}
+2024-04-17 17:55:50,866 - INFO - Acc: 0.00%
+2024-04-17 17:55:50,866 - INFO - UniID: 52
+2024-04-17 17:55:50,867 - INFO - Mom and Dad: 15 11
+2024-04-17 17:55:50,867 - INFO - Gen: 2
+2024-04-17 17:55:50,867 - INFO - Hash: db7b1a3c9c0f7289fe0f416282a0f1d1
+2024-04-17 17:55:50,867 - INFO - {'activation': 'linear', 'nb_layers': 2, 'optimizer': 'sgd', 'regulizer': 0.0, 'nb_neurons': [64, 512, 512, 128, 256, 512]}
+2024-04-17 17:55:50,867 - INFO - Acc: 0.00%
+2024-04-17 17:55:50,867 - INFO - UniID: 53
+2024-04-17 17:55:50,867 - INFO - Mom and Dad: 4 11
+2024-04-17 17:55:50,867 - INFO - Gen: 2
+2024-04-17 17:55:50,867 - INFO - Hash: ecbe10fb5a7f9800971c1802261dc48f
+2024-04-17 17:55:50,867 - INFO - {'activation': 'linear', 'nb_layers': 1, 'optimizer': 'adagrad', 'regulizer': 0.0, 'nb_neurons': [128, 512, 128, 128, 128, 512]}
+2024-04-17 17:55:50,867 - INFO - Acc: 0.00%
+2024-04-17 17:55:50,867 - INFO - UniID: 54
+2024-04-17 17:55:50,867 - INFO - Mom and Dad: 4 11
+2024-04-17 17:55:50,867 - INFO - Gen: 2
+2024-04-17 17:55:50,867 - INFO - Hash: 4a4ea0b5556738081e038f235ed3689e
+2024-04-17 17:55:50,867 - INFO - ***train_networks(networks, dataset)***
+2024-04-17 17:55:50,867 - INFO - Getting Keras datasets
+2024-04-17 17:55:51,165 - INFO - Compling Keras model
+2024-04-17 17:55:51,165 - INFO - Architecture:[64, 512, 128, 256, 256, 256],sigmoid,adagrad,2
+2024-04-17 17:56:00,178 - INFO - Getting Keras datasets
+2024-04-17 17:56:00,487 - INFO - Compling Keras model
+2024-04-17 17:56:00,487 - INFO - Architecture:[256, 128, 256, 512, 128, 512],linear,adadelta,4
+2024-04-17 17:56:14,757 - INFO - Getting Keras datasets
+2024-04-17 17:56:15,055 - INFO - Compling Keras model
+2024-04-17 17:56:15,055 - INFO - Architecture:[64, 512, 128, 256, 256, 256],sigmoid,adagrad,3
+2024-04-17 17:56:24,993 - INFO - Getting Keras datasets
+2024-04-17 17:56:25,288 - INFO - Compling Keras model
+2024-04-17 17:56:25,289 - INFO - Architecture:[256, 512, 128, 512, 128, 256],softplus,adagrad,2
+2024-04-17 17:56:45,256 - INFO - Getting Keras datasets
+2024-04-17 17:56:45,553 - INFO - Compling Keras model
+2024-04-17 17:56:45,553 - INFO - Architecture:[64, 256, 512, 256, 128, 64],sigmoid,adamax,5
+2024-04-17 17:57:12,519 - INFO - Getting Keras datasets
+2024-04-17 17:57:12,816 - INFO - Compling Keras model
+2024-04-17 17:57:12,816 - INFO - Architecture:[64, 64, 128, 256, 256, 256],elu,adagrad,2
+2024-04-17 17:57:17,666 - INFO - Getting Keras datasets
+2024-04-17 17:57:17,960 - INFO - Compling Keras model
+2024-04-17 17:57:17,960 - INFO - Architecture:[64, 512, 128, 256, 256, 256],hard_sigmoid,adagrad,3
+2024-04-17 17:57:30,348 - INFO - Getting Keras datasets
+2024-04-17 17:57:30,640 - INFO - Compling Keras model
+2024-04-17 17:57:30,640 - INFO - Architecture:[64, 256, 128, 256, 128, 64],sigmoid,adamax,5
+2024-04-17 17:57:42,666 - INFO - Getting Keras datasets
+2024-04-17 17:57:42,956 - INFO - Compling Keras model
+2024-04-17 17:57:42,956 - INFO - Architecture:[64, 256, 512, 256, 128, 256],elu,adagrad,5
+2024-04-17 17:57:52,362 - INFO - Getting Keras datasets
+2024-04-17 17:57:52,658 - INFO - Compling Keras model
+2024-04-17 17:57:52,658 - INFO - Architecture:[256, 512, 128, 512, 128, 64],softplus,adamax,3
+2024-04-17 17:58:20,157 - INFO - Getting Keras datasets
+2024-04-17 17:58:20,448 - INFO - Compling Keras model
+2024-04-17 17:58:20,448 - INFO - Architecture:[128, 512, 512, 128, 256, 512],linear,adamax,2
+2024-04-17 17:58:32,206 - INFO - Getting Keras datasets
+2024-04-17 17:58:32,496 - INFO - Compling Keras model
+2024-04-17 17:58:32,496 - INFO - Architecture:[64, 256, 512, 256, 128, 64],elu,sgd,5
+2024-04-17 17:58:42,233 - INFO - Getting Keras datasets
+2024-04-17 17:58:42,524 - INFO - Compling Keras model
+2024-04-17 17:58:42,524 - INFO - Architecture:[256, 512, 128, 256, 256, 256],softplus,adagrad,3
+2024-04-17 17:59:47,952 - INFO - Getting Keras datasets
+2024-04-17 17:59:48,245 - INFO - Compling Keras model
+2024-04-17 17:59:48,245 - INFO - Architecture:[64, 512, 128, 512, 128, 256],sigmoid,adagrad,2
+2024-04-17 17:59:57,228 - INFO - Getting Keras datasets
+2024-04-17 17:59:57,518 - INFO - Compling Keras model
+2024-04-17 17:59:57,518 - INFO - Architecture:[256, 512, 128, 512, 128, 256],sigmoid,adagrad,3
+2024-04-17 18:00:17,870 - INFO - Getting Keras datasets
+2024-04-17 18:00:18,166 - INFO - Compling Keras model
+2024-04-17 18:00:18,167 - INFO - Architecture:[64, 256, 512, 256, 128, 64],elu,adam,5
+2024-04-17 18:00:28,363 - INFO - Getting Keras datasets
+2024-04-17 18:00:28,654 - INFO - Compling Keras model
+2024-04-17 18:00:28,654 - INFO - Architecture:[512, 256, 512, 256, 128, 256],elu,adagrad,5
+2024-04-17 18:00:58,039 - INFO - Getting Keras datasets
+2024-04-17 18:00:58,328 - INFO - Compling Keras model
+2024-04-17 18:00:58,329 - INFO - Architecture:[64, 512, 128, 256, 256, 64],tanh,adamax,2
+2024-04-17 18:01:07,533 - INFO - Getting Keras datasets
+2024-04-17 18:01:07,822 - INFO - Compling Keras model
+2024-04-17 18:01:07,822 - INFO - Architecture:[64, 512, 128, 256, 256, 256],sigmoid,adamax,2
+2024-04-17 18:01:17,056 - INFO - Getting Keras datasets
+2024-04-17 18:01:17,346 - INFO - Compling Keras model
+2024-04-17 18:01:17,346 - INFO - Architecture:[64, 256, 512, 256, 128, 64],elu,adagrad,5
+2024-04-17 18:01:26,792 - INFO - Getting Keras datasets
+2024-04-17 18:01:27,083 - INFO - Compling Keras model
+2024-04-17 18:01:27,083 - INFO - Architecture:[128, 512, 512, 128, 128, 256],linear,adagrad,1
+2024-04-17 18:01:32,305 - INFO - Getting Keras datasets
+2024-04-17 18:01:32,594 - INFO - Compling Keras model
+2024-04-17 18:01:32,594 - INFO - Architecture:[256, 512, 128, 512, 256, 512],elu,sgd,3
+2024-04-17 18:01:53,070 - INFO - Getting Keras datasets
+2024-04-17 18:01:53,359 - INFO - Compling Keras model
+2024-04-17 18:01:53,360 - INFO - Architecture:[128, 512, 512, 128, 256, 512],softplus,sgd,1
+2024-04-17 18:01:59,327 - INFO - Getting Keras datasets
+2024-04-17 18:01:59,616 - INFO - Compling Keras model
+2024-04-17 18:01:59,616 - INFO - Architecture:[256, 512, 128, 512, 128, 256],linear,adagrad,3
+2024-04-17 18:02:19,149 - INFO - Getting Keras datasets
+2024-04-17 18:02:19,439 - INFO - Compling Keras model
+2024-04-17 18:02:19,439 - INFO - Architecture:[64, 512, 512, 128, 256, 512],linear,sgd,2
+2024-04-17 18:02:27,758 - INFO - Getting Keras datasets
+2024-04-17 18:02:28,046 - INFO - Compling Keras model
+2024-04-17 18:02:28,046 - INFO - Architecture:[128, 512, 128, 128, 128, 512],linear,adagrad,1
+2024-04-17 18:02:33,195 - INFO - Generation average: 4.23%
+2024-04-17 18:02:33,196 - INFO - --------------------------------------------------------------------------------
+2024-04-17 18:02:33,196 - INFO - ***Now in generation 3 of 10***
+2024-04-17 18:02:33,196 - INFO - --------------------------------------------------------------------------------
+2024-04-17 18:02:33,196 - INFO - {'nb_layers': 5, 'regulizer': 0.001, 'activation': 'elu', 'optimizer': 'adamax', 'nb_neurons': [64, 256, 512, 256, 128, 64]}
+2024-04-17 18:02:33,196 - INFO - Acc: 29.98%
+2024-04-17 18:02:33,196 - INFO - UniID: 17
+2024-04-17 18:02:33,196 - INFO - Mom and Dad: 0 0
+2024-04-17 18:02:33,196 - INFO - Gen: 1
+2024-04-17 18:02:33,196 - INFO - Hash: 6869c30d22128d06f02e1436755d2aa8
+2024-04-17 18:02:33,196 - INFO - {'activation': 'sigmoid', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [64, 256, 512, 256, 128, 64]}
+2024-04-17 18:02:33,196 - INFO - Acc: 19.86%
+2024-04-17 18:02:33,196 - INFO - UniID: 33
+2024-04-17 18:02:33,196 - INFO - Mom and Dad: 21 17
+2024-04-17 18:02:33,196 - INFO - Gen: 2
+2024-04-17 18:02:33,196 - INFO - Hash: 26a5da8190719e338706a1891a548ed6
+2024-04-17 18:02:33,196 - INFO - {'nb_layers': 3, 'regulizer': 0.0, 'activation': 'softplus', 'optimizer': 'adagrad', 'nb_neurons': [256, 512, 128, 512, 128, 256]}
+2024-04-17 18:02:33,196 - INFO - Acc: 9.67%
+2024-04-17 18:02:33,196 - INFO - UniID: 15
+2024-04-17 18:02:33,196 - INFO - Mom and Dad: 0 0
+2024-04-17 18:02:33,196 - INFO - Gen: 1
+2024-04-17 18:02:33,196 - INFO - Hash: 7c7fede76a2c6b7cc342abe44801e8b6
+2024-04-17 18:02:33,196 - INFO - {'nb_layers': 2, 'regulizer': 0.0, 'activation': 'linear', 'optimizer': 'adagrad', 'nb_neurons': [64, 512, 128, 128, 128, 512]}
+2024-04-17 18:02:33,196 - INFO - Acc: 8.83%
+2024-04-17 18:02:33,196 - INFO - UniID: 4
+2024-04-17 18:02:33,196 - INFO - Mom and Dad: 0 0
+2024-04-17 18:02:33,196 - INFO - Gen: 1
+2024-04-17 18:02:33,196 - INFO - Hash: 45c1263b1edd791f87c600c6c1853d4c
+2024-04-17 18:02:33,196 - INFO - {'activation': 'linear', 'nb_layers': 1, 'optimizer': 'adam', 'regulizer': 0.0, 'nb_neurons': [128, 512, 512, 128, 128, 256]}
+2024-04-17 18:02:33,196 - INFO - Acc: 0.00%
+2024-04-17 18:02:33,196 - INFO - UniID: 49
+2024-04-17 18:02:33,196 - INFO - Mom and Dad: 11 15
+2024-04-17 18:02:33,196 - INFO - Gen: 3
+2024-04-17 18:02:33,196 - INFO - Hash: 573d96afd9bceb37f9b6f7018cb90043
+2024-04-17 18:02:33,196 - INFO - {'activation': 'linear', 'nb_layers': 2, 'optimizer': 'adam', 'regulizer': 0.0, 'nb_neurons': [64, 512, 512, 128, 256, 512]}
+2024-04-17 18:02:33,196 - INFO - Acc: 0.00%
+2024-04-17 18:02:33,196 - INFO - UniID: 53
+2024-04-17 18:02:33,196 - INFO - Mom and Dad: 4 11
+2024-04-17 18:02:33,196 - INFO - Gen: 3
+2024-04-17 18:02:33,196 - INFO - Hash: 00f1f1359c0575663534dcb3052d3b5f
+2024-04-17 18:02:33,196 - INFO - {'activation': 'sigmoid', 'nb_layers': 2, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 256, 128, 256, 128, 64]}
+2024-04-17 18:02:33,196 - INFO - Acc: 0.00%
+2024-04-17 18:02:33,196 - INFO - UniID: 36
+2024-04-17 18:02:33,196 - INFO - Mom and Dad: 21 17
+2024-04-17 18:02:33,197 - INFO - Gen: 3
+2024-04-17 18:02:33,197 - INFO - Hash: 2b20bc73105c8143439a90c82a3bbf94
+2024-04-17 18:02:33,197 - INFO - {'activation': 'linear', 'nb_layers': 2, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [512, 512, 512, 128, 256, 512]}
+2024-04-17 18:02:33,197 - INFO - Acc: 0.00%
+2024-04-17 18:02:33,197 - INFO - UniID: 39
+2024-04-17 18:02:33,197 - INFO - Mom and Dad: 11 17
+2024-04-17 18:02:33,197 - INFO - Gen: 3
+2024-04-17 18:02:33,197 - INFO - Hash: 0367af029b43c7723b6ad39ca5dbd927
+2024-04-17 18:02:33,197 - INFO - {'activation': 'sigmoid', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [64, 256, 512, 128, 128, 64]}
+2024-04-17 18:02:33,197 - INFO - Acc: 0.00%
+2024-04-17 18:02:33,197 - INFO - UniID: 55
+2024-04-17 18:02:33,197 - INFO - Mom and Dad: 33 17
+2024-04-17 18:02:33,197 - INFO - Gen: 3
+2024-04-17 18:02:33,197 - INFO - Hash: 24a2db66bb75ade0fca8d91e3e992e7e
+2024-04-17 18:02:33,197 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [64, 128, 512, 256, 128, 64]}
+2024-04-17 18:02:33,197 - INFO - Acc: 0.00%
+2024-04-17 18:02:33,197 - INFO - UniID: 56
+2024-04-17 18:02:33,197 - INFO - Mom and Dad: 33 17
+2024-04-17 18:02:33,197 - INFO - Gen: 3
+2024-04-17 18:02:33,197 - INFO - Hash: 7d913593d40390dbef45a2da2bea03b2
+2024-04-17 18:02:33,197 - INFO - {'activation': 'sigmoid', 'nb_layers': 2, 'optimizer': 'adam', 'regulizer': 0.0, 'nb_neurons': [64, 256, 128, 256, 128, 512]}
+2024-04-17 18:02:33,197 - INFO - Acc: 0.00%
+2024-04-17 18:02:33,197 - INFO - UniID: 57
+2024-04-17 18:02:33,197 - INFO - Mom and Dad: 36 53
+2024-04-17 18:02:33,197 - INFO - Gen: 3
+2024-04-17 18:02:33,197 - INFO - Hash: 1f565a6524fd53ff00d69b41010e99d3
+2024-04-17 18:02:33,197 - INFO - {'activation': 'linear', 'nb_layers': 2, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 512, 512, 128, 256, 64]}
+2024-04-17 18:02:33,197 - INFO - Acc: 0.00%
+2024-04-17 18:02:33,197 - INFO - UniID: 58
+2024-04-17 18:02:33,197 - INFO - Mom and Dad: 36 53
+2024-04-17 18:02:33,197 - INFO - Gen: 3
+2024-04-17 18:02:33,197 - INFO - Hash: 700e2f0d3cec5889f9851be8ff2a8eed
+2024-04-17 18:02:33,197 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 256, 512, 256, 128, 256]}
+2024-04-17 18:02:33,197 - INFO - Acc: 0.00%
+2024-04-17 18:02:33,197 - INFO - UniID: 59
+2024-04-17 18:02:33,197 - INFO - Mom and Dad: 17 36
+2024-04-17 18:02:33,197 - INFO - Gen: 3
+2024-04-17 18:02:33,197 - INFO - Hash: deac0e63e2364434e478ef111edf5dbf
+2024-04-17 18:02:33,197 - INFO - {'activation': 'sigmoid', 'nb_layers': 2, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [64, 256, 128, 256, 256, 64]}
+2024-04-17 18:02:33,197 - INFO - Acc: 0.00%
+2024-04-17 18:02:33,197 - INFO - UniID: 60
+2024-04-17 18:02:33,197 - INFO - Mom and Dad: 17 36
+2024-04-17 18:02:33,197 - INFO - Gen: 3
+2024-04-17 18:02:33,197 - INFO - Hash: 833ee976610b4a7e429daf7a4ef5d33d
+2024-04-17 18:02:33,197 - INFO - {'activation': 'softplus', 'nb_layers': 3, 'optimizer': 'adagrad', 'regulizer': 0.0, 'nb_neurons': [64, 512, 128, 128, 128, 512]}
+2024-04-17 18:02:33,197 - INFO - Acc: 0.00%
+2024-04-17 18:02:33,197 - INFO - UniID: 61
+2024-04-17 18:02:33,197 - INFO - Mom and Dad: 15 4
+2024-04-17 18:02:33,197 - INFO - Gen: 3
+2024-04-17 18:02:33,197 - INFO - Hash: 1aeb32eca72d51f3c8d787a2265249ac
+2024-04-17 18:02:33,197 - INFO - {'activation': 'linear', 'nb_layers': 2, 'optimizer': 'adagrad', 'regulizer': 0.0, 'nb_neurons': [256, 512, 128, 512, 128, 256]}
+2024-04-17 18:02:33,197 - INFO - Acc: 0.00%
+2024-04-17 18:02:33,197 - INFO - UniID: 62
+2024-04-17 18:02:33,197 - INFO - Mom and Dad: 15 4
+2024-04-17 18:02:33,197 - INFO - Gen: 3
+2024-04-17 18:02:33,197 - INFO - Hash: 4c8cef3470e464c5c762e8382f1009e0
+2024-04-17 18:02:33,197 - INFO - {'activation': 'sigmoid', 'nb_layers': 5, 'optimizer': 'adagrad', 'regulizer': 0.0, 'nb_neurons': [512, 256, 512, 512, 128, 256]}
+2024-04-17 18:02:33,197 - INFO - Acc: 0.00%
+2024-04-17 18:02:33,197 - INFO - UniID: 63
+2024-04-17 18:02:33,197 - INFO - Mom and Dad: 33 15
+2024-04-17 18:02:33,197 - INFO - Gen: 3
+2024-04-17 18:02:33,197 - INFO - Hash: 19323045ec410cd1437ac9398ad8c879
+2024-04-17 18:02:33,197 - INFO - {'activation': 'softplus', 'nb_layers': 3, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [256, 512, 128, 256, 128, 64]}
+2024-04-17 18:02:33,197 - INFO - Acc: 0.00%
+2024-04-17 18:02:33,197 - INFO - UniID: 64
+2024-04-17 18:02:33,197 - INFO - Mom and Dad: 33 15
+2024-04-17 18:02:33,197 - INFO - Gen: 3
+2024-04-17 18:02:33,197 - INFO - Hash: 45e145324fba220d6ccb5b0d0a712704
+2024-04-17 18:02:33,197 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.0, 'nb_neurons': [64, 256, 512, 256, 128, 512]}
+2024-04-17 18:02:33,197 - INFO - Acc: 0.00%
+2024-04-17 18:02:33,197 - INFO - UniID: 65
+2024-04-17 18:02:33,197 - INFO - Mom and Dad: 17 15
+2024-04-17 18:02:33,197 - INFO - Gen: 3
+2024-04-17 18:02:33,197 - INFO - Hash: 00776ef075b0a58bbbebb149a99e0a72
+2024-04-17 18:02:33,197 - INFO - {'activation': 'softplus', 'nb_layers': 3, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [256, 512, 128, 512, 128, 256]}
+2024-04-17 18:02:33,197 - INFO - Acc: 0.00%
+2024-04-17 18:02:33,197 - INFO - UniID: 66
+2024-04-17 18:02:33,197 - INFO - Mom and Dad: 17 15
+2024-04-17 18:02:33,197 - INFO - Gen: 3
+2024-04-17 18:02:33,197 - INFO - Hash: 524a46c844070d0a77b116cc891efced
+2024-04-17 18:02:33,197 - INFO - {'activation': 'softplus', 'nb_layers': 3, 'optimizer': 'rmsprop', 'regulizer': 0.001, 'nb_neurons': [256, 512, 128, 512, 128, 256]}
+2024-04-17 18:02:33,197 - INFO - Acc: 0.00%
+2024-04-17 18:02:33,197 - INFO - UniID: 67
+2024-04-17 18:02:33,197 - INFO - Mom and Dad: 15 17
+2024-04-17 18:02:33,197 - INFO - Gen: 3
+2024-04-17 18:02:33,197 - INFO - Hash: ea57236ffa6d8e3a7bf805d7ce403c63
+2024-04-17 18:02:33,197 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adagrad', 'regulizer': 0.0, 'nb_neurons': [64, 256, 512, 512, 128, 64]}
+2024-04-17 18:02:33,197 - INFO - Acc: 0.00%
+2024-04-17 18:02:33,197 - INFO - UniID: 68
+2024-04-17 18:02:33,197 - INFO - Mom and Dad: 15 17
+2024-04-17 18:02:33,197 - INFO - Gen: 3
+2024-04-17 18:02:33,197 - INFO - Hash: 228e1ab28cd101c29eedd8044131d990
+2024-04-17 18:02:33,197 - INFO - {'activation': 'sigmoid', 'nb_layers': 5, 'optimizer': 'adagrad', 'regulizer': 0.0, 'nb_neurons': [64, 256, 512, 256, 128, 64]}
+2024-04-17 18:02:33,197 - INFO - Acc: 0.00%
+2024-04-17 18:02:33,197 - INFO - UniID: 69
+2024-04-17 18:02:33,197 - INFO - Mom and Dad: 33 4
+2024-04-17 18:02:33,197 - INFO - Gen: 3
+2024-04-17 18:02:33,197 - INFO - Hash: 395f25a7267d6f8efc8b5a591f028150
+2024-04-17 18:02:33,197 - INFO - {'activation': 'linear', 'nb_layers': 2, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [64, 512, 128, 128, 128, 512]}
+2024-04-17 18:02:33,197 - INFO - Acc: 0.00%
+2024-04-17 18:02:33,197 - INFO - UniID: 70
+2024-04-17 18:02:33,197 - INFO - Mom and Dad: 33 4
+2024-04-17 18:02:33,197 - INFO - Gen: 3
+2024-04-17 18:02:33,197 - INFO - Hash: 24291e9b482a50a0bf8d243e5b8c09e9
+2024-04-17 18:02:33,197 - INFO - {'activation': 'linear', 'nb_layers': 2, 'optimizer': 'adam', 'regulizer': 0.0, 'nb_neurons': [64, 64, 512, 128, 256, 512]}
+2024-04-17 18:02:33,197 - INFO - Acc: 0.00%
+2024-04-17 18:02:33,197 - INFO - UniID: 71
+2024-04-17 18:02:33,197 - INFO - Mom and Dad: 4 53
+2024-04-17 18:02:33,197 - INFO - Gen: 3
+2024-04-17 18:02:33,197 - INFO - Hash: 5f9c7d2e6a5a63d0b31296085bcab54e
+2024-04-17 18:02:33,197 - INFO - {'activation': 'linear', 'nb_layers': 2, 'optimizer': 'adagrad', 'regulizer': 0.0, 'nb_neurons': [512, 512, 128, 128, 128, 512]}
+2024-04-17 18:02:33,197 - INFO - Acc: 0.00%
+2024-04-17 18:02:33,197 - INFO - UniID: 72
+2024-04-17 18:02:33,197 - INFO - Mom and Dad: 4 53
+2024-04-17 18:02:33,197 - INFO - Gen: 3
+2024-04-17 18:02:33,197 - INFO - Hash: 6c9563621c70998c826a47c5656dde07
+2024-04-17 18:02:33,197 - INFO - {'activation': 'softplus', 'nb_layers': 3, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [256, 256, 512, 256, 128, 64]}
+2024-04-17 18:02:33,197 - INFO - Acc: 0.00%
+2024-04-17 18:02:33,197 - INFO - UniID: 73
+2024-04-17 18:02:33,197 - INFO - Mom and Dad: 15 17
+2024-04-17 18:02:33,197 - INFO - Gen: 3
+2024-04-17 18:02:33,197 - INFO - Hash: 7a10dd38bf212e98660d82f39f22c25c
+2024-04-17 18:02:33,197 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adagrad', 'regulizer': 0.0, 'nb_neurons': [64, 512, 128, 512, 64, 256]}
+2024-04-17 18:02:33,197 - INFO - Acc: 0.00%
+2024-04-17 18:02:33,197 - INFO - UniID: 74
+2024-04-17 18:02:33,197 - INFO - Mom and Dad: 15 17
+2024-04-17 18:02:33,197 - INFO - Gen: 3
+2024-04-17 18:02:33,197 - INFO - Hash: 0457b558245979d9159d1c3c340f33a0
+2024-04-17 18:02:33,197 - INFO - {'activation': 'sigmoid', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [256, 256, 512, 256, 128, 64]}
+2024-04-17 18:02:33,197 - INFO - Acc: 0.00%
+2024-04-17 18:02:33,197 - INFO - UniID: 75
+2024-04-17 18:02:33,197 - INFO - Mom and Dad: 33 17
+2024-04-17 18:02:33,197 - INFO - Gen: 3
+2024-04-17 18:02:33,197 - INFO - Hash: 6012d8b4d3aabfcd7b257617be2b2057
+2024-04-17 18:02:33,197 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [64, 64, 512, 256, 128, 64]}
+2024-04-17 18:02:33,197 - INFO - Acc: 0.00%
+2024-04-17 18:02:33,197 - INFO - UniID: 76
+2024-04-17 18:02:33,197 - INFO - Mom and Dad: 33 17
+2024-04-17 18:02:33,197 - INFO - Gen: 3
+2024-04-17 18:02:33,197 - INFO - Hash: 24e577dcc23ded8341805589db747e7c
+2024-04-17 18:02:33,197 - INFO - ***train_networks(networks, dataset)***
+2024-04-17 18:02:33,198 - INFO - Getting Keras datasets
+2024-04-17 18:02:33,487 - INFO - Compling Keras model
+2024-04-17 18:02:33,487 - INFO - Architecture:[128, 512, 512, 128, 128, 256],linear,adam,1
+2024-04-17 18:02:39,025 - INFO - Getting Keras datasets
+2024-04-17 18:02:39,314 - INFO - Compling Keras model
+2024-04-17 18:02:39,314 - INFO - Architecture:[64, 512, 512, 128, 256, 512],linear,adam,2
+2024-04-17 18:02:48,125 - INFO - Getting Keras datasets
+2024-04-17 18:02:48,416 - INFO - Compling Keras model
+2024-04-17 18:02:48,416 - INFO - Architecture:[64, 256, 128, 256, 128, 64],sigmoid,adamax,2
+2024-04-17 18:03:06,955 - INFO - Getting Keras datasets
+2024-04-17 18:03:07,246 - INFO - Compling Keras model
+2024-04-17 18:03:07,246 - INFO - Architecture:[512, 512, 512, 128, 256, 512],linear,adamax,2
+2024-04-17 18:03:46,965 - INFO - Getting Keras datasets
+2024-04-17 18:03:47,255 - INFO - Compling Keras model
+2024-04-17 18:03:47,255 - INFO - Architecture:[64, 256, 512, 128, 128, 64],sigmoid,adamax,5
+2024-04-17 18:04:13,779 - INFO - Getting Keras datasets
+2024-04-17 18:04:14,076 - INFO - Compling Keras model
+2024-04-17 18:04:14,076 - INFO - Architecture:[64, 128, 512, 256, 128, 64],elu,adamax,5
+2024-04-17 18:04:22,535 - INFO - Getting Keras datasets
+2024-04-17 18:04:22,825 - INFO - Compling Keras model
+2024-04-17 18:04:22,825 - INFO - Architecture:[64, 256, 128, 256, 128, 512],sigmoid,adam,2
+2024-04-17 18:04:29,636 - INFO - Getting Keras datasets
+2024-04-17 18:04:29,925 - INFO - Compling Keras model
+2024-04-17 18:04:29,925 - INFO - Architecture:[64, 512, 512, 128, 256, 64],linear,adamax,2
+2024-04-17 18:04:52,294 - INFO - Getting Keras datasets
+2024-04-17 18:04:52,584 - INFO - Compling Keras model
+2024-04-17 18:04:52,585 - INFO - Architecture:[64, 256, 512, 256, 128, 256],elu,adamax,5
+2024-04-17 18:05:19,749 - INFO - Getting Keras datasets
+2024-04-17 18:05:20,042 - INFO - Compling Keras model
+2024-04-17 18:05:20,042 - INFO - Architecture:[64, 256, 128, 256, 256, 64],sigmoid,adamax,2
+2024-04-17 18:05:26,719 - INFO - Getting Keras datasets
+2024-04-17 18:05:27,008 - INFO - Compling Keras model
+2024-04-17 18:05:27,008 - INFO - Architecture:[64, 512, 128, 128, 128, 512],softplus,adagrad,3
+2024-04-17 18:05:37,756 - INFO - Getting Keras datasets
+2024-04-17 18:05:38,047 - INFO - Compling Keras model
+2024-04-17 18:05:38,047 - INFO - Architecture:[256, 512, 128, 512, 128, 256],linear,adagrad,2
+2024-04-17 18:05:56,093 - INFO - Getting Keras datasets
+2024-04-17 18:05:56,383 - INFO - Compling Keras model
+2024-04-17 18:05:56,383 - INFO - Architecture:[512, 256, 512, 512, 128, 256],sigmoid,adagrad,5
+2024-04-17 18:06:26,997 - INFO - Getting Keras datasets
+2024-04-17 18:06:27,286 - INFO - Compling Keras model
+2024-04-17 18:06:27,286 - INFO - Architecture:[256, 512, 128, 256, 128, 64],softplus,adamax,3
+2024-04-17 18:06:48,430 - INFO - Getting Keras datasets
+2024-04-17 18:06:48,721 - INFO - Compling Keras model
+2024-04-17 18:06:48,722 - INFO - Architecture:[64, 256, 512, 256, 128, 512],elu,adamax,5
+2024-04-17 18:06:58,569 - INFO - Getting Keras datasets
+2024-04-17 18:06:58,857 - INFO - Compling Keras model
+2024-04-17 18:06:58,857 - INFO - Architecture:[256, 512, 128, 512, 128, 256],softplus,adamax,3
+2024-04-17 18:07:19,989 - INFO - Getting Keras datasets
+2024-04-17 18:07:20,279 - INFO - Compling Keras model
+2024-04-17 18:07:20,279 - INFO - Architecture:[256, 512, 128, 512, 128, 256],softplus,rmsprop,3
+2024-04-17 18:07:41,257 - INFO - Getting Keras datasets
+2024-04-17 18:07:41,547 - INFO - Compling Keras model
+2024-04-17 18:07:41,547 - INFO - Architecture:[64, 256, 512, 512, 128, 64],elu,adagrad,5
+2024-04-17 18:07:52,093 - INFO - Getting Keras datasets
+2024-04-17 18:07:52,385 - INFO - Compling Keras model
+2024-04-17 18:07:52,385 - INFO - Architecture:[64, 256, 512, 256, 128, 64],sigmoid,adagrad,5
+2024-04-17 18:08:01,759 - INFO - Getting Keras datasets
+2024-04-17 18:08:02,049 - INFO - Compling Keras model
+2024-04-17 18:08:02,049 - INFO - Architecture:[64, 512, 128, 128, 128, 512],linear,adamax,2
+2024-04-17 18:08:10,569 - INFO - Getting Keras datasets
+2024-04-17 18:08:10,865 - INFO - Compling Keras model
+2024-04-17 18:08:10,865 - INFO - Architecture:[64, 64, 512, 128, 256, 512],linear,adam,2
+2024-04-17 18:08:15,484 - INFO - Getting Keras datasets
+2024-04-17 18:08:15,775 - INFO - Compling Keras model
+2024-04-17 18:08:15,775 - INFO - Architecture:[512, 512, 128, 128, 128, 512],linear,adagrad,2
+2024-04-17 18:08:46,613 - INFO - Getting Keras datasets
+2024-04-17 18:08:46,905 - INFO - Compling Keras model
+2024-04-17 18:08:46,905 - INFO - Architecture:[256, 256, 512, 256, 128, 64],softplus,adamax,3
+2024-04-17 18:09:03,976 - INFO - Getting Keras datasets
+2024-04-17 18:09:04,275 - INFO - Compling Keras model
+2024-04-17 18:09:04,275 - INFO - Architecture:[64, 512, 128, 512, 64, 256],elu,adagrad,5
+2024-04-17 18:09:36,234 - INFO - Getting Keras datasets
+2024-04-17 18:09:36,525 - INFO - Compling Keras model
+2024-04-17 18:09:36,525 - INFO - Architecture:[256, 256, 512, 256, 128, 64],sigmoid,adamax,5
+2024-04-17 18:10:30,738 - INFO - Getting Keras datasets
+2024-04-17 18:10:31,030 - INFO - Compling Keras model
+2024-04-17 18:10:31,030 - INFO - Architecture:[64, 64, 512, 256, 128, 64],elu,adamax,5
+2024-04-17 18:10:49,400 - INFO - Generation average: 7.98%
+2024-04-17 18:10:49,401 - INFO - --------------------------------------------------------------------------------
+2024-04-17 18:10:49,401 - INFO - ***Now in generation 4 of 10***
+2024-04-17 18:10:49,401 - INFO - --------------------------------------------------------------------------------
+2024-04-17 18:10:49,401 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 256, 512, 256, 128, 256]}
+2024-04-17 18:10:49,401 - INFO - Acc: 37.21%
+2024-04-17 18:10:49,401 - INFO - UniID: 59
+2024-04-17 18:10:49,401 - INFO - Mom and Dad: 17 36
+2024-04-17 18:10:49,401 - INFO - Gen: 3
+2024-04-17 18:10:49,401 - INFO - Hash: deac0e63e2364434e478ef111edf5dbf
+2024-04-17 18:10:49,401 - INFO - {'nb_layers': 5, 'regulizer': 0.001, 'activation': 'elu', 'optimizer': 'adamax', 'nb_neurons': [64, 256, 512, 256, 128, 64]}
+2024-04-17 18:10:49,401 - INFO - Acc: 29.98%
+2024-04-17 18:10:49,401 - INFO - UniID: 17
+2024-04-17 18:10:49,401 - INFO - Mom and Dad: 0 0
+2024-04-17 18:10:49,401 - INFO - Gen: 1
+2024-04-17 18:10:49,401 - INFO - Hash: 6869c30d22128d06f02e1436755d2aa8
+2024-04-17 18:10:49,401 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [64, 64, 512, 256, 128, 64]}
+2024-04-17 18:10:49,401 - INFO - Acc: 25.91%
+2024-04-17 18:10:49,401 - INFO - UniID: 76
+2024-04-17 18:10:49,402 - INFO - Mom and Dad: 33 17
+2024-04-17 18:10:49,402 - INFO - Gen: 3
+2024-04-17 18:10:49,402 - INFO - Hash: 24e577dcc23ded8341805589db747e7c
+2024-04-17 18:10:49,402 - INFO - {'activation': 'sigmoid', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [256, 256, 512, 256, 128, 64]}
+2024-04-17 18:10:49,402 - INFO - Acc: 25.38%
+2024-04-17 18:10:49,402 - INFO - UniID: 75
+2024-04-17 18:10:49,402 - INFO - Mom and Dad: 33 17
+2024-04-17 18:10:49,402 - INFO - Gen: 3
+2024-04-17 18:10:49,402 - INFO - Hash: 6012d8b4d3aabfcd7b257617be2b2057
+2024-04-17 18:10:49,402 - INFO - {'activation': 'sigmoid', 'nb_layers': 2, 'optimizer': 'adam', 'regulizer': 0.01, 'nb_neurons': [64, 256, 128, 256, 128, 64]}
+2024-04-17 18:10:49,402 - INFO - Acc: 0.00%
+2024-04-17 18:10:49,402 - INFO - UniID: 36
+2024-04-17 18:10:49,402 - INFO - Mom and Dad: 21 17
+2024-04-17 18:10:49,402 - INFO - Gen: 4
+2024-04-17 18:10:49,402 - INFO - Hash: 0ff8f4bebe875d5f089067c0b3ddb94f
+2024-04-17 18:10:49,402 - INFO - {'activation': 'sigmoid', 'nb_layers': 5, 'optimizer': 'adagrad', 'regulizer': 0.0, 'nb_neurons': [64, 256, 512, 256, 512, 64]}
+2024-04-17 18:10:49,402 - INFO - Acc: 0.00%
+2024-04-17 18:10:49,402 - INFO - UniID: 69
+2024-04-17 18:10:49,402 - INFO - Mom and Dad: 33 4
+2024-04-17 18:10:49,402 - INFO - Gen: 4
+2024-04-17 18:10:49,402 - INFO - Hash: 3cec7f948c98f5ec92afd202f5c684b0
+2024-04-17 18:10:49,402 - INFO - {'activation': 'elu', 'nb_layers': 2, 'optimizer': 'adam', 'regulizer': 0.01, 'nb_neurons': [64, 256, 128, 256, 128, 64]}
+2024-04-17 18:10:49,402 - INFO - Acc: 0.00%
+2024-04-17 18:10:49,402 - INFO - UniID: 77
+2024-04-17 18:10:49,402 - INFO - Mom and Dad: 59 36
+2024-04-17 18:10:49,402 - INFO - Gen: 4
+2024-04-17 18:10:49,402 - INFO - Hash: 4f71a6b8d6fdc403362c6dbaf439afc4
+2024-04-17 18:10:49,402 - INFO - {'activation': 'sigmoid', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 256, 512, 256, 128, 128]}
+2024-04-17 18:10:49,402 - INFO - Acc: 0.00%
+2024-04-17 18:10:49,402 - INFO - UniID: 78
+2024-04-17 18:10:49,402 - INFO - Mom and Dad: 59 36
+2024-04-17 18:10:49,402 - INFO - Gen: 4
+2024-04-17 18:10:49,402 - INFO - Hash: ea0b2a26d31a2c8014ade93a341064fe
+2024-04-17 18:10:49,402 - INFO - {'activation': 'sigmoid', 'nb_layers': 2, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [64, 256, 256, 256, 128, 64]}
+2024-04-17 18:10:49,402 - INFO - Acc: 0.00%
+2024-04-17 18:10:49,402 - INFO - UniID: 79
+2024-04-17 18:10:49,402 - INFO - Mom and Dad: 36 17
+2024-04-17 18:10:49,402 - INFO - Gen: 4
+2024-04-17 18:10:49,402 - INFO - Hash: 9b95dc1c0ba0061a9701b8831e3fd7eb
+2024-04-17 18:10:49,402 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adam', 'regulizer': 0.0, 'nb_neurons': [64, 256, 512, 64, 128, 64]}
+2024-04-17 18:10:49,402 - INFO - Acc: 0.00%
+2024-04-17 18:10:49,402 - INFO - UniID: 80
+2024-04-17 18:10:49,402 - INFO - Mom and Dad: 36 17
+2024-04-17 18:10:49,402 - INFO - Gen: 4
+2024-04-17 18:10:49,402 - INFO - Hash: 97df57f4263a0341ddc1c40fddb374f8
+2024-04-17 18:10:49,402 - INFO - {'activation': 'sigmoid', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.0001, 'nb_neurons': [256, 256, 512, 256, 128, 256]}
+2024-04-17 18:10:49,402 - INFO - Acc: 0.00%
+2024-04-17 18:10:49,402 - INFO - UniID: 81
+2024-04-17 18:10:49,402 - INFO - Mom and Dad: 75 59
+2024-04-17 18:10:49,402 - INFO - Gen: 4
+2024-04-17 18:10:49,402 - INFO - Hash: a8a902ce05c3d05dc2fe3d70c4247ea8
+2024-04-17 18:10:49,402 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [256, 256, 512, 256, 128, 64]}
+2024-04-17 18:10:49,402 - INFO - Acc: 0.00%
+2024-04-17 18:10:49,402 - INFO - UniID: 82
+2024-04-17 18:10:49,402 - INFO - Mom and Dad: 75 59
+2024-04-17 18:10:49,402 - INFO - Gen: 4
+2024-04-17 18:10:49,402 - INFO - Hash: 6071073c5fab3ecd50393d0d0ff721b2
+2024-04-17 18:10:49,402 - INFO - {'activation': 'sigmoid', 'nb_layers': 2, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [128, 256, 128, 256, 128, 64]}
+2024-04-17 18:10:49,402 - INFO - Acc: 0.00%
+2024-04-17 18:10:49,402 - INFO - UniID: 83
+2024-04-17 18:10:49,402 - INFO - Mom and Dad: 36 76
+2024-04-17 18:10:49,402 - INFO - Gen: 4
+2024-04-17 18:10:49,402 - INFO - Hash: 3c0d15ce53afaa1a58394fec16f9573c
+2024-04-17 18:10:49,402 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adam', 'regulizer': 0.01, 'nb_neurons': [64, 64, 512, 256, 128, 64]}
+2024-04-17 18:10:49,402 - INFO - Acc: 0.00%
+2024-04-17 18:10:49,402 - INFO - UniID: 84
+2024-04-17 18:10:49,402 - INFO - Mom and Dad: 36 76
+2024-04-17 18:10:49,402 - INFO - Gen: 4
+2024-04-17 18:10:49,402 - INFO - Hash: 6ee9b17ebeb02182712e1103bb732bd2
+2024-04-17 18:10:49,402 - INFO - {'activation': 'linear', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 64, 512, 256, 128, 64]}
+2024-04-17 18:10:49,402 - INFO - Acc: 0.00%
+2024-04-17 18:10:49,402 - INFO - UniID: 85
+2024-04-17 18:10:49,402 - INFO - Mom and Dad: 76 17
+2024-04-17 18:10:49,402 - INFO - Gen: 4
+2024-04-17 18:10:49,402 - INFO - Hash: 7a51213953230f5a0ffc2fab493178dc
+2024-04-17 18:10:49,402 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 64, 512, 128, 128, 64]}
+2024-04-17 18:10:49,402 - INFO - Acc: 0.00%
+2024-04-17 18:10:49,402 - INFO - UniID: 86
+2024-04-17 18:10:49,402 - INFO - Mom and Dad: 76 17
+2024-04-17 18:10:49,402 - INFO - Gen: 4
+2024-04-17 18:10:49,402 - INFO - Hash: 7667f98bae54624bcbda361e254bffab
+2024-04-17 18:10:49,402 - INFO - {'activation': 'sigmoid', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [64, 64, 512, 256, 128, 64]}
+2024-04-17 18:10:49,402 - INFO - Acc: 0.00%
+2024-04-17 18:10:49,402 - INFO - UniID: 87
+2024-04-17 18:10:49,402 - INFO - Mom and Dad: 75 76
+2024-04-17 18:10:49,402 - INFO - Gen: 4
+2024-04-17 18:10:49,402 - INFO - Hash: 04e65356b94bdab2a3e7220ffdba1daa
+2024-04-17 18:10:49,402 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [256, 64, 512, 256, 128, 64]}
+2024-04-17 18:10:49,402 - INFO - Acc: 0.00%
+2024-04-17 18:10:49,402 - INFO - UniID: 88
+2024-04-17 18:10:49,402 - INFO - Mom and Dad: 75 76
+2024-04-17 18:10:49,402 - INFO - Gen: 4
+2024-04-17 18:10:49,402 - INFO - Hash: b76105077ead0368e7ff9ef898d5f069
+2024-04-17 18:10:49,402 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [64, 256, 512, 64, 128, 64]}
+2024-04-17 18:10:49,402 - INFO - Acc: 0.00%
+2024-04-17 18:10:49,402 - INFO - UniID: 89
+2024-04-17 18:10:49,402 - INFO - Mom and Dad: 59 75
+2024-04-17 18:10:49,402 - INFO - Gen: 4
+2024-04-17 18:10:49,402 - INFO - Hash: 69e75a2fcf63b66eb425059e860a3494
+2024-04-17 18:10:49,402 - INFO - {'activation': 'linear', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [256, 256, 512, 256, 128, 256]}
+2024-04-17 18:10:49,402 - INFO - Acc: 0.00%
+2024-04-17 18:10:49,402 - INFO - UniID: 90
+2024-04-17 18:10:49,402 - INFO - Mom and Dad: 59 75
+2024-04-17 18:10:49,402 - INFO - Gen: 4
+2024-04-17 18:10:49,402 - INFO - Hash: 9670b012cde8536ef90d469b1896c815
+2024-04-17 18:10:49,402 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.0001, 'nb_neurons': [64, 256, 512, 512, 128, 64]}
+2024-04-17 18:10:49,402 - INFO - Acc: 0.00%
+2024-04-17 18:10:49,402 - INFO - UniID: 91
+2024-04-17 18:10:49,402 - INFO - Mom and Dad: 17 59
+2024-04-17 18:10:49,402 - INFO - Gen: 4
+2024-04-17 18:10:49,402 - INFO - Hash: 4ffd27cd3903e849c098230b7cd18819
+2024-04-17 18:10:49,402 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [64, 256, 64, 256, 128, 64]}
+2024-04-17 18:10:49,402 - INFO - Acc: 0.00%
+2024-04-17 18:10:49,402 - INFO - UniID: 92
+2024-04-17 18:10:49,402 - INFO - Mom and Dad: 17 59
+2024-04-17 18:10:49,402 - INFO - Gen: 4
+2024-04-17 18:10:49,402 - INFO - Hash: 92e5d12053fa1b397c95a6a223e6b7da
+2024-04-17 18:10:49,402 - INFO - {'activation': 'sigmoid', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [256, 256, 512, 256, 128, 512]}
+2024-04-17 18:10:49,402 - INFO - Acc: 0.00%
+2024-04-17 18:10:49,402 - INFO - UniID: 93
+2024-04-17 18:10:49,402 - INFO - Mom and Dad: 75 17
+2024-04-17 18:10:49,402 - INFO - Gen: 4
+2024-04-17 18:10:49,402 - INFO - Hash: 19bee76dd8cdca61aed23cdb01967165
+2024-04-17 18:10:49,402 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [64, 256, 256, 256, 128, 64]}
+2024-04-17 18:10:49,402 - INFO - Acc: 0.00%
+2024-04-17 18:10:49,402 - INFO - UniID: 94
+2024-04-17 18:10:49,402 - INFO - Mom and Dad: 75 17
+2024-04-17 18:10:49,402 - INFO - Gen: 4
+2024-04-17 18:10:49,402 - INFO - Hash: 136e471f82130bc87d0d018a00251f09
+2024-04-17 18:10:49,402 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adam', 'regulizer': 0.001, 'nb_neurons': [64, 256, 512, 256, 128, 256]}
+2024-04-17 18:10:49,402 - INFO - Acc: 0.00%
+2024-04-17 18:10:49,402 - INFO - UniID: 95
+2024-04-17 18:10:49,402 - INFO - Mom and Dad: 59 17
+2024-04-17 18:10:49,402 - INFO - Gen: 4
+2024-04-17 18:10:49,402 - INFO - Hash: 9bc7771bf074d9b4ede72c79fa3d1c48
+2024-04-17 18:10:49,402 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 256, 256, 256, 128, 256]}
+2024-04-17 18:10:49,402 - INFO - Acc: 0.00%
+2024-04-17 18:10:49,402 - INFO - UniID: 96
+2024-04-17 18:10:49,402 - INFO - Mom and Dad: 59 17
+2024-04-17 18:10:49,402 - INFO - Gen: 4
+2024-04-17 18:10:49,402 - INFO - Hash: 4861fdf5d6b260df42ef46c8227b692e
+2024-04-17 18:10:49,402 - INFO - {'activation': 'sigmoid', 'nb_layers': 1, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [64, 256, 512, 256, 128, 64]}
+2024-04-17 18:10:49,402 - INFO - Acc: 0.00%
+2024-04-17 18:10:49,402 - INFO - UniID: 97
+2024-04-17 18:10:49,402 - INFO - Mom and Dad: 36 75
+2024-04-17 18:10:49,403 - INFO - Gen: 4
+2024-04-17 18:10:49,403 - INFO - Hash: 7a284792052a37d540cfb1a8fc50238e
+2024-04-17 18:10:49,403 - INFO - {'activation': 'sigmoid', 'nb_layers': 5, 'optimizer': 'adam', 'regulizer': 0.01, 'nb_neurons': [256, 256, 128, 256, 128, 64]}
+2024-04-17 18:10:49,403 - INFO - Acc: 0.00%
+2024-04-17 18:10:49,403 - INFO - UniID: 98
+2024-04-17 18:10:49,403 - INFO - Mom and Dad: 36 75
+2024-04-17 18:10:49,403 - INFO - Gen: 4
+2024-04-17 18:10:49,403 - INFO - Hash: 214ddb9754aeed9e21e740e2898179c9
+2024-04-17 18:10:49,403 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [128, 256, 512, 256, 128, 64]}
+2024-04-17 18:10:49,403 - INFO - Acc: 0.00%
+2024-04-17 18:10:49,403 - INFO - UniID: 99
+2024-04-17 18:10:49,403 - INFO - Mom and Dad: 59 76
+2024-04-17 18:10:49,403 - INFO - Gen: 4
+2024-04-17 18:10:49,403 - INFO - Hash: 9dde2e5a53cb0e14adcb6bddf69ce7ba
+2024-04-17 18:10:49,403 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 64, 512, 256, 128, 256]}
+2024-04-17 18:10:49,403 - INFO - Acc: 0.00%
+2024-04-17 18:10:49,403 - INFO - UniID: 100
+2024-04-17 18:10:49,403 - INFO - Mom and Dad: 59 76
+2024-04-17 18:10:49,403 - INFO - Gen: 4
+2024-04-17 18:10:49,403 - INFO - Hash: ddcfc7b247bd777da86bccb61ca55354
+2024-04-17 18:10:49,403 - INFO - ***train_networks(networks, dataset)***
+2024-04-17 18:10:49,403 - INFO - Getting Keras datasets
+2024-04-17 18:10:49,692 - INFO - Compling Keras model
+2024-04-17 18:10:49,692 - INFO - Architecture:[64, 256, 128, 256, 128, 64],sigmoid,adam,2
+2024-04-17 18:10:56,523 - INFO - Getting Keras datasets
+2024-04-17 18:10:56,813 - INFO - Compling Keras model
+2024-04-17 18:10:56,813 - INFO - Architecture:[64, 256, 512, 256, 512, 64],sigmoid,adagrad,5
+2024-04-17 18:11:06,220 - INFO - Getting Keras datasets
+2024-04-17 18:11:06,511 - INFO - Compling Keras model
+2024-04-17 18:11:06,511 - INFO - Architecture:[64, 256, 128, 256, 128, 64],elu,adam,2
+2024-04-17 18:11:13,377 - INFO - Getting Keras datasets
+2024-04-17 18:11:13,666 - INFO - Compling Keras model
+2024-04-17 18:11:13,666 - INFO - Architecture:[64, 256, 512, 256, 128, 128],sigmoid,adamax,5
+2024-04-17 18:11:25,963 - INFO - Getting Keras datasets
+2024-04-17 18:11:26,258 - INFO - Compling Keras model
+2024-04-17 18:11:26,258 - INFO - Architecture:[64, 256, 256, 256, 128, 64],sigmoid,adamax,2
+2024-04-17 18:11:32,928 - INFO - Getting Keras datasets
+2024-04-17 18:11:33,217 - INFO - Compling Keras model
+2024-04-17 18:11:33,217 - INFO - Architecture:[64, 256, 512, 64, 128, 64],elu,adam,5
+2024-04-17 18:11:44,164 - INFO - Getting Keras datasets
+2024-04-17 18:11:44,455 - INFO - Compling Keras model
+2024-04-17 18:11:44,455 - INFO - Architecture:[256, 256, 512, 256, 128, 256],sigmoid,adamax,5
+2024-04-17 18:12:02,363 - INFO - Getting Keras datasets
+2024-04-17 18:12:02,652 - INFO - Compling Keras model
+2024-04-17 18:12:02,652 - INFO - Architecture:[256, 256, 512, 256, 128, 64],elu,adamax,5
+2024-04-17 18:12:20,622 - INFO - Getting Keras datasets
+2024-04-17 18:12:20,912 - INFO - Compling Keras model
+2024-04-17 18:12:20,912 - INFO - Architecture:[128, 256, 128, 256, 128, 64],sigmoid,adamax,2
+2024-04-17 18:12:40,882 - INFO - Getting Keras datasets
+2024-04-17 18:12:41,172 - INFO - Compling Keras model
+2024-04-17 18:12:41,172 - INFO - Architecture:[64, 64, 512, 256, 128, 64],elu,adam,5
+2024-04-17 18:12:58,062 - INFO - Getting Keras datasets
+2024-04-17 18:12:58,358 - INFO - Compling Keras model
+2024-04-17 18:12:58,358 - INFO - Architecture:[64, 64, 512, 256, 128, 64],linear,adamax,5
+2024-04-17 18:13:15,119 - INFO - Getting Keras datasets
+2024-04-17 18:13:15,410 - INFO - Compling Keras model
+2024-04-17 18:13:15,410 - INFO - Architecture:[64, 64, 512, 128, 128, 64],elu,adamax,5
+2024-04-17 18:13:32,527 - INFO - Getting Keras datasets
+2024-04-17 18:13:32,824 - INFO - Compling Keras model
+2024-04-17 18:13:32,824 - INFO - Architecture:[64, 64, 512, 256, 128, 64],sigmoid,adamax,5
+2024-04-17 18:13:42,161 - INFO - Getting Keras datasets
+2024-04-17 18:13:42,455 - INFO - Compling Keras model
+2024-04-17 18:13:42,456 - INFO - Architecture:[256, 64, 512, 256, 128, 64],elu,adamax,5
+2024-04-17 18:13:56,467 - INFO - Getting Keras datasets
+2024-04-17 18:13:56,760 - INFO - Compling Keras model
+2024-04-17 18:13:56,760 - INFO - Architecture:[64, 256, 512, 64, 128, 64],elu,adamax,5
+2024-04-17 18:14:06,164 - INFO - Getting Keras datasets
+2024-04-17 18:14:06,456 - INFO - Compling Keras model
+2024-04-17 18:14:06,456 - INFO - Architecture:[256, 256, 512, 256, 128, 256],linear,adamax,5
+2024-04-17 18:14:55,792 - INFO - Getting Keras datasets
+2024-04-17 18:14:56,087 - INFO - Compling Keras model
+2024-04-17 18:14:56,087 - INFO - Architecture:[64, 256, 512, 512, 128, 64],elu,adamax,5
+2024-04-17 18:15:06,453 - INFO - Getting Keras datasets
+2024-04-17 18:15:06,744 - INFO - Compling Keras model
+2024-04-17 18:15:06,744 - INFO - Architecture:[64, 256, 64, 256, 128, 64],elu,adamax,5
+2024-04-17 18:15:27,891 - INFO - Getting Keras datasets
+2024-04-17 18:15:28,182 - INFO - Compling Keras model
+2024-04-17 18:15:28,182 - INFO - Architecture:[256, 256, 512, 256, 128, 512],sigmoid,adamax,5
+2024-04-17 18:15:46,883 - INFO - Getting Keras datasets
+2024-04-17 18:15:47,178 - INFO - Compling Keras model
+2024-04-17 18:15:47,178 - INFO - Architecture:[64, 256, 256, 256, 128, 64],elu,adamax,5
+2024-04-17 18:15:56,457 - INFO - Getting Keras datasets
+2024-04-17 18:15:56,746 - INFO - Compling Keras model
+2024-04-17 18:15:56,746 - INFO - Architecture:[64, 256, 512, 256, 128, 256],elu,adam,5
+2024-04-17 18:16:06,820 - INFO - Getting Keras datasets
+2024-04-17 18:16:07,116 - INFO - Compling Keras model
+2024-04-17 18:16:07,116 - INFO - Architecture:[64, 256, 256, 256, 128, 256],elu,adamax,5
+2024-04-17 18:16:30,908 - INFO - Getting Keras datasets
+2024-04-17 18:16:31,200 - INFO - Compling Keras model
+2024-04-17 18:16:31,200 - INFO - Architecture:[64, 256, 512, 256, 128, 64],sigmoid,adamax,1
+2024-04-17 18:16:35,112 - INFO - Getting Keras datasets
+2024-04-17 18:16:35,400 - INFO - Compling Keras model
+2024-04-17 18:16:35,400 - INFO - Architecture:[256, 256, 128, 256, 128, 64],sigmoid,adam,5
+2024-04-17 18:16:51,910 - INFO - Getting Keras datasets
+2024-04-17 18:16:52,202 - INFO - Compling Keras model
+2024-04-17 18:16:52,202 - INFO - Architecture:[128, 256, 512, 256, 128, 64],elu,adamax,5
+2024-04-17 18:17:28,769 - INFO - Getting Keras datasets
+2024-04-17 18:17:29,060 - INFO - Compling Keras model
+2024-04-17 18:17:29,060 - INFO - Architecture:[64, 64, 512, 256, 128, 256],elu,adamax,5
+2024-04-17 18:17:47,193 - INFO - Generation average: 13.32%
+2024-04-17 18:17:47,193 - INFO - --------------------------------------------------------------------------------
+2024-04-17 18:17:47,194 - INFO - ***Now in generation 5 of 10***
+2024-04-17 18:17:47,194 - INFO - --------------------------------------------------------------------------------
+2024-04-17 18:17:47,194 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 256, 256, 256, 128, 256]}
+2024-04-17 18:17:47,194 - INFO - Acc: 40.36%
+2024-04-17 18:17:47,194 - INFO - UniID: 96
+2024-04-17 18:17:47,194 - INFO - Mom and Dad: 59 17
+2024-04-17 18:17:47,194 - INFO - Gen: 4
+2024-04-17 18:17:47,194 - INFO - Hash: 4861fdf5d6b260df42ef46c8227b692e
+2024-04-17 18:17:47,194 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 256, 512, 256, 128, 256]}
+2024-04-17 18:17:47,194 - INFO - Acc: 37.21%
+2024-04-17 18:17:47,194 - INFO - UniID: 59
+2024-04-17 18:17:47,194 - INFO - Mom and Dad: 17 36
+2024-04-17 18:17:47,194 - INFO - Gen: 3
+2024-04-17 18:17:47,194 - INFO - Hash: deac0e63e2364434e478ef111edf5dbf
+2024-04-17 18:17:47,194 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [128, 256, 512, 256, 128, 64]}
+2024-04-17 18:17:47,194 - INFO - Acc: 36.25%
+2024-04-17 18:17:47,194 - INFO - UniID: 99
+2024-04-17 18:17:47,194 - INFO - Mom and Dad: 59 76
+2024-04-17 18:17:47,194 - INFO - Gen: 4
+2024-04-17 18:17:47,194 - INFO - Hash: 9dde2e5a53cb0e14adcb6bddf69ce7ba
+2024-04-17 18:17:47,194 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 64, 512, 128, 128, 64]}
+2024-04-17 18:17:47,194 - INFO - Acc: 33.18%
+2024-04-17 18:17:47,194 - INFO - UniID: 86
+2024-04-17 18:17:47,194 - INFO - Mom and Dad: 76 17
+2024-04-17 18:17:47,194 - INFO - Gen: 4
+2024-04-17 18:17:47,194 - INFO - Hash: 7667f98bae54624bcbda361e254bffab
+2024-04-17 18:17:47,194 - INFO - {'activation': 'sigmoid', 'nb_layers': 2, 'optimizer': 'adam', 'regulizer': 0.01, 'nb_neurons': [64, 256, 128, 256, 512, 64]}
+2024-04-17 18:17:47,194 - INFO - Acc: 0.00%
+2024-04-17 18:17:47,194 - INFO - UniID: 36
+2024-04-17 18:17:47,194 - INFO - Mom and Dad: 21 17
+2024-04-17 18:17:47,194 - INFO - Gen: 5
+2024-04-17 18:17:47,195 - INFO - Hash: 1dd5e7a5479c71742b5d282ea1f4e68d
+2024-04-17 18:17:47,195 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [256, 64, 64, 256, 128, 64]}
+2024-04-17 18:17:47,195 - INFO - Acc: 0.00%
+2024-04-17 18:17:47,195 - INFO - UniID: 88
+2024-04-17 18:17:47,195 - INFO - Mom and Dad: 75 76
+2024-04-17 18:17:47,195 - INFO - Gen: 5
+2024-04-17 18:17:47,195 - INFO - Hash: dc5ea61c0fcebe25110511174beb0064
+2024-04-17 18:17:47,195 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [64, 64, 64, 256, 128, 64]}
+2024-04-17 18:17:47,195 - INFO - Acc: 0.00%
+2024-04-17 18:17:47,195 - INFO - UniID: 87
+2024-04-17 18:17:47,195 - INFO - Mom and Dad: 75 76
+2024-04-17 18:17:47,195 - INFO - Gen: 5
+2024-04-17 18:17:47,195 - INFO - Hash: 55b22e3320dcbc96039c51d07c15a716
+2024-04-17 18:17:47,195 - INFO - {'activation': 'sigmoid', 'nb_layers': 5, 'optimizer': 'adam', 'regulizer': 0.001, 'nb_neurons': [256, 128, 128, 256, 128, 64]}
+2024-04-17 18:17:47,195 - INFO - Acc: 0.00%
+2024-04-17 18:17:47,195 - INFO - UniID: 98
+2024-04-17 18:17:47,195 - INFO - Mom and Dad: 36 75
+2024-04-17 18:17:47,195 - INFO - Gen: 5
+2024-04-17 18:17:47,195 - INFO - Hash: ea884232adfaf91b259e9d42698666bb
+2024-04-17 18:17:47,195 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'sgd', 'regulizer': 0.001, 'nb_neurons': [64, 64, 64, 256, 128, 64]}
+2024-04-17 18:17:47,195 - INFO - Acc: 0.00%
+2024-04-17 18:17:47,195 - INFO - UniID: 101
+2024-04-17 18:17:47,195 - INFO - Mom and Dad: 87 88
+2024-04-17 18:17:47,195 - INFO - Gen: 5
+2024-04-17 18:17:47,195 - INFO - Hash: f1d798d3b4ca86fd54424b00c7be3754
+2024-04-17 18:17:47,195 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'nadam', 'regulizer': 0.001, 'nb_neurons': [256, 64, 64, 256, 128, 64]}
+2024-04-17 18:17:47,195 - INFO - Acc: 0.00%
+2024-04-17 18:17:47,195 - INFO - UniID: 102
+2024-04-17 18:17:47,195 - INFO - Mom and Dad: 87 88
+2024-04-17 18:17:47,195 - INFO - Gen: 5
+2024-04-17 18:17:47,195 - INFO - Hash: 1a1fad3e78f89ab92cf815cd9d390002
+2024-04-17 18:17:47,195 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [64, 64, 64, 256, 128, 256]}
+2024-04-17 18:17:47,195 - INFO - Acc: 0.00%
+2024-04-17 18:17:47,195 - INFO - UniID: 103
+2024-04-17 18:17:47,195 - INFO - Mom and Dad: 96 87
+2024-04-17 18:17:47,195 - INFO - Gen: 5
+2024-04-17 18:17:47,195 - INFO - Hash: 59371db2d68835328310e36f8507e1c0
+2024-04-17 18:17:47,195 - INFO - {'activation': 'softplus', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 256, 256, 256, 128, 256]}
+2024-04-17 18:17:47,195 - INFO - Acc: 0.00%
+2024-04-17 18:17:47,195 - INFO - UniID: 104
+2024-04-17 18:17:47,195 - INFO - Mom and Dad: 96 87
+2024-04-17 18:17:47,195 - INFO - Gen: 5
+2024-04-17 18:17:47,195 - INFO - Hash: 244964128b1758effe96018391351056
+2024-04-17 18:17:47,195 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.0001, 'nb_neurons': [128, 256, 128, 256, 128, 64]}
+2024-04-17 18:17:47,195 - INFO - Acc: 0.00%
+2024-04-17 18:17:47,195 - INFO - UniID: 105
+2024-04-17 18:17:47,195 - INFO - Mom and Dad: 99 87
+2024-04-17 18:17:47,195 - INFO - Gen: 5
+2024-04-17 18:17:47,195 - INFO - Hash: ff96eb4d27f7c9cfd125216a15e166b1
+2024-04-17 18:17:47,195 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [64, 64, 256, 256, 128, 64]}
+2024-04-17 18:17:47,195 - INFO - Acc: 0.00%
+2024-04-17 18:17:47,195 - INFO - UniID: 106
+2024-04-17 18:17:47,195 - INFO - Mom and Dad: 99 87
+2024-04-17 18:17:47,195 - INFO - Gen: 5
+2024-04-17 18:17:47,195 - INFO - Hash: 56ba5370f9deea2b5feb8751a328d82e
+2024-04-17 18:17:47,195 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'rmsprop', 'regulizer': 0.001, 'nb_neurons': [64, 256, 256, 256, 128, 256]}
+2024-04-17 18:17:47,195 - INFO - Acc: 0.00%
+2024-04-17 18:17:47,195 - INFO - UniID: 107
+2024-04-17 18:17:47,195 - INFO - Mom and Dad: 96 88
+2024-04-17 18:17:47,195 - INFO - Gen: 5
+2024-04-17 18:17:47,195 - INFO - Hash: ca4b38b58a5b637be9dab659c6f1b0f4
+2024-04-17 18:17:47,195 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [256, 64, 64, 256, 128, 512]}
+2024-04-17 18:17:47,195 - INFO - Acc: 0.00%
+2024-04-17 18:17:47,195 - INFO - UniID: 108
+2024-04-17 18:17:47,195 - INFO - Mom and Dad: 96 88
+2024-04-17 18:17:47,195 - INFO - Gen: 5
+2024-04-17 18:17:47,195 - INFO - Hash: 56bd8e6d40829cee94af03c6ffddd5e6
+2024-04-17 18:17:47,195 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.0001, 'nb_neurons': [64, 256, 512, 256, 256, 256]}
+2024-04-17 18:17:47,195 - INFO - Acc: 0.00%
+2024-04-17 18:17:47,195 - INFO - UniID: 109
+2024-04-17 18:17:47,195 - INFO - Mom and Dad: 96 99
+2024-04-17 18:17:47,195 - INFO - Gen: 5
+2024-04-17 18:17:47,195 - INFO - Hash: fbebe4a0ae6fc7540777ccfba7daff9d
+2024-04-17 18:17:47,195 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [128, 256, 256, 256, 128, 64]}
+2024-04-17 18:17:47,195 - INFO - Acc: 0.00%
+2024-04-17 18:17:47,195 - INFO - UniID: 110
+2024-04-17 18:17:47,195 - INFO - Mom and Dad: 96 99
+2024-04-17 18:17:47,195 - INFO - Gen: 5
+2024-04-17 18:17:47,195 - INFO - Hash: ae5c7302424bf812c0da9ef4014bcda8
+2024-04-17 18:17:47,195 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [128, 256, 512, 256, 128, 256]}
+2024-04-17 18:17:47,195 - INFO - Acc: 0.00%
+2024-04-17 18:17:47,195 - INFO - UniID: 111
+2024-04-17 18:17:47,195 - INFO - Mom and Dad: 99 59
+2024-04-17 18:17:47,195 - INFO - Gen: 5
+2024-04-17 18:17:47,195 - INFO - Hash: ea90dbc86cead12c8e9ff2de49da11d5
+2024-04-17 18:17:47,195 - INFO - {'activation': 'tanh', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [64, 256, 512, 256, 128, 64]}
+2024-04-17 18:17:47,195 - INFO - Acc: 0.00%
+2024-04-17 18:17:47,195 - INFO - UniID: 112
+2024-04-17 18:17:47,195 - INFO - Mom and Dad: 99 59
+2024-04-17 18:17:47,195 - INFO - Gen: 5
+2024-04-17 18:17:47,195 - INFO - Hash: e907c9379e3fcef140e5f31087c4a4e4
+2024-04-17 18:17:47,195 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 256, 512, 512, 128, 256]}
+2024-04-17 18:17:47,195 - INFO - Acc: 0.00%
+2024-04-17 18:17:47,195 - INFO - UniID: 113
+2024-04-17 18:17:47,195 - INFO - Mom and Dad: 59 36
+2024-04-17 18:17:47,195 - INFO - Gen: 5
+2024-04-17 18:17:47,195 - INFO - Hash: 694ca17c813cf274930536af313670fd
+2024-04-17 18:17:47,195 - INFO - {'activation': 'sigmoid', 'nb_layers': 1, 'optimizer': 'adam', 'regulizer': 0.01, 'nb_neurons': [64, 256, 128, 256, 512, 64]}
+2024-04-17 18:17:47,195 - INFO - Acc: 0.00%
+2024-04-17 18:17:47,195 - INFO - UniID: 114
+2024-04-17 18:17:47,195 - INFO - Mom and Dad: 59 36
+2024-04-17 18:17:47,195 - INFO - Gen: 5
+2024-04-17 18:17:47,195 - INFO - Hash: 34ea90dbdb0e0c86410905f498b95ab4
+2024-04-17 18:17:47,195 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [256, 256, 256, 256, 128, 256]}
+2024-04-17 18:17:47,195 - INFO - Acc: 0.00%
+2024-04-17 18:17:47,195 - INFO - UniID: 115
+2024-04-17 18:17:47,195 - INFO - Mom and Dad: 88 96
+2024-04-17 18:17:47,195 - INFO - Gen: 5
+2024-04-17 18:17:47,195 - INFO - Hash: fccf521f0036453017eea6917796dc7c
+2024-04-17 18:17:47,195 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [64, 64, 64, 256, 128, 128]}
+2024-04-17 18:17:47,195 - INFO - Acc: 0.00%
+2024-04-17 18:17:47,195 - INFO - UniID: 116
+2024-04-17 18:17:47,195 - INFO - Mom and Dad: 88 96
+2024-04-17 18:17:47,195 - INFO - Gen: 5
+2024-04-17 18:17:47,195 - INFO - Hash: dd9c5904ca0e76044b5dea0826acc2d4
+2024-04-17 18:17:47,195 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [128, 256, 256, 256, 128, 256]}
+2024-04-17 18:17:47,195 - INFO - Acc: 0.00%
+2024-04-17 18:17:47,195 - INFO - UniID: 117
+2024-04-17 18:17:47,195 - INFO - Mom and Dad: 99 96
+2024-04-17 18:17:47,195 - INFO - Gen: 5
+2024-04-17 18:17:47,195 - INFO - Hash: 804bbff768e87d313f93556dff4d45a3
+2024-04-17 18:17:47,195 - INFO - {'activation': 'linear', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [64, 256, 512, 256, 128, 64]}
+2024-04-17 18:17:47,195 - INFO - Acc: 0.00%
+2024-04-17 18:17:47,195 - INFO - UniID: 118
+2024-04-17 18:17:47,195 - INFO - Mom and Dad: 99 96
+2024-04-17 18:17:47,195 - INFO - Gen: 5
+2024-04-17 18:17:47,195 - INFO - Hash: 2a9f5d339e1b30f195ee2060fc46c65d
+2024-04-17 18:17:47,195 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [128, 64, 512, 256, 128, 64]}
+2024-04-17 18:17:47,195 - INFO - Acc: 0.00%
+2024-04-17 18:17:47,195 - INFO - UniID: 119
+2024-04-17 18:17:47,195 - INFO - Mom and Dad: 86 99
+2024-04-17 18:17:47,195 - INFO - Gen: 5
+2024-04-17 18:17:47,195 - INFO - Hash: 5b7cfb1f3d4eaa333d14644005ae9349
+2024-04-17 18:17:47,195 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [256, 64, 512, 128, 128, 64]}
+2024-04-17 18:17:47,195 - INFO - Acc: 0.00%
+2024-04-17 18:17:47,195 - INFO - UniID: 120
+2024-04-17 18:17:47,195 - INFO - Mom and Dad: 86 99
+2024-04-17 18:17:47,195 - INFO - Gen: 5
+2024-04-17 18:17:47,195 - INFO - Hash: f58de2321e9ddddb7427447c41fc5dea
+2024-04-17 18:17:47,195 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [128, 256, 512, 512, 128, 256]}
+2024-04-17 18:17:47,195 - INFO - Acc: 0.00%
+2024-04-17 18:17:47,195 - INFO - UniID: 121
+2024-04-17 18:17:47,195 - INFO - Mom and Dad: 99 96
+2024-04-17 18:17:47,195 - INFO - Gen: 5
+2024-04-17 18:17:47,195 - INFO - Hash: d0ffcbeeffa49acd917a987ae580f3b9
+2024-04-17 18:17:47,195 - INFO - {'activation': 'tanh', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.0001, 'nb_neurons': [64, 64, 256, 256, 128, 64]}
+2024-04-17 18:17:47,195 - INFO - Acc: 0.00%
+2024-04-17 18:17:47,195 - INFO - UniID: 122
+2024-04-17 18:17:47,195 - INFO - Mom and Dad: 99 96
+2024-04-17 18:17:47,195 - INFO - Gen: 5
+2024-04-17 18:17:47,195 - INFO - Hash: 1118f1d1ce5eb3b3061ef86d80a0652c
+2024-04-17 18:17:47,196 - INFO - ***train_networks(networks, dataset)***
+2024-04-17 18:17:47,196 - INFO - Getting Keras datasets
+2024-04-17 18:17:47,492 - INFO - Compling Keras model
+2024-04-17 18:17:47,492 - INFO - Architecture:[64, 256, 128, 256, 512, 64],sigmoid,adam,2
+2024-04-17 18:17:55,249 - INFO - Getting Keras datasets
+2024-04-17 18:17:55,538 - INFO - Compling Keras model
+2024-04-17 18:17:55,538 - INFO - Architecture:[256, 64, 64, 256, 128, 64],elu,adamax,5
+2024-04-17 18:18:08,438 - INFO - Getting Keras datasets
+2024-04-17 18:18:08,725 - INFO - Compling Keras model
+2024-04-17 18:18:08,725 - INFO - Architecture:[64, 64, 64, 256, 128, 64],elu,adamax,5
+2024-04-17 18:18:14,689 - INFO - Getting Keras datasets
+2024-04-17 18:18:14,985 - INFO - Compling Keras model
+2024-04-17 18:18:14,985 - INFO - Architecture:[256, 128, 128, 256, 128, 64],sigmoid,adam,5
+2024-04-17 18:18:29,296 - INFO - Getting Keras datasets
+2024-04-17 18:18:29,591 - INFO - Compling Keras model
+2024-04-17 18:18:29,591 - INFO - Architecture:[64, 64, 64, 256, 128, 64],elu,sgd,5
+2024-04-17 18:18:35,040 - INFO - Getting Keras datasets
+2024-04-17 18:18:35,332 - INFO - Compling Keras model
+2024-04-17 18:18:35,332 - INFO - Architecture:[256, 64, 64, 256, 128, 64],elu,nadam,5
+2024-04-17 18:18:49,684 - INFO - Getting Keras datasets
+2024-04-17 18:18:49,979 - INFO - Compling Keras model
+2024-04-17 18:18:49,980 - INFO - Architecture:[64, 64, 64, 256, 128, 256],elu,adamax,5
+2024-04-17 18:18:55,954 - INFO - Getting Keras datasets
+2024-04-17 18:18:56,244 - INFO - Compling Keras model
+2024-04-17 18:18:56,244 - INFO - Architecture:[64, 256, 256, 256, 128, 256],softplus,adamax,5
+2024-04-17 18:19:21,340 - INFO - Getting Keras datasets
+2024-04-17 18:19:21,632 - INFO - Compling Keras model
+2024-04-17 18:19:21,632 - INFO - Architecture:[128, 256, 128, 256, 128, 64],elu,adamax,5
+2024-04-17 18:19:32,758 - INFO - Getting Keras datasets
+2024-04-17 18:19:33,046 - INFO - Compling Keras model
+2024-04-17 18:19:33,046 - INFO - Architecture:[64, 64, 256, 256, 128, 64],elu,adamax,5
+2024-04-17 18:19:49,658 - INFO - Getting Keras datasets
+2024-04-17 18:19:49,948 - INFO - Compling Keras model
+2024-04-17 18:19:49,948 - INFO - Architecture:[64, 256, 256, 256, 128, 256],elu,rmsprop,5
+2024-04-17 18:20:11,159 - INFO - Getting Keras datasets
+2024-04-17 18:20:11,450 - INFO - Compling Keras model
+2024-04-17 18:20:11,450 - INFO - Architecture:[256, 64, 64, 256, 128, 512],elu,adamax,5
+2024-04-17 18:20:48,939 - INFO - Getting Keras datasets
+2024-04-17 18:20:49,231 - INFO - Compling Keras model
+2024-04-17 18:20:49,231 - INFO - Architecture:[64, 256, 512, 256, 256, 256],elu,adamax,5
+2024-04-17 18:20:59,126 - INFO - Getting Keras datasets
+2024-04-17 18:20:59,417 - INFO - Compling Keras model
+2024-04-17 18:20:59,417 - INFO - Architecture:[128, 256, 256, 256, 128, 64],elu,adamax,5
+2024-04-17 18:21:32,567 - INFO - Getting Keras datasets
+2024-04-17 18:21:32,858 - INFO - Compling Keras model
+2024-04-17 18:21:32,858 - INFO - Architecture:[128, 256, 512, 256, 128, 256],elu,adamax,5
+2024-04-17 18:22:09,462 - INFO - Getting Keras datasets
+2024-04-17 18:22:09,763 - INFO - Compling Keras model
+2024-04-17 18:22:09,763 - INFO - Architecture:[64, 256, 512, 256, 128, 64],tanh,adamax,5
+2024-04-17 18:22:36,818 - INFO - Getting Keras datasets
+2024-04-17 18:22:37,114 - INFO - Compling Keras model
+2024-04-17 18:22:37,114 - INFO - Architecture:[64, 256, 512, 512, 128, 256],elu,adamax,5
+2024-04-17 18:23:07,132 - INFO - Getting Keras datasets
+2024-04-17 18:23:07,422 - INFO - Compling Keras model
+2024-04-17 18:23:07,423 - INFO - Architecture:[64, 256, 128, 256, 512, 64],sigmoid,adam,1
+2024-04-17 18:23:11,388 - INFO - Getting Keras datasets
+2024-04-17 18:23:11,678 - INFO - Compling Keras model
+2024-04-17 18:23:11,679 - INFO - Architecture:[256, 256, 256, 256, 128, 256],elu,adamax,5
+2024-04-17 18:24:02,247 - INFO - Getting Keras datasets
+2024-04-17 18:24:02,540 - INFO - Compling Keras model
+2024-04-17 18:24:02,540 - INFO - Architecture:[64, 64, 64, 256, 128, 128],elu,adamax,5
+2024-04-17 18:24:17,034 - INFO - Getting Keras datasets
+2024-04-17 18:24:17,325 - INFO - Compling Keras model
+2024-04-17 18:24:17,325 - INFO - Architecture:[128, 256, 256, 256, 128, 256],elu,adamax,5
+2024-04-17 18:24:50,481 - INFO - Getting Keras datasets
+2024-04-17 18:24:50,772 - INFO - Compling Keras model
+2024-04-17 18:24:50,772 - INFO - Architecture:[64, 256, 512, 256, 128, 64],linear,adamax,5
+2024-04-17 18:25:15,975 - INFO - Getting Keras datasets
+2024-04-17 18:25:16,271 - INFO - Compling Keras model
+2024-04-17 18:25:16,272 - INFO - Architecture:[128, 64, 512, 256, 128, 64],elu,adamax,5
+2024-04-17 18:25:42,130 - INFO - Getting Keras datasets
+2024-04-17 18:25:42,421 - INFO - Compling Keras model
+2024-04-17 18:25:42,421 - INFO - Architecture:[256, 64, 512, 128, 128, 64],elu,adamax,5
+2024-04-17 18:26:22,441 - INFO - Getting Keras datasets
+2024-04-17 18:26:22,732 - INFO - Compling Keras model
+2024-04-17 18:26:22,732 - INFO - Architecture:[128, 256, 512, 512, 128, 256],elu,adamax,5
+2024-04-17 18:27:00,855 - INFO - Getting Keras datasets
+2024-04-17 18:27:01,147 - INFO - Compling Keras model
+2024-04-17 18:27:01,147 - INFO - Architecture:[64, 64, 256, 256, 128, 64],tanh,adamax,5
+2024-04-17 18:27:08,822 - INFO - Generation average: 22.38%
+2024-04-17 18:27:08,822 - INFO - --------------------------------------------------------------------------------
+2024-04-17 18:27:08,823 - INFO - ***Now in generation 6 of 10***
+2024-04-17 18:27:08,823 - INFO - --------------------------------------------------------------------------------
+2024-04-17 18:27:08,824 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [256, 256, 256, 256, 128, 256]}
+2024-04-17 18:27:08,824 - INFO - Acc: 42.66%
+2024-04-17 18:27:08,824 - INFO - UniID: 115
+2024-04-17 18:27:08,824 - INFO - Mom and Dad: 88 96
+2024-04-17 18:27:08,824 - INFO - Gen: 5
+2024-04-17 18:27:08,824 - INFO - Hash: fccf521f0036453017eea6917796dc7c
+2024-04-17 18:27:08,824 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 256, 256, 256, 128, 256]}
+2024-04-17 18:27:08,824 - INFO - Acc: 40.36%
+2024-04-17 18:27:08,824 - INFO - UniID: 96
+2024-04-17 18:27:08,824 - INFO - Mom and Dad: 59 17
+2024-04-17 18:27:08,824 - INFO - Gen: 4
+2024-04-17 18:27:08,824 - INFO - Hash: 4861fdf5d6b260df42ef46c8227b692e
+2024-04-17 18:27:08,824 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [256, 64, 64, 256, 128, 512]}
+2024-04-17 18:27:08,824 - INFO - Acc: 39.12%
+2024-04-17 18:27:08,824 - INFO - UniID: 108
+2024-04-17 18:27:08,824 - INFO - Mom and Dad: 96 88
+2024-04-17 18:27:08,824 - INFO - Gen: 5
+2024-04-17 18:27:08,824 - INFO - Hash: 56bd8e6d40829cee94af03c6ffddd5e6
+2024-04-17 18:27:08,824 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [128, 256, 256, 256, 128, 256]}
+2024-04-17 18:27:08,824 - INFO - Acc: 39.01%
+2024-04-17 18:27:08,824 - INFO - UniID: 117
+2024-04-17 18:27:08,824 - INFO - Mom and Dad: 99 96
+2024-04-17 18:27:08,824 - INFO - Gen: 5
+2024-04-17 18:27:08,824 - INFO - Hash: 804bbff768e87d313f93556dff4d45a3
+2024-04-17 18:27:08,824 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'sgd', 'regulizer': 0.001, 'nb_neurons': [128, 64, 512, 256, 128, 64]}
+2024-04-17 18:27:08,824 - INFO - Acc: 0.00%
+2024-04-17 18:27:08,824 - INFO - UniID: 119
+2024-04-17 18:27:08,824 - INFO - Mom and Dad: 86 99
+2024-04-17 18:27:08,824 - INFO - Gen: 6
+2024-04-17 18:27:08,824 - INFO - Hash: f2f644a36fb0f9c5dd24e812546969b6
+2024-04-17 18:27:08,824 - INFO - {'activation': 'elu', 'nb_layers': 1, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [128, 256, 512, 256, 128, 64]}
+2024-04-17 18:27:08,824 - INFO - Acc: 0.00%
+2024-04-17 18:27:08,824 - INFO - UniID: 99
+2024-04-17 18:27:08,824 - INFO - Mom and Dad: 59 76
+2024-04-17 18:27:08,824 - INFO - Gen: 6
+2024-04-17 18:27:08,824 - INFO - Hash: 5de785ce891a3a3c4ed8430b413ff0b0
+2024-04-17 18:27:08,824 - INFO - {'activation': 'elu', 'nb_layers': 4, 'optimizer': 'adamax', 'regulizer': 0.0001, 'nb_neurons': [64, 256, 512, 256, 256, 256]}
+2024-04-17 18:27:08,824 - INFO - Acc: 0.00%
+2024-04-17 18:27:08,824 - INFO - UniID: 109
+2024-04-17 18:27:08,824 - INFO - Mom and Dad: 96 99
+2024-04-17 18:27:08,825 - INFO - Gen: 6
+2024-04-17 18:27:08,825 - INFO - Hash: 15df0ecc923cf61ffccbd392511b89de
+2024-04-17 18:27:08,825 - INFO - {'activation': 'elu', 'nb_layers': 2, 'optimizer': 'nadam', 'regulizer': 0.001, 'nb_neurons': [256, 64, 64, 256, 128, 64]}
+2024-04-17 18:27:08,825 - INFO - Acc: 0.00%
+2024-04-17 18:27:08,825 - INFO - UniID: 102
+2024-04-17 18:27:08,825 - INFO - Mom and Dad: 87 88
+2024-04-17 18:27:08,825 - INFO - Gen: 6
+2024-04-17 18:27:08,825 - INFO - Hash: 1a324b0f0bb6498c41bfea46c985741d
+2024-04-17 18:27:08,825 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.0001, 'nb_neurons': [128, 256, 128, 256, 128, 128]}
+2024-04-17 18:27:08,825 - INFO - Acc: 0.00%
+2024-04-17 18:27:08,825 - INFO - UniID: 105
+2024-04-17 18:27:08,825 - INFO - Mom and Dad: 99 87
+2024-04-17 18:27:08,825 - INFO - Gen: 6
+2024-04-17 18:27:08,825 - INFO - Hash: fba6e514d545e05c8713ea69dc0f22cc
+2024-04-17 18:27:08,825 - INFO - {'activation': 'elu', 'nb_layers': 2, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [256, 64, 64, 256, 128, 256]}
+2024-04-17 18:27:08,825 - INFO - Acc: 0.00%
+2024-04-17 18:27:08,825 - INFO - UniID: 123
+2024-04-17 18:27:08,825 - INFO - Mom and Dad: 102 117
+2024-04-17 18:27:08,825 - INFO - Gen: 6
+2024-04-17 18:27:08,825 - INFO - Hash: 1837ecd1009ce07eaa6adf5ddf021b11
+2024-04-17 18:27:08,825 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'nadam', 'regulizer': 0.001, 'nb_neurons': [128, 256, 256, 256, 128, 64]}
+2024-04-17 18:27:08,825 - INFO - Acc: 0.00%
+2024-04-17 18:27:08,825 - INFO - UniID: 124
+2024-04-17 18:27:08,825 - INFO - Mom and Dad: 102 117
+2024-04-17 18:27:08,825 - INFO - Gen: 6
+2024-04-17 18:27:08,825 - INFO - Hash: 04c7e8875ae7e6d6b96e8fd57c0bc3b4
+2024-04-17 18:27:08,825 - INFO - {'activation': 'relu', 'nb_layers': 1, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [128, 256, 512, 256, 128, 64]}
+2024-04-17 18:27:08,825 - INFO - Acc: 0.00%
+2024-04-17 18:27:08,825 - INFO - UniID: 125
+2024-04-17 18:27:08,825 - INFO - Mom and Dad: 99 117
+2024-04-17 18:27:08,825 - INFO - Gen: 6
+2024-04-17 18:27:08,825 - INFO - Hash: 701d5129ab7a85f265cad016496afe1a
+2024-04-17 18:27:08,825 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.0, 'nb_neurons': [64, 256, 64, 256, 128, 256]}
+2024-04-17 18:27:08,825 - INFO - Acc: 0.00%
+2024-04-17 18:27:08,825 - INFO - UniID: 126
+2024-04-17 18:27:08,825 - INFO - Mom and Dad: 99 117
+2024-04-17 18:27:08,825 - INFO - Gen: 6
+2024-04-17 18:27:08,825 - INFO - Hash: 2a3e167d497b19678f36550c5a174b46
+2024-04-17 18:27:08,825 - INFO - {'activation': 'elu', 'nb_layers': 4, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [64, 256, 512, 256, 256, 512]}
+2024-04-17 18:27:08,825 - INFO - Acc: 0.00%
+2024-04-17 18:27:08,825 - INFO - UniID: 127
+2024-04-17 18:27:08,825 - INFO - Mom and Dad: 109 119
+2024-04-17 18:27:08,825 - INFO - Gen: 6
+2024-04-17 18:27:08,825 - INFO - Hash: bc4cc2afad913deb2562e05b5d965114
+2024-04-17 18:27:08,825 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'sgd', 'regulizer': 0.0001, 'nb_neurons': [128, 64, 512, 256, 512, 64]}
+2024-04-17 18:27:08,825 - INFO - Acc: 0.00%
+2024-04-17 18:27:08,825 - INFO - UniID: 128
+2024-04-17 18:27:08,825 - INFO - Mom and Dad: 109 119
+2024-04-17 18:27:08,825 - INFO - Gen: 6
+2024-04-17 18:27:08,825 - INFO - Hash: 24a9d9bd3cb23829afdc0c3d1a31bb64
+2024-04-17 18:27:08,825 - INFO - {'activation': 'elu', 'nb_layers': 4, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 256, 512, 256, 128, 256]}
+2024-04-17 18:27:08,825 - INFO - Acc: 0.00%
+2024-04-17 18:27:08,825 - INFO - UniID: 129
+2024-04-17 18:27:08,825 - INFO - Mom and Dad: 109 115
+2024-04-17 18:27:08,825 - INFO - Gen: 6
+2024-04-17 18:27:08,825 - INFO - Hash: 5798c95099a6b8926cbc8c416f443a27
+2024-04-17 18:27:08,825 - INFO - {'activation': 'elu', 'nb_layers': 3, 'optimizer': 'adamax', 'regulizer': 0.0001, 'nb_neurons': [256, 256, 256, 256, 256, 256]}
+2024-04-17 18:27:08,825 - INFO - Acc: 0.00%
+2024-04-17 18:27:08,825 - INFO - UniID: 130
+2024-04-17 18:27:08,825 - INFO - Mom and Dad: 109 115
+2024-04-17 18:27:08,825 - INFO - Gen: 6
+2024-04-17 18:27:08,825 - INFO - Hash: d130c6b62efbc87f038b3d8be1e5aaba
+2024-04-17 18:27:08,825 - INFO - {'activation': 'elu', 'nb_layers': 2, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [256, 64, 256, 64, 128, 256]}
+2024-04-17 18:27:08,825 - INFO - Acc: 0.00%
+2024-04-17 18:27:08,825 - INFO - UniID: 131
+2024-04-17 18:27:08,825 - INFO - Mom and Dad: 102 117
+2024-04-17 18:27:08,825 - INFO - Gen: 6
+2024-04-17 18:27:08,825 - INFO - Hash: 589884f122ca699c89829309008b23d0
+2024-04-17 18:27:08,825 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'nadam', 'regulizer': 0.001, 'nb_neurons': [128, 256, 64, 256, 128, 64]}
+2024-04-17 18:27:08,825 - INFO - Acc: 0.00%
+2024-04-17 18:27:08,825 - INFO - UniID: 132
+2024-04-17 18:27:08,825 - INFO - Mom and Dad: 102 117
+2024-04-17 18:27:08,825 - INFO - Gen: 6
+2024-04-17 18:27:08,825 - INFO - Hash: c47bcda00408caff453aff0b8f11fc5a
+2024-04-17 18:27:08,825 - INFO - {'activation': 'elu', 'nb_layers': 2, 'optimizer': 'nadam', 'regulizer': 0.001, 'nb_neurons': [256, 64, 64, 256, 64, 64]}
+2024-04-17 18:27:08,825 - INFO - Acc: 0.00%
+2024-04-17 18:27:08,825 - INFO - UniID: 133
+2024-04-17 18:27:08,825 - INFO - Mom and Dad: 109 102
+2024-04-17 18:27:08,825 - INFO - Gen: 6
+2024-04-17 18:27:08,825 - INFO - Hash: 3c3ff9db0f471903fc6c78240daaebde
+2024-04-17 18:27:08,825 - INFO - {'activation': 'elu', 'nb_layers': 4, 'optimizer': 'adagrad', 'regulizer': 0.001, 'nb_neurons': [64, 256, 512, 256, 256, 256]}
+2024-04-17 18:27:08,825 - INFO - Acc: 0.00%
+2024-04-17 18:27:08,825 - INFO - UniID: 134
+2024-04-17 18:27:08,825 - INFO - Mom and Dad: 109 102
+2024-04-17 18:27:08,825 - INFO - Gen: 6
+2024-04-17 18:27:08,825 - INFO - Hash: 2cbad010ce5d05d1062af191202ef37c
+2024-04-17 18:27:08,825 - INFO - {'activation': 'elu', 'nb_layers': 2, 'optimizer': 'adadelta', 'regulizer': 0.01, 'nb_neurons': [256, 64, 64, 256, 128, 256]}
+2024-04-17 18:27:08,825 - INFO - Acc: 0.00%
+2024-04-17 18:27:08,825 - INFO - UniID: 135
+2024-04-17 18:27:08,825 - INFO - Mom and Dad: 102 117
+2024-04-17 18:27:08,825 - INFO - Gen: 6
+2024-04-17 18:27:08,825 - INFO - Hash: 571243ab6c5f841ed7ff84e27e8a36f8
+2024-04-17 18:27:08,825 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'nadam', 'regulizer': 0.001, 'nb_neurons': [128, 256, 256, 64, 128, 64]}
+2024-04-17 18:27:08,825 - INFO - Acc: 0.00%
+2024-04-17 18:27:08,825 - INFO - UniID: 136
+2024-04-17 18:27:08,825 - INFO - Mom and Dad: 102 117
+2024-04-17 18:27:08,825 - INFO - Gen: 6
+2024-04-17 18:27:08,825 - INFO - Hash: d28790a9d10c2b1436f0304edf814a21
+2024-04-17 18:27:08,825 - INFO - {'activation': 'elu', 'nb_layers': 2, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [64, 256, 256, 256, 128, 256]}
+2024-04-17 18:27:08,825 - INFO - Acc: 0.00%
+2024-04-17 18:27:08,825 - INFO - UniID: 137
+2024-04-17 18:27:08,825 - INFO - Mom and Dad: 102 96
+2024-04-17 18:27:08,825 - INFO - Gen: 6
+2024-04-17 18:27:08,825 - INFO - Hash: 6833e3b01e86e64e173e1a6f38492dd6
+2024-04-17 18:27:08,825 - INFO - {'activation': 'linear', 'nb_layers': 5, 'optimizer': 'nadam', 'regulizer': 0.001, 'nb_neurons': [256, 64, 64, 256, 128, 64]}
+2024-04-17 18:27:08,825 - INFO - Acc: 0.00%
+2024-04-17 18:27:08,825 - INFO - UniID: 138
+2024-04-17 18:27:08,825 - INFO - Mom and Dad: 102 96
+2024-04-17 18:27:08,825 - INFO - Gen: 6
+2024-04-17 18:27:08,825 - INFO - Hash: d9e24e5e9ed5adbaf36c89bd32d06a6a
+2024-04-17 18:27:08,825 - INFO - {'activation': 'sigmoid', 'nb_layers': 4, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 256, 512, 256, 256, 256]}
+2024-04-17 18:27:08,825 - INFO - Acc: 0.00%
+2024-04-17 18:27:08,825 - INFO - UniID: 139
+2024-04-17 18:27:08,825 - INFO - Mom and Dad: 109 108
+2024-04-17 18:27:08,825 - INFO - Gen: 6
+2024-04-17 18:27:08,825 - INFO - Hash: 1989e6e4a3de9051278a4d2c4f9c8f9f
+2024-04-17 18:27:08,825 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.0001, 'nb_neurons': [256, 128, 64, 256, 128, 64]}
+2024-04-17 18:27:08,825 - INFO - Acc: 0.00%
+2024-04-17 18:27:08,825 - INFO - UniID: 140
+2024-04-17 18:27:08,825 - INFO - Mom and Dad: 109 108
+2024-04-17 18:27:08,825 - INFO - Gen: 6
+2024-04-17 18:27:08,825 - INFO - Hash: 2c187ac360e8ac34a1123c80de77058a
+2024-04-17 18:27:08,825 - INFO - {'activation': 'elu', 'nb_layers': 4, 'optimizer': 'adadelta', 'regulizer': 0.01, 'nb_neurons': [64, 256, 512, 256, 256, 256]}
+2024-04-17 18:27:08,825 - INFO - Acc: 0.00%
+2024-04-17 18:27:08,825 - INFO - UniID: 141
+2024-04-17 18:27:08,825 - INFO - Mom and Dad: 109 115
+2024-04-17 18:27:08,825 - INFO - Gen: 6
+2024-04-17 18:27:08,825 - INFO - Hash: f62ff6ee606d01a34ce895c12506421d
+2024-04-17 18:27:08,825 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.0, 'nb_neurons': [256, 256, 256, 256, 64, 256]}
+2024-04-17 18:27:08,825 - INFO - Acc: 0.00%
+2024-04-17 18:27:08,825 - INFO - UniID: 142
+2024-04-17 18:27:08,825 - INFO - Mom and Dad: 109 115
+2024-04-17 18:27:08,825 - INFO - Gen: 6
+2024-04-17 18:27:08,825 - INFO - Hash: b02e8fd0d69466a77130ecf0c9dfbe7b
+2024-04-17 18:27:08,825 - INFO - {'activation': 'elu', 'nb_layers': 1, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [128, 128, 512, 256, 128, 64]}
+2024-04-17 18:27:08,825 - INFO - Acc: 0.00%
+2024-04-17 18:27:08,825 - INFO - UniID: 143
+2024-04-17 18:27:08,825 - INFO - Mom and Dad: 99 115
+2024-04-17 18:27:08,825 - INFO - Gen: 6
+2024-04-17 18:27:08,825 - INFO - Hash: 8f95ac5626e190d2a4de39319c0bd95f
+2024-04-17 18:27:08,825 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [256, 256, 256, 256, 512, 256]}
+2024-04-17 18:27:08,825 - INFO - Acc: 0.00%
+2024-04-17 18:27:08,825 - INFO - UniID: 144
+2024-04-17 18:27:08,825 - INFO - Mom and Dad: 99 115
+2024-04-17 18:27:08,825 - INFO - Gen: 6
+2024-04-17 18:27:08,825 - INFO - Hash: 00408d4d60a2288b4fe673c45358f474
+2024-04-17 18:27:08,826 - INFO - ***train_networks(networks, dataset)***
+2024-04-17 18:27:08,826 - INFO - Getting Keras datasets
+2024-04-17 18:27:09,118 - INFO - Compling Keras model
+2024-04-17 18:27:09,118 - INFO - Architecture:[128, 64, 512, 256, 128, 64],elu,sgd,5
+2024-04-17 18:27:17,964 - INFO - Getting Keras datasets
+2024-04-17 18:27:18,253 - INFO - Compling Keras model
+2024-04-17 18:27:18,253 - INFO - Architecture:[128, 256, 512, 256, 128, 64],elu,adamax,1
+2024-04-17 18:27:24,196 - INFO - Getting Keras datasets
+2024-04-17 18:27:24,484 - INFO - Compling Keras model
+2024-04-17 18:27:24,484 - INFO - Architecture:[64, 256, 512, 256, 256, 256],elu,adamax,4
+2024-04-17 18:27:34,003 - INFO - Getting Keras datasets
+2024-04-17 18:27:34,297 - INFO - Compling Keras model
+2024-04-17 18:27:34,297 - INFO - Architecture:[256, 64, 64, 256, 128, 64],elu,nadam,2
+2024-04-17 18:27:46,748 - INFO - Getting Keras datasets
+2024-04-17 18:27:47,040 - INFO - Compling Keras model
+2024-04-17 18:27:47,040 - INFO - Architecture:[128, 256, 128, 256, 128, 128],elu,adamax,5
+2024-04-17 18:27:58,109 - INFO - Getting Keras datasets
+2024-04-17 18:27:58,401 - INFO - Compling Keras model
+2024-04-17 18:27:58,401 - INFO - Architecture:[256, 64, 64, 256, 128, 256],elu,adamax,2
+2024-04-17 18:28:10,201 - INFO - Getting Keras datasets
+2024-04-17 18:28:10,489 - INFO - Compling Keras model
+2024-04-17 18:28:10,489 - INFO - Architecture:[128, 256, 256, 256, 128, 64],elu,nadam,5
+2024-04-17 18:28:23,504 - INFO - Getting Keras datasets
+2024-04-17 18:28:23,795 - INFO - Compling Keras model
+2024-04-17 18:28:23,795 - INFO - Architecture:[128, 256, 512, 256, 128, 64],relu,adamax,1
+2024-04-17 18:28:39,396 - INFO - Getting Keras datasets
+2024-04-17 18:28:39,683 - INFO - Compling Keras model
+2024-04-17 18:28:39,683 - INFO - Architecture:[64, 256, 64, 256, 128, 256],elu,adamax,5
+2024-04-17 18:28:47,674 - INFO - Getting Keras datasets
+2024-04-17 18:28:47,966 - INFO - Compling Keras model
+2024-04-17 18:28:47,966 - INFO - Architecture:[64, 256, 512, 256, 256, 512],elu,adamax,4
+2024-04-17 18:28:57,676 - INFO - Getting Keras datasets
+2024-04-17 18:28:57,967 - INFO - Compling Keras model
+2024-04-17 18:28:57,968 - INFO - Architecture:[128, 64, 512, 256, 512, 64],elu,sgd,5
+2024-04-17 18:29:07,056 - INFO - Getting Keras datasets
+2024-04-17 18:29:07,347 - INFO - Compling Keras model
+2024-04-17 18:29:07,347 - INFO - Architecture:[64, 256, 512, 256, 128, 256],elu,adamax,4
+2024-04-17 18:29:35,533 - INFO - Getting Keras datasets
+2024-04-17 18:29:35,824 - INFO - Compling Keras model
+2024-04-17 18:29:35,824 - INFO - Architecture:[256, 256, 256, 256, 256, 256],elu,adamax,3
+2024-04-17 18:29:51,814 - INFO - Getting Keras datasets
+2024-04-17 18:29:52,107 - INFO - Compling Keras model
+2024-04-17 18:29:52,107 - INFO - Architecture:[256, 64, 256, 64, 128, 256],elu,adamax,2
+2024-04-17 18:30:03,838 - INFO - Getting Keras datasets
+2024-04-17 18:30:04,126 - INFO - Compling Keras model
+2024-04-17 18:30:04,126 - INFO - Architecture:[128, 256, 64, 256, 128, 64],elu,nadam,5
+2024-04-17 18:30:16,200 - INFO - Getting Keras datasets
+2024-04-17 18:30:16,491 - INFO - Compling Keras model
+2024-04-17 18:30:16,491 - INFO - Architecture:[256, 64, 64, 256, 64, 64],elu,nadam,2
+2024-04-17 18:30:28,951 - INFO - Getting Keras datasets
+2024-04-17 18:30:29,241 - INFO - Compling Keras model
+2024-04-17 18:30:29,241 - INFO - Architecture:[64, 256, 512, 256, 256, 256],elu,adagrad,4
+2024-04-17 18:30:38,484 - INFO - Getting Keras datasets
+2024-04-17 18:30:38,774 - INFO - Compling Keras model
+2024-04-17 18:30:38,775 - INFO - Architecture:[256, 64, 64, 256, 128, 256],elu,adadelta,2
+2024-04-17 18:30:50,645 - INFO - Getting Keras datasets
+2024-04-17 18:30:50,935 - INFO - Compling Keras model
+2024-04-17 18:30:50,935 - INFO - Architecture:[128, 256, 256, 64, 128, 64],elu,nadam,5
+2024-04-17 18:31:03,539 - INFO - Getting Keras datasets
+2024-04-17 18:31:03,830 - INFO - Compling Keras model
+2024-04-17 18:31:03,830 - INFO - Architecture:[64, 256, 256, 256, 128, 256],elu,adamax,2
+2024-04-17 18:31:10,571 - INFO - Getting Keras datasets
+2024-04-17 18:31:10,862 - INFO - Compling Keras model
+2024-04-17 18:31:10,862 - INFO - Architecture:[256, 64, 64, 256, 128, 64],linear,nadam,5
+2024-04-17 18:31:23,788 - INFO - Getting Keras datasets
+2024-04-17 18:31:24,080 - INFO - Compling Keras model
+2024-04-17 18:31:24,080 - INFO - Architecture:[64, 256, 512, 256, 256, 256],sigmoid,adamax,4
+2024-04-17 18:31:36,045 - INFO - Getting Keras datasets
+2024-04-17 18:31:36,335 - INFO - Compling Keras model
+2024-04-17 18:31:36,335 - INFO - Architecture:[256, 128, 64, 256, 128, 64],elu,adamax,5
+2024-04-17 18:31:52,336 - INFO - Getting Keras datasets
+2024-04-17 18:31:52,630 - INFO - Compling Keras model
+2024-04-17 18:31:52,630 - INFO - Architecture:[64, 256, 512, 256, 256, 256],elu,adadelta,4
+2024-04-17 18:32:02,257 - INFO - Getting Keras datasets
+2024-04-17 18:32:02,548 - INFO - Compling Keras model
+2024-04-17 18:32:02,548 - INFO - Architecture:[256, 256, 256, 256, 64, 256],elu,adamax,5
+2024-04-17 18:32:19,469 - INFO - Getting Keras datasets
+2024-04-17 18:32:19,757 - INFO - Compling Keras model
+2024-04-17 18:32:19,757 - INFO - Architecture:[128, 128, 512, 256, 128, 64],elu,adamax,1
+2024-04-17 18:32:25,626 - INFO - Getting Keras datasets
+2024-04-17 18:32:25,913 - INFO - Compling Keras model
+2024-04-17 18:32:25,913 - INFO - Architecture:[256, 256, 256, 256, 512, 256],elu,adamax,5
+2024-04-17 18:32:43,060 - INFO - Generation average: 8.71%
+2024-04-17 18:32:43,061 - INFO - --------------------------------------------------------------------------------
+2024-04-17 18:32:43,062 - INFO - ***Now in generation 7 of 10***
+2024-04-17 18:32:43,062 - INFO - --------------------------------------------------------------------------------
+2024-04-17 18:32:43,062 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [256, 256, 256, 256, 128, 256]}
+2024-04-17 18:32:43,062 - INFO - Acc: 42.66%
+2024-04-17 18:32:43,062 - INFO - UniID: 115
+2024-04-17 18:32:43,062 - INFO - Mom and Dad: 88 96
+2024-04-17 18:32:43,062 - INFO - Gen: 5
+2024-04-17 18:32:43,062 - INFO - Hash: fccf521f0036453017eea6917796dc7c
+2024-04-17 18:32:43,062 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 256, 256, 256, 128, 256]}
+2024-04-17 18:32:43,062 - INFO - Acc: 40.36%
+2024-04-17 18:32:43,062 - INFO - UniID: 96
+2024-04-17 18:32:43,062 - INFO - Mom and Dad: 59 17
+2024-04-17 18:32:43,062 - INFO - Gen: 4
+2024-04-17 18:32:43,062 - INFO - Hash: 4861fdf5d6b260df42ef46c8227b692e
+2024-04-17 18:32:43,062 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [256, 64, 64, 256, 128, 512]}
+2024-04-17 18:32:43,062 - INFO - Acc: 39.12%
+2024-04-17 18:32:43,062 - INFO - UniID: 108
+2024-04-17 18:32:43,062 - INFO - Mom and Dad: 96 88
+2024-04-17 18:32:43,062 - INFO - Gen: 5
+2024-04-17 18:32:43,062 - INFO - Hash: 56bd8e6d40829cee94af03c6ffddd5e6
+2024-04-17 18:32:43,062 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [128, 256, 256, 256, 128, 256]}
+2024-04-17 18:32:43,062 - INFO - Acc: 39.01%
+2024-04-17 18:32:43,062 - INFO - UniID: 117
+2024-04-17 18:32:43,062 - INFO - Mom and Dad: 99 96
+2024-04-17 18:32:43,062 - INFO - Gen: 5
+2024-04-17 18:32:43,062 - INFO - Hash: 804bbff768e87d313f93556dff4d45a3
+2024-04-17 18:32:43,062 - INFO - {'activation': 'elu', 'nb_layers': 4, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 256, 512, 256, 64, 256]}
+2024-04-17 18:32:43,062 - INFO - Acc: 0.00%
+2024-04-17 18:32:43,062 - INFO - UniID: 129
+2024-04-17 18:32:43,062 - INFO - Mom and Dad: 109 115
+2024-04-17 18:32:43,062 - INFO - Gen: 7
+2024-04-17 18:32:43,062 - INFO - Hash: 85a31eccf4496df80a5b8646d2bc22df
+2024-04-17 18:32:43,062 - INFO - {'activation': 'elu', 'nb_layers': 1, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [128, 256, 512, 256, 128, 256]}
+2024-04-17 18:32:43,062 - INFO - Acc: 0.00%
+2024-04-17 18:32:43,062 - INFO - UniID: 99
+2024-04-17 18:32:43,062 - INFO - Mom and Dad: 59 76
+2024-04-17 18:32:43,062 - INFO - Gen: 7
+2024-04-17 18:32:43,062 - INFO - Hash: 5e368fa33e21bbfde8186514ab96ace2
+2024-04-17 18:32:43,062 - INFO - {'activation': 'linear', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.0001, 'nb_neurons': [256, 128, 64, 256, 128, 64]}
+2024-04-17 18:32:43,062 - INFO - Acc: 0.00%
+2024-04-17 18:32:43,062 - INFO - UniID: 140
+2024-04-17 18:32:43,062 - INFO - Mom and Dad: 109 108
+2024-04-17 18:32:43,062 - INFO - Gen: 7
+2024-04-17 18:32:43,062 - INFO - Hash: d3e38e53da8c120d798b469fca5cca46
+2024-04-17 18:32:43,062 - INFO - {'activation': 'hard_sigmoid', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [256, 64, 64, 256, 128, 512]}
+2024-04-17 18:32:43,062 - INFO - Acc: 0.00%
+2024-04-17 18:32:43,062 - INFO - UniID: 145
+2024-04-17 18:32:43,062 - INFO - Mom and Dad: 108 99
+2024-04-17 18:32:43,062 - INFO - Gen: 7
+2024-04-17 18:32:43,062 - INFO - Hash: 0535bcc49098cf707de88d8d0f35b3d4
+2024-04-17 18:32:43,062 - INFO - {'activation': 'elu', 'nb_layers': 1, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [128, 256, 512, 128, 128, 256]}
+2024-04-17 18:32:43,062 - INFO - Acc: 0.00%
+2024-04-17 18:32:43,062 - INFO - UniID: 146
+2024-04-17 18:32:43,062 - INFO - Mom and Dad: 108 99
+2024-04-17 18:32:43,062 - INFO - Gen: 7
+2024-04-17 18:32:43,062 - INFO - Hash: 2e5fdbe3c6d35a60d85c39337892d332
+2024-04-17 18:32:43,062 - INFO - {'activation': 'elu', 'nb_layers': 1, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [128, 128, 512, 256, 128, 256]}
+2024-04-17 18:32:43,062 - INFO - Acc: 0.00%
+2024-04-17 18:32:43,062 - INFO - UniID: 147
+2024-04-17 18:32:43,062 - INFO - Mom and Dad: 96 99
+2024-04-17 18:32:43,062 - INFO - Gen: 7
+2024-04-17 18:32:43,062 - INFO - Hash: 7fe903a97d9366bb8f8bf6dcc27df718
+2024-04-17 18:32:43,062 - INFO - {'activation': 'elu', 'nb_layers': 4, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 256, 256, 256, 128, 256]}
+2024-04-17 18:32:43,062 - INFO - Acc: 0.00%
+2024-04-17 18:32:43,062 - INFO - UniID: 148
+2024-04-17 18:32:43,062 - INFO - Mom and Dad: 96 99
+2024-04-17 18:32:43,062 - INFO - Gen: 7
+2024-04-17 18:32:43,062 - INFO - Hash: af2993d067d7069acfb163a869857b7d
+2024-04-17 18:32:43,062 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adadelta', 'regulizer': 0.001, 'nb_neurons': [128, 256, 256, 256, 128, 256]}
+2024-04-17 18:32:43,062 - INFO - Acc: 0.00%
+2024-04-17 18:32:43,062 - INFO - UniID: 149
+2024-04-17 18:32:43,062 - INFO - Mom and Dad: 117 99
+2024-04-17 18:32:43,062 - INFO - Gen: 7
+2024-04-17 18:32:43,062 - INFO - Hash: 63a265901b640fef357bcd9a63e8db83
+2024-04-17 18:32:43,062 - INFO - {'activation': 'elu', 'nb_layers': 1, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [128, 256, 512, 512, 128, 256]}
+2024-04-17 18:32:43,062 - INFO - Acc: 0.00%
+2024-04-17 18:32:43,062 - INFO - UniID: 150
+2024-04-17 18:32:43,062 - INFO - Mom and Dad: 117 99
+2024-04-17 18:32:43,062 - INFO - Gen: 7
+2024-04-17 18:32:43,062 - INFO - Hash: 433bdc01e1bf85400939bd15e4dc016d
+2024-04-17 18:32:43,062 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [128, 256, 512, 256, 64, 256]}
+2024-04-17 18:32:43,062 - INFO - Acc: 0.00%
+2024-04-17 18:32:43,062 - INFO - UniID: 151
+2024-04-17 18:32:43,062 - INFO - Mom and Dad: 117 129
+2024-04-17 18:32:43,062 - INFO - Gen: 7
+2024-04-17 18:32:43,062 - INFO - Hash: f4973c3e1a18fa6a0f2a23fbd943593a
+2024-04-17 18:32:43,062 - INFO - {'activation': 'elu', 'nb_layers': 2, 'optimizer': 'adamax', 'regulizer': 0.0, 'nb_neurons': [64, 256, 256, 512, 128, 256]}
+2024-04-17 18:32:43,062 - INFO - Acc: 0.00%
+2024-04-17 18:32:43,062 - INFO - UniID: 152
+2024-04-17 18:32:43,062 - INFO - Mom and Dad: 117 129
+2024-04-17 18:32:43,062 - INFO - Gen: 7
+2024-04-17 18:32:43,062 - INFO - Hash: b9235d9a33765f9f33626d02473c2068
+2024-04-17 18:32:43,062 - INFO - {'activation': 'elu', 'nb_layers': 3, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [128, 256, 256, 256, 128, 256]}
+2024-04-17 18:32:43,062 - INFO - Acc: 0.00%
+2024-04-17 18:32:43,062 - INFO - UniID: 153
+2024-04-17 18:32:43,062 - INFO - Mom and Dad: 115 96
+2024-04-17 18:32:43,062 - INFO - Gen: 7
+2024-04-17 18:32:43,062 - INFO - Hash: 8c6f6cd13cee18eac25f587a5a3f54c9
+2024-04-17 18:32:43,062 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adam', 'regulizer': 0.01, 'nb_neurons': [256, 256, 256, 256, 128, 256]}
+2024-04-17 18:32:43,062 - INFO - Acc: 0.00%
+2024-04-17 18:32:43,062 - INFO - UniID: 154
+2024-04-17 18:32:43,062 - INFO - Mom and Dad: 115 96
+2024-04-17 18:32:43,062 - INFO - Gen: 7
+2024-04-17 18:32:43,062 - INFO - Hash: d6756a747224df449cfc7351b8d34fcc
+2024-04-17 18:32:43,062 - INFO - {'activation': 'elu', 'nb_layers': 1, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [128, 64, 64, 256, 128, 512]}
+2024-04-17 18:32:43,062 - INFO - Acc: 0.00%
+2024-04-17 18:32:43,062 - INFO - UniID: 155
+2024-04-17 18:32:43,062 - INFO - Mom and Dad: 99 108
+2024-04-17 18:32:43,062 - INFO - Gen: 7
+2024-04-17 18:32:43,062 - INFO - Hash: 25e68782447346a288115122ba00c191
+2024-04-17 18:32:43,062 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [256, 256, 512, 256, 128, 256]}
+2024-04-17 18:32:43,062 - INFO - Acc: 0.00%
+2024-04-17 18:32:43,062 - INFO - UniID: 156
+2024-04-17 18:32:43,062 - INFO - Mom and Dad: 99 108
+2024-04-17 18:32:43,062 - INFO - Gen: 7
+2024-04-17 18:32:43,062 - INFO - Hash: bcfba2af4c02b131087afab469e82f6c
+2024-04-17 18:32:43,062 - INFO - {'activation': 'elu', 'nb_layers': 1, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [128, 256, 512, 256, 256, 256]}
+2024-04-17 18:32:43,062 - INFO - Acc: 0.00%
+2024-04-17 18:32:43,062 - INFO - UniID: 157
+2024-04-17 18:32:43,062 - INFO - Mom and Dad: 99 96
+2024-04-17 18:32:43,062 - INFO - Gen: 7
+2024-04-17 18:32:43,062 - INFO - Hash: 326186176e05d2e5e356464c7465da34
+2024-04-17 18:32:43,062 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [64, 256, 256, 128, 128, 256]}
+2024-04-17 18:32:43,062 - INFO - Acc: 0.00%
+2024-04-17 18:32:43,063 - INFO - UniID: 158
+2024-04-17 18:32:43,063 - INFO - Mom and Dad: 99 96
+2024-04-17 18:32:43,063 - INFO - Gen: 7
+2024-04-17 18:32:43,063 - INFO - Hash: deedabc2d6a1f7255a145d3ba8270edf
+2024-04-17 18:32:43,063 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 256, 512, 256, 64, 256]}
+2024-04-17 18:32:43,063 - INFO - Acc: 0.00%
+2024-04-17 18:32:43,063 - INFO - UniID: 159
+2024-04-17 18:32:43,063 - INFO - Mom and Dad: 115 129
+2024-04-17 18:32:43,063 - INFO - Gen: 7
+2024-04-17 18:32:43,063 - INFO - Hash: 5bd02635fca8560b7b36bb644d53c1bd
+2024-04-17 18:32:43,063 - INFO - {'activation': 'elu', 'nb_layers': 4, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [256, 256, 256, 256, 128, 256]}
+2024-04-17 18:32:43,063 - INFO - Acc: 0.00%
+2024-04-17 18:32:43,063 - INFO - UniID: 160
+2024-04-17 18:32:43,063 - INFO - Mom and Dad: 115 129
+2024-04-17 18:32:43,063 - INFO - Gen: 7
+2024-04-17 18:32:43,063 - INFO - Hash: bb3880a0300b9b09193bf0710a22122e
+2024-04-17 18:32:43,063 - INFO - {'activation': 'elu', 'nb_layers': 4, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [512, 256, 512, 256, 256, 256]}
+2024-04-17 18:32:43,063 - INFO - Acc: 0.00%
+2024-04-17 18:32:43,063 - INFO - UniID: 161
+2024-04-17 18:32:43,063 - INFO - Mom and Dad: 129 117
+2024-04-17 18:32:43,063 - INFO - Gen: 7
+2024-04-17 18:32:43,063 - INFO - Hash: b841e974ca47a29468da3b91d4df16ca
+2024-04-17 18:32:43,063 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [128, 256, 256, 256, 64, 256]}
+2024-04-17 18:32:43,063 - INFO - Acc: 0.00%
+2024-04-17 18:32:43,063 - INFO - UniID: 162
+2024-04-17 18:32:43,063 - INFO - Mom and Dad: 129 117
+2024-04-17 18:32:43,063 - INFO - Gen: 7
+2024-04-17 18:32:43,063 - INFO - Hash: 6ab735bf4fce2e91d8b2da1ab29f0bb3
+2024-04-17 18:32:43,063 - INFO - {'activation': 'sigmoid', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [128, 256, 256, 256, 128, 256]}
+2024-04-17 18:32:43,063 - INFO - Acc: 0.00%
+2024-04-17 18:32:43,063 - INFO - UniID: 163
+2024-04-17 18:32:43,063 - INFO - Mom and Dad: 117 99
+2024-04-17 18:32:43,063 - INFO - Gen: 7
+2024-04-17 18:32:43,063 - INFO - Hash: 9b0c09f0b96dd55c0f950de0b660533b
+2024-04-17 18:32:43,063 - INFO - {'activation': 'elu', 'nb_layers': 1, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [128, 256, 512, 256, 128, 512]}
+2024-04-17 18:32:43,063 - INFO - Acc: 0.00%
+2024-04-17 18:32:43,063 - INFO - UniID: 164
+2024-04-17 18:32:43,063 - INFO - Mom and Dad: 117 99
+2024-04-17 18:32:43,063 - INFO - Gen: 7
+2024-04-17 18:32:43,063 - INFO - Hash: 31758425e2a0d377747f096a4e292a64
+2024-04-17 18:32:43,063 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [256, 256, 256, 64, 128, 256]}
+2024-04-17 18:32:43,063 - INFO - Acc: 0.00%
+2024-04-17 18:32:43,063 - INFO - UniID: 165
+2024-04-17 18:32:43,063 - INFO - Mom and Dad: 99 115
+2024-04-17 18:32:43,063 - INFO - Gen: 7
+2024-04-17 18:32:43,063 - INFO - Hash: cb7b65428e19eb1f837bb5d497f8c20d
+2024-04-17 18:32:43,063 - INFO - {'activation': 'elu', 'nb_layers': 1, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [64, 256, 512, 256, 128, 256]}
+2024-04-17 18:32:43,063 - INFO - Acc: 0.00%
+2024-04-17 18:32:43,063 - INFO - UniID: 166
+2024-04-17 18:32:43,063 - INFO - Mom and Dad: 99 115
+2024-04-17 18:32:43,063 - INFO - Gen: 7
+2024-04-17 18:32:43,063 - INFO - Hash: 64e2da152e6542b927eeb012b32b73e2
+2024-04-17 18:32:43,063 - INFO - {'activation': 'elu', 'nb_layers': 1, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [128, 256, 512, 256, 256, 512]}
+2024-04-17 18:32:43,063 - INFO - Acc: 0.00%
+2024-04-17 18:32:43,063 - INFO - UniID: 167
+2024-04-17 18:32:43,063 - INFO - Mom and Dad: 99 96
+2024-04-17 18:32:43,063 - INFO - Gen: 7
+2024-04-17 18:32:43,063 - INFO - Hash: e85fcaadb1564081cdebb4e983e2858e
+2024-04-17 18:32:43,063 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.001, 'nb_neurons': [64, 128, 256, 256, 128, 256]}
+2024-04-17 18:32:43,063 - INFO - Acc: 0.00%
+2024-04-17 18:32:43,063 - INFO - UniID: 168
+2024-04-17 18:32:43,063 - INFO - Mom and Dad: 99 96
+2024-04-17 18:32:43,063 - INFO - Gen: 7
+2024-04-17 18:32:43,063 - INFO - Hash: a0d69f2fade47ef32fdfdb7601f2fc32
+2024-04-17 18:32:43,063 - INFO - ***train_networks(networks, dataset)***
+2024-04-17 18:32:43,063 - INFO - Getting Keras datasets
+2024-04-17 18:32:43,353 - INFO - Compling Keras model
+2024-04-17 18:32:43,353 - INFO - Architecture:[64, 256, 512, 256, 64, 256],elu,adamax,4
+2024-04-17 18:33:10,084 - INFO - Getting Keras datasets
+2024-04-17 18:33:10,375 - INFO - Compling Keras model
+2024-04-17 18:33:10,375 - INFO - Architecture:[128, 256, 512, 256, 128, 256],elu,adamax,1
+2024-04-17 18:33:26,792 - INFO - Getting Keras datasets
+2024-04-17 18:33:27,085 - INFO - Compling Keras model
+2024-04-17 18:33:27,085 - INFO - Architecture:[256, 128, 64, 256, 128, 64],linear,adamax,5
+2024-04-17 18:33:39,903 - INFO - Getting Keras datasets
+2024-04-17 18:33:40,195 - INFO - Compling Keras model
+2024-04-17 18:33:40,195 - INFO - Architecture:[256, 64, 64, 256, 128, 512],hard_sigmoid,adamax,5
+2024-04-17 18:33:56,192 - INFO - Getting Keras datasets
+2024-04-17 18:33:56,485 - INFO - Compling Keras model
+2024-04-17 18:33:56,485 - INFO - Architecture:[128, 256, 512, 128, 128, 256],elu,adamax,1
+2024-04-17 18:34:12,927 - INFO - Getting Keras datasets
+2024-04-17 18:34:13,220 - INFO - Compling Keras model
+2024-04-17 18:34:13,220 - INFO - Architecture:[128, 128, 512, 256, 128, 256],elu,adamax,1
+2024-04-17 18:34:19,064 - INFO - Getting Keras datasets
+2024-04-17 18:34:19,357 - INFO - Compling Keras model
+2024-04-17 18:34:19,357 - INFO - Architecture:[64, 256, 256, 256, 128, 256],elu,adamax,4
+2024-04-17 18:34:42,678 - INFO - Getting Keras datasets
+2024-04-17 18:34:42,974 - INFO - Compling Keras model
+2024-04-17 18:34:42,974 - INFO - Architecture:[128, 256, 256, 256, 128, 256],elu,adadelta,5
+2024-04-17 18:34:54,675 - INFO - Getting Keras datasets
+2024-04-17 18:34:54,970 - INFO - Compling Keras model
+2024-04-17 18:34:54,970 - INFO - Architecture:[128, 256, 512, 512, 128, 256],elu,adamax,1
+2024-04-17 18:35:11,544 - INFO - Getting Keras datasets
+2024-04-17 18:35:11,838 - INFO - Compling Keras model
+2024-04-17 18:35:11,838 - INFO - Architecture:[128, 256, 512, 256, 64, 256],elu,adamax,5
+2024-04-17 18:35:48,459 - INFO - Getting Keras datasets
+2024-04-17 18:35:48,749 - INFO - Compling Keras model
+2024-04-17 18:35:48,749 - INFO - Architecture:[64, 256, 256, 512, 128, 256],elu,adamax,2
+2024-04-17 18:35:55,638 - INFO - Getting Keras datasets
+2024-04-17 18:35:55,927 - INFO - Compling Keras model
+2024-04-17 18:35:55,927 - INFO - Architecture:[128, 256, 256, 256, 128, 256],elu,adamax,3
+2024-04-17 18:36:08,430 - INFO - Getting Keras datasets
+2024-04-17 18:36:08,719 - INFO - Compling Keras model
+2024-04-17 18:36:08,719 - INFO - Architecture:[256, 256, 256, 256, 128, 256],elu,adam,5
+2024-04-17 18:36:59,650 - INFO - Getting Keras datasets
+2024-04-17 18:36:59,940 - INFO - Compling Keras model
+2024-04-17 18:36:59,940 - INFO - Architecture:[128, 64, 64, 256, 128, 512],elu,adamax,1
+2024-04-17 18:37:05,791 - INFO - Getting Keras datasets
+2024-04-17 18:37:06,079 - INFO - Compling Keras model
+2024-04-17 18:37:06,079 - INFO - Architecture:[256, 256, 512, 256, 128, 256],elu,adamax,5
+2024-04-17 18:37:24,010 - INFO - Getting Keras datasets
+2024-04-17 18:37:24,302 - INFO - Compling Keras model
+2024-04-17 18:37:24,302 - INFO - Architecture:[128, 256, 512, 256, 256, 256],elu,adamax,1
+2024-04-17 18:37:30,197 - INFO - Getting Keras datasets
+2024-04-17 18:37:30,483 - INFO - Compling Keras model
+2024-04-17 18:37:30,483 - INFO - Architecture:[64, 256, 256, 128, 128, 256],elu,adamax,5
+2024-04-17 18:37:39,083 - INFO - Getting Keras datasets
+2024-04-17 18:37:39,380 - INFO - Compling Keras model
+2024-04-17 18:37:39,380 - INFO - Architecture:[64, 256, 512, 256, 64, 256],elu,adamax,5
+2024-04-17 18:38:06,644 - INFO - Getting Keras datasets
+2024-04-17 18:38:06,938 - INFO - Compling Keras model
+2024-04-17 18:38:06,938 - INFO - Architecture:[256, 256, 256, 256, 128, 256],elu,adamax,4
+2024-04-17 18:38:57,136 - INFO - Getting Keras datasets
+2024-04-17 18:38:57,426 - INFO - Compling Keras model
+2024-04-17 18:38:57,426 - INFO - Architecture:[512, 256, 512, 256, 256, 256],elu,adamax,4
+2024-04-17 18:40:28,975 - INFO - Getting Keras datasets
+2024-04-17 18:40:29,270 - INFO - Compling Keras model
+2024-04-17 18:40:29,270 - INFO - Architecture:[128, 256, 256, 256, 64, 256],elu,adamax,5
+2024-04-17 18:41:02,523 - INFO - Getting Keras datasets
+2024-04-17 18:41:02,819 - INFO - Compling Keras model
+2024-04-17 18:41:02,819 - INFO - Architecture:[128, 256, 256, 256, 128, 256],sigmoid,adamax,5
+2024-04-17 18:41:14,440 - INFO - Getting Keras datasets
+2024-04-17 18:41:14,735 - INFO - Compling Keras model
+2024-04-17 18:41:14,735 - INFO - Architecture:[128, 256, 512, 256, 128, 512],elu,adamax,1
+2024-04-17 18:41:20,588 - INFO - Getting Keras datasets
+2024-04-17 18:41:20,877 - INFO - Compling Keras model
+2024-04-17 18:41:20,877 - INFO - Architecture:[256, 256, 256, 64, 128, 256],elu,adamax,5
+2024-04-17 18:42:10,751 - INFO - Getting Keras datasets
+2024-04-17 18:42:11,042 - INFO - Compling Keras model
+2024-04-17 18:42:11,042 - INFO - Architecture:[64, 256, 512, 256, 128, 256],elu,adamax,1
+2024-04-17 18:42:18,352 - INFO - Getting Keras datasets
+2024-04-17 18:42:18,643 - INFO - Compling Keras model
+2024-04-17 18:42:18,643 - INFO - Architecture:[128, 256, 512, 256, 256, 512],elu,adamax,1
+2024-04-17 18:42:24,541 - INFO - Getting Keras datasets
+2024-04-17 18:42:24,830 - INFO - Compling Keras model
+2024-04-17 18:42:24,830 - INFO - Architecture:[64, 128, 256, 256, 128, 256],elu,adamax,5
+2024-04-17 18:42:33,901 - INFO - Generation average: 18.34%
+2024-04-17 18:42:33,902 - INFO - --------------------------------------------------------------------------------
+2024-04-17 18:42:33,903 - INFO - ***Now in generation 8 of 10***
+2024-04-17 18:42:33,903 - INFO - --------------------------------------------------------------------------------
+2024-04-17 18:42:33,903 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [256, 256, 256, 256, 128, 256]}
+2024-04-17 18:42:33,903 - INFO - Acc: 42.66%
+2024-04-17 18:42:33,903 - INFO - UniID: 115
+2024-04-17 18:42:33,903 - INFO - Mom and Dad: 88 96
+2024-04-17 18:42:33,903 - INFO - Gen: 5
+2024-04-17 18:42:33,903 - INFO - Hash: fccf521f0036453017eea6917796dc7c
+2024-04-17 18:42:33,903 - INFO - {'activation': 'elu', 'nb_layers': 4, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [256, 256, 256, 256, 128, 256]}
+2024-04-17 18:42:33,903 - INFO - Acc: 42.19%
+2024-04-17 18:42:33,903 - INFO - UniID: 160
+2024-04-17 18:42:33,903 - INFO - Mom and Dad: 115 129
+2024-04-17 18:42:33,903 - INFO - Gen: 7
+2024-04-17 18:42:33,903 - INFO - Hash: bb3880a0300b9b09193bf0710a22122e
+2024-04-17 18:42:33,903 - INFO - {'activation': 'elu', 'nb_layers': 4, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 256, 256, 256, 128, 256]}
+2024-04-17 18:42:33,903 - INFO - Acc: 41.24%
+2024-04-17 18:42:33,903 - INFO - UniID: 148
+2024-04-17 18:42:33,903 - INFO - Mom and Dad: 96 99
+2024-04-17 18:42:33,903 - INFO - Gen: 7
+2024-04-17 18:42:33,903 - INFO - Hash: af2993d067d7069acfb163a869857b7d
+2024-04-17 18:42:33,903 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 256, 256, 256, 128, 256]}
+2024-04-17 18:42:33,903 - INFO - Acc: 40.36%
+2024-04-17 18:42:33,903 - INFO - UniID: 96
+2024-04-17 18:42:33,903 - INFO - Mom and Dad: 59 17
+2024-04-17 18:42:33,903 - INFO - Gen: 4
+2024-04-17 18:42:33,903 - INFO - Hash: 4861fdf5d6b260df42ef46c8227b692e
+2024-04-17 18:42:33,903 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adagrad', 'regulizer': 0.01, 'nb_neurons': [256, 64, 64, 256, 128, 512]}
+2024-04-17 18:42:33,903 - INFO - Acc: 0.00%
+2024-04-17 18:42:33,903 - INFO - UniID: 108
+2024-04-17 18:42:33,903 - INFO - Mom and Dad: 96 88
+2024-04-17 18:42:33,903 - INFO - Gen: 8
+2024-04-17 18:42:33,903 - INFO - Hash: 8645a37717cccdd41c4740c561a7fed5
+2024-04-17 18:42:33,903 - INFO - {'activation': 'tanh', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [256, 256, 256, 256, 64, 256]}
+2024-04-17 18:42:33,903 - INFO - Acc: 0.00%
+2024-04-17 18:42:33,903 - INFO - UniID: 169
+2024-04-17 18:42:33,903 - INFO - Mom and Dad: 115 148
+2024-04-17 18:42:33,903 - INFO - Gen: 8
+2024-04-17 18:42:33,903 - INFO - Hash: 334edb4029402d0031bfd16fd76144ba
+2024-04-17 18:42:33,903 - INFO - {'activation': 'sigmoid', 'nb_layers': 2, 'optimizer': 'adamax', 'regulizer': 0.0001, 'nb_neurons': [64, 256, 256, 256, 128, 256]}
+2024-04-17 18:42:33,903 - INFO - Acc: 0.00%
+2024-04-17 18:42:33,903 - INFO - UniID: 170
+2024-04-17 18:42:33,903 - INFO - Mom and Dad: 115 148
+2024-04-17 18:42:33,903 - INFO - Gen: 8
+2024-04-17 18:42:33,903 - INFO - Hash: 9179263faaf99b8e38f9940f5f1df591
+2024-04-17 18:42:33,903 - INFO - {'activation': 'relu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 256, 256, 256, 128, 256]}
+2024-04-17 18:42:33,903 - INFO - Acc: 0.00%
+2024-04-17 18:42:33,903 - INFO - UniID: 171
+2024-04-17 18:42:33,903 - INFO - Mom and Dad: 96 148
+2024-04-17 18:42:33,903 - INFO - Gen: 8
+2024-04-17 18:42:33,903 - INFO - Hash: d7e0042d670732d2dea969f1f211b182
+2024-04-17 18:42:33,903 - INFO - {'activation': 'elu', 'nb_layers': 4, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [512, 256, 256, 256, 128, 256]}
+2024-04-17 18:42:33,903 - INFO - Acc: 0.00%
+2024-04-17 18:42:33,903 - INFO - UniID: 172
+2024-04-17 18:42:33,903 - INFO - Mom and Dad: 96 148
+2024-04-17 18:42:33,903 - INFO - Gen: 8
+2024-04-17 18:42:33,903 - INFO - Hash: b9f752fb85750a592ae572af55c83f5d
+2024-04-17 18:42:33,903 - INFO - {'activation': 'elu', 'nb_layers': 2, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 256, 256, 256, 512, 256]}
+2024-04-17 18:42:33,903 - INFO - Acc: 0.00%
+2024-04-17 18:42:33,903 - INFO - UniID: 173
+2024-04-17 18:42:33,903 - INFO - Mom and Dad: 148 160
+2024-04-17 18:42:33,903 - INFO - Gen: 8
+2024-04-17 18:42:33,903 - INFO - Hash: 08d076ae0c310c6adf71e09d16d6230e
+2024-04-17 18:42:33,903 - INFO - {'activation': 'elu', 'nb_layers': 4, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [128, 256, 256, 256, 128, 256]}
+2024-04-17 18:42:33,903 - INFO - Acc: 0.00%
+2024-04-17 18:42:33,903 - INFO - UniID: 174
+2024-04-17 18:42:33,904 - INFO - Mom and Dad: 148 160
+2024-04-17 18:42:33,904 - INFO - Gen: 8
+2024-04-17 18:42:33,904 - INFO - Hash: 160a0de6f02107b9dfd0f07aa48dc117
+2024-04-17 18:42:33,904 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [256, 256, 256, 512, 128, 256]}
+2024-04-17 18:42:33,904 - INFO - Acc: 0.00%
+2024-04-17 18:42:33,904 - INFO - UniID: 175
+2024-04-17 18:42:33,904 - INFO - Mom and Dad: 115 96
+2024-04-17 18:42:33,904 - INFO - Gen: 8
+2024-04-17 18:42:33,904 - INFO - Hash: 7f90335dc4cf5a0e855c9ccd0e5b8731
+2024-04-17 18:42:33,904 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.0, 'nb_neurons': [64, 128, 512, 256, 128, 256]}
+2024-04-17 18:42:33,904 - INFO - Acc: 0.00%
+2024-04-17 18:42:33,904 - INFO - UniID: 176
+2024-04-17 18:42:33,904 - INFO - Mom and Dad: 115 96
+2024-04-17 18:42:33,904 - INFO - Gen: 8
+2024-04-17 18:42:33,904 - INFO - Hash: b6f894af6e09ee0b8bcc3f33ac2f7bb7
+2024-04-17 18:42:33,904 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [256, 256, 256, 256, 256, 256]}
+2024-04-17 18:42:33,904 - INFO - Acc: 0.00%
+2024-04-17 18:42:33,904 - INFO - UniID: 177
+2024-04-17 18:42:33,904 - INFO - Mom and Dad: 115 148
+2024-04-17 18:42:33,904 - INFO - Gen: 8
+2024-04-17 18:42:33,904 - INFO - Hash: 64a4926d9a27d17ead724f5d39c8bac5
+2024-04-17 18:42:33,904 - INFO - {'activation': 'elu', 'nb_layers': 4, 'optimizer': 'adagrad', 'regulizer': 0.0, 'nb_neurons': [64, 256, 256, 256, 128, 256]}
+2024-04-17 18:42:33,904 - INFO - Acc: 0.00%
+2024-04-17 18:42:33,904 - INFO - UniID: 178
+2024-04-17 18:42:33,904 - INFO - Mom and Dad: 115 148
+2024-04-17 18:42:33,904 - INFO - Gen: 8
+2024-04-17 18:42:33,904 - INFO - Hash: d71ccf87594aa203ae2a949e0077410f
+2024-04-17 18:42:33,904 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 256, 128, 256, 128, 256]}
+2024-04-17 18:42:33,904 - INFO - Acc: 0.00%
+2024-04-17 18:42:33,904 - INFO - UniID: 179
+2024-04-17 18:42:33,904 - INFO - Mom and Dad: 96 115
+2024-04-17 18:42:33,904 - INFO - Gen: 8
+2024-04-17 18:42:33,904 - INFO - Hash: 3cccd3c997257425e7dd779d027c4ce1
+2024-04-17 18:42:33,904 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [256, 256, 256, 256, 128, 64]}
+2024-04-17 18:42:33,904 - INFO - Acc: 0.00%
+2024-04-17 18:42:33,904 - INFO - UniID: 180
+2024-04-17 18:42:33,904 - INFO - Mom and Dad: 96 115
+2024-04-17 18:42:33,904 - INFO - Gen: 8
+2024-04-17 18:42:33,904 - INFO - Hash: dde9a00f5f7efbb1a04e6c5d80540a0d
+2024-04-17 18:42:33,904 - INFO - {'activation': 'elu', 'nb_layers': 4, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 256, 64, 256, 128, 256]}
+2024-04-17 18:42:33,904 - INFO - Acc: 0.00%
+2024-04-17 18:42:33,904 - INFO - UniID: 181
+2024-04-17 18:42:33,904 - INFO - Mom and Dad: 148 96
+2024-04-17 18:42:33,904 - INFO - Gen: 8
+2024-04-17 18:42:33,904 - INFO - Hash: 545c6bdd6c6d80bc674123b86f94cebd
+2024-04-17 18:42:33,904 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 256, 256, 512, 128, 64]}
+2024-04-17 18:42:33,904 - INFO - Acc: 0.00%
+2024-04-17 18:42:33,904 - INFO - UniID: 182
+2024-04-17 18:42:33,904 - INFO - Mom and Dad: 148 96
+2024-04-17 18:42:33,904 - INFO - Gen: 8
+2024-04-17 18:42:33,904 - INFO - Hash: 6cbcceed84763f42d517970288e3d47f
+2024-04-17 18:42:33,904 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 256, 128, 128, 128, 256]}
+2024-04-17 18:42:33,904 - INFO - Acc: 0.00%
+2024-04-17 18:42:33,904 - INFO - UniID: 183
+2024-04-17 18:42:33,904 - INFO - Mom and Dad: 160 96
+2024-04-17 18:42:33,904 - INFO - Gen: 8
+2024-04-17 18:42:33,904 - INFO - Hash: f7c67049581e9310d8902c34b30493be
+2024-04-17 18:42:33,904 - INFO - {'activation': 'elu', 'nb_layers': 2, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [256, 256, 256, 256, 128, 256]}
+2024-04-17 18:42:33,904 - INFO - Acc: 0.00%
+2024-04-17 18:42:33,904 - INFO - UniID: 184
+2024-04-17 18:42:33,904 - INFO - Mom and Dad: 160 96
+2024-04-17 18:42:33,904 - INFO - Gen: 8
+2024-04-17 18:42:33,904 - INFO - Hash: 8c4651b516796d57b6c45eddaf16fd68
+2024-04-17 18:42:33,904 - INFO - {'activation': 'elu', 'nb_layers': 4, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 512, 256, 256, 128, 256]}
+2024-04-17 18:42:33,904 - INFO - Acc: 0.00%
+2024-04-17 18:42:33,904 - INFO - UniID: 185
+2024-04-17 18:42:33,904 - INFO - Mom and Dad: 148 160
+2024-04-17 18:42:33,904 - INFO - Gen: 8
+2024-04-17 18:42:33,904 - INFO - Hash: 27864258a2feaf7f9a94ee006ed5035e
+2024-04-17 18:42:33,904 - INFO - {'activation': 'sigmoid', 'nb_layers': 4, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [256, 256, 256, 256, 128, 256]}
+2024-04-17 18:42:33,904 - INFO - Acc: 0.00%
+2024-04-17 18:42:33,904 - INFO - UniID: 186
+2024-04-17 18:42:33,904 - INFO - Mom and Dad: 148 160
+2024-04-17 18:42:33,904 - INFO - Gen: 8
+2024-04-17 18:42:33,904 - INFO - Hash: 15ba5edb6bef70d33a100c7eaa4cfd12
+2024-04-17 18:42:33,904 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 256, 256, 256, 256, 256]}
+2024-04-17 18:42:33,904 - INFO - Acc: 0.00%
+2024-04-17 18:42:33,904 - INFO - UniID: 187
+2024-04-17 18:42:33,904 - INFO - Mom and Dad: 96 160
+2024-04-17 18:42:33,904 - INFO - Gen: 8
+2024-04-17 18:42:33,904 - INFO - Hash: 0f2c2f1a08b5c948ded086888be90b03
+2024-04-17 18:42:33,904 - INFO - {'activation': 'elu', 'nb_layers': 1, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [256, 256, 256, 256, 128, 256]}
+2024-04-17 18:42:33,904 - INFO - Acc: 0.00%
+2024-04-17 18:42:33,904 - INFO - UniID: 188
+2024-04-17 18:42:33,904 - INFO - Mom and Dad: 96 160
+2024-04-17 18:42:33,904 - INFO - Gen: 8
+2024-04-17 18:42:33,904 - INFO - Hash: 32430873dc71867486845dae6c7e7c3e
+2024-04-17 18:42:33,904 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.0, 'nb_neurons': [64, 256, 256, 64, 128, 256]}
+2024-04-17 18:42:33,904 - INFO - Acc: 0.00%
+2024-04-17 18:42:33,904 - INFO - UniID: 189
+2024-04-17 18:42:33,904 - INFO - Mom and Dad: 96 115
+2024-04-17 18:42:33,904 - INFO - Gen: 8
+2024-04-17 18:42:33,904 - INFO - Hash: b5089c3c7ad819337666cc8c2ce9ce10
+2024-04-17 18:42:33,904 - INFO - {'activation': 'linear', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [256, 256, 256, 256, 256, 256]}
+2024-04-17 18:42:33,904 - INFO - Acc: 0.00%
+2024-04-17 18:42:33,904 - INFO - UniID: 190
+2024-04-17 18:42:33,904 - INFO - Mom and Dad: 96 115
+2024-04-17 18:42:33,904 - INFO - Gen: 8
+2024-04-17 18:42:33,904 - INFO - Hash: 28ca9c836e348af8ac0c5e4259c3fd26
+2024-04-17 18:42:33,904 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [256, 256, 256, 128, 128, 256]}
+2024-04-17 18:42:33,904 - INFO - Acc: 0.00%
+2024-04-17 18:42:33,904 - INFO - UniID: 191
+2024-04-17 18:42:33,904 - INFO - Mom and Dad: 115 148
+2024-04-17 18:42:33,904 - INFO - Gen: 8
+2024-04-17 18:42:33,904 - INFO - Hash: 39a3af5f0163bf7670302ffd89bfb16f
+2024-04-17 18:42:33,904 - INFO - {'activation': 'elu', 'nb_layers': 4, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 256, 256, 128, 128, 256]}
+2024-04-17 18:42:33,904 - INFO - Acc: 0.00%
+2024-04-17 18:42:33,904 - INFO - UniID: 192
+2024-04-17 18:42:33,904 - INFO - Mom and Dad: 115 148
+2024-04-17 18:42:33,904 - INFO - Gen: 8
+2024-04-17 18:42:33,904 - INFO - Hash: 6223afed04c3ff26ee6fb8b6d9e77292
+2024-04-17 18:42:33,904 - INFO - {'activation': 'elu', 'nb_layers': 4, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 256, 256, 256, 128, 64]}
+2024-04-17 18:42:33,904 - INFO - Acc: 0.00%
+2024-04-17 18:42:33,904 - INFO - UniID: 193
+2024-04-17 18:42:33,904 - INFO - Mom and Dad: 148 160
+2024-04-17 18:42:33,904 - INFO - Gen: 8
+2024-04-17 18:42:33,904 - INFO - Hash: b922db47d51388089795658c7fb051f6
+2024-04-17 18:42:33,904 - INFO - {'activation': 'elu', 'nb_layers': 4, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [256, 256, 64, 256, 128, 256]}
+2024-04-17 18:42:33,904 - INFO - Acc: 0.00%
+2024-04-17 18:42:33,904 - INFO - UniID: 194
+2024-04-17 18:42:33,904 - INFO - Mom and Dad: 148 160
+2024-04-17 18:42:33,904 - INFO - Gen: 8
+2024-04-17 18:42:33,904 - INFO - Hash: 3606868b31988e952162ad57da6ff271
+2024-04-17 18:42:33,904 - INFO - ***train_networks(networks, dataset)***
+2024-04-17 18:42:33,904 - INFO - Getting Keras datasets
+2024-04-17 18:42:34,199 - INFO - Compling Keras model
+2024-04-17 18:42:34,199 - INFO - Architecture:[256, 64, 64, 256, 128, 512],elu,adagrad,5
+2024-04-17 18:43:11,462 - INFO - Getting Keras datasets
+2024-04-17 18:43:11,752 - INFO - Compling Keras model
+2024-04-17 18:43:11,752 - INFO - Architecture:[256, 256, 256, 256, 64, 256],tanh,adamax,5
+2024-04-17 18:44:02,012 - INFO - Getting Keras datasets
+2024-04-17 18:44:02,304 - INFO - Compling Keras model
+2024-04-17 18:44:02,304 - INFO - Architecture:[64, 256, 256, 256, 128, 256],sigmoid,adamax,2
+2024-04-17 18:44:08,991 - INFO - Getting Keras datasets
+2024-04-17 18:44:09,281 - INFO - Compling Keras model
+2024-04-17 18:44:09,281 - INFO - Architecture:[64, 256, 256, 256, 128, 256],relu,adamax,5
+2024-04-17 18:44:32,899 - INFO - Getting Keras datasets
+2024-04-17 18:44:33,190 - INFO - Compling Keras model
+2024-04-17 18:44:33,190 - INFO - Architecture:[512, 256, 256, 256, 128, 256],elu,adamax,4
+2024-04-17 18:46:01,268 - INFO - Getting Keras datasets
+2024-04-17 18:46:01,561 - INFO - Compling Keras model
+2024-04-17 18:46:01,561 - INFO - Architecture:[64, 256, 256, 256, 512, 256],elu,adamax,2
+2024-04-17 18:46:08,326 - INFO - Getting Keras datasets
+2024-04-17 18:46:08,621 - INFO - Compling Keras model
+2024-04-17 18:46:08,621 - INFO - Architecture:[128, 256, 256, 256, 128, 256],elu,adamax,4
+2024-04-17 18:46:41,341 - INFO - Getting Keras datasets
+2024-04-17 18:46:41,632 - INFO - Compling Keras model
+2024-04-17 18:46:41,633 - INFO - Architecture:[256, 256, 256, 512, 128, 256],elu,adamax,5
+2024-04-17 18:47:33,242 - INFO - Getting Keras datasets
+2024-04-17 18:47:33,533 - INFO - Compling Keras model
+2024-04-17 18:47:33,533 - INFO - Architecture:[64, 128, 512, 256, 128, 256],elu,adamax,5
+2024-04-17 18:47:41,496 - INFO - Getting Keras datasets
+2024-04-17 18:47:41,787 - INFO - Compling Keras model
+2024-04-17 18:47:41,787 - INFO - Architecture:[256, 256, 256, 256, 256, 256],elu,adamax,5
+2024-04-17 18:48:32,443 - INFO - Getting Keras datasets
+2024-04-17 18:48:32,733 - INFO - Compling Keras model
+2024-04-17 18:48:32,733 - INFO - Architecture:[64, 256, 256, 256, 128, 256],elu,adagrad,4
+2024-04-17 18:48:40,868 - INFO - Getting Keras datasets
+2024-04-17 18:48:41,158 - INFO - Compling Keras model
+2024-04-17 18:48:41,159 - INFO - Architecture:[64, 256, 128, 256, 128, 256],elu,adamax,5
+2024-04-17 18:49:03,079 - INFO - Getting Keras datasets
+2024-04-17 18:49:03,370 - INFO - Compling Keras model
+2024-04-17 18:49:03,370 - INFO - Architecture:[256, 256, 256, 256, 128, 64],elu,adamax,5
+2024-04-17 18:49:54,105 - INFO - Getting Keras datasets
+2024-04-17 18:49:54,400 - INFO - Compling Keras model
+2024-04-17 18:49:54,400 - INFO - Architecture:[64, 256, 64, 256, 128, 256],elu,adamax,4
+2024-04-17 18:50:15,103 - INFO - Getting Keras datasets
+2024-04-17 18:50:15,393 - INFO - Compling Keras model
+2024-04-17 18:50:15,393 - INFO - Architecture:[64, 256, 256, 512, 128, 64],elu,adamax,5
+2024-04-17 18:50:42,313 - INFO - Getting Keras datasets
+2024-04-17 18:50:42,604 - INFO - Compling Keras model
+2024-04-17 18:50:42,604 - INFO - Architecture:[64, 256, 128, 128, 128, 256],elu,adamax,5
+2024-04-17 18:51:04,671 - INFO - Getting Keras datasets
+2024-04-17 18:51:04,962 - INFO - Compling Keras model
+2024-04-17 18:51:04,962 - INFO - Architecture:[256, 256, 256, 256, 128, 256],elu,adamax,2
+2024-04-17 18:51:24,309 - INFO - Getting Keras datasets
+2024-04-17 18:51:24,598 - INFO - Compling Keras model
+2024-04-17 18:51:24,598 - INFO - Architecture:[64, 512, 256, 256, 128, 256],elu,adamax,4
+2024-04-17 18:51:59,290 - INFO - Getting Keras datasets
+2024-04-17 18:51:59,579 - INFO - Compling Keras model
+2024-04-17 18:51:59,579 - INFO - Architecture:[256, 256, 256, 256, 128, 256],sigmoid,adamax,4
+2024-04-17 18:52:20,848 - INFO - Getting Keras datasets
+2024-04-17 18:52:21,141 - INFO - Compling Keras model
+2024-04-17 18:52:21,141 - INFO - Architecture:[64, 256, 256, 256, 256, 256],elu,adamax,5
+2024-04-17 18:52:45,085 - INFO - Getting Keras datasets
+2024-04-17 18:52:45,376 - INFO - Compling Keras model
+2024-04-17 18:52:45,376 - INFO - Architecture:[256, 256, 256, 256, 128, 256],elu,adamax,1
+2024-04-17 18:52:55,742 - INFO - Getting Keras datasets
+2024-04-17 18:52:56,033 - INFO - Compling Keras model
+2024-04-17 18:52:56,033 - INFO - Architecture:[64, 256, 256, 64, 128, 256],elu,adamax,5
+2024-04-17 18:53:04,686 - INFO - Getting Keras datasets
+2024-04-17 18:53:04,979 - INFO - Compling Keras model
+2024-04-17 18:53:04,979 - INFO - Architecture:[256, 256, 256, 256, 256, 256],linear,adamax,5
+2024-04-17 18:53:51,277 - INFO - Getting Keras datasets
+2024-04-17 18:53:51,570 - INFO - Compling Keras model
+2024-04-17 18:53:51,570 - INFO - Architecture:[256, 256, 256, 128, 128, 256],elu,adamax,5
+2024-04-17 18:54:41,920 - INFO - Getting Keras datasets
+2024-04-17 18:54:42,231 - INFO - Compling Keras model
+2024-04-17 18:54:42,231 - INFO - Architecture:[64, 256, 256, 128, 128, 256],elu,adamax,4
+2024-04-17 18:55:05,263 - INFO - Getting Keras datasets
+2024-04-17 18:55:05,575 - INFO - Compling Keras model
+2024-04-17 18:55:05,575 - INFO - Architecture:[64, 256, 256, 256, 128, 64],elu,adamax,4
+2024-04-17 18:55:28,999 - INFO - Getting Keras datasets
+2024-04-17 18:55:29,302 - INFO - Compling Keras model
+2024-04-17 18:55:29,302 - INFO - Architecture:[256, 256, 64, 256, 128, 256],elu,adamax,4
+2024-04-17 18:56:16,995 - INFO - Generation average: 28.37%
+2024-04-17 18:56:16,996 - INFO - --------------------------------------------------------------------------------
+2024-04-17 18:56:17,023 - INFO - ***Now in generation 9 of 10***
+2024-04-17 18:56:17,024 - INFO - --------------------------------------------------------------------------------
+2024-04-17 18:56:17,024 - INFO - {'activation': 'elu', 'nb_layers': 4, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 512, 256, 256, 128, 256]}
+2024-04-17 18:56:17,024 - INFO - Acc: 43.49%
+2024-04-17 18:56:17,024 - INFO - UniID: 185
+2024-04-17 18:56:17,024 - INFO - Mom and Dad: 148 160
+2024-04-17 18:56:17,024 - INFO - Gen: 8
+2024-04-17 18:56:17,024 - INFO - Hash: 27864258a2feaf7f9a94ee006ed5035e
+2024-04-17 18:56:17,024 - INFO - {'activation': 'relu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 256, 256, 256, 128, 256]}
+2024-04-17 18:56:17,024 - INFO - Acc: 43.37%
+2024-04-17 18:56:17,024 - INFO - UniID: 171
+2024-04-17 18:56:17,025 - INFO - Mom and Dad: 96 148
+2024-04-17 18:56:17,025 - INFO - Gen: 8
+2024-04-17 18:56:17,025 - INFO - Hash: d7e0042d670732d2dea969f1f211b182
+2024-04-17 18:56:17,025 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [256, 256, 256, 256, 128, 256]}
+2024-04-17 18:56:17,025 - INFO - Acc: 42.66%
+2024-04-17 18:56:17,025 - INFO - UniID: 115
+2024-04-17 18:56:17,025 - INFO - Mom and Dad: 88 96
+2024-04-17 18:56:17,025 - INFO - Gen: 5
+2024-04-17 18:56:17,025 - INFO - Hash: fccf521f0036453017eea6917796dc7c
+2024-04-17 18:56:17,025 - INFO - {'activation': 'elu', 'nb_layers': 4, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [256, 256, 256, 256, 128, 256]}
+2024-04-17 18:56:17,025 - INFO - Acc: 42.19%
+2024-04-17 18:56:17,025 - INFO - UniID: 160
+2024-04-17 18:56:17,025 - INFO - Mom and Dad: 115 129
+2024-04-17 18:56:17,025 - INFO - Gen: 7
+2024-04-17 18:56:17,025 - INFO - Hash: bb3880a0300b9b09193bf0710a22122e
+2024-04-17 18:56:17,025 - INFO - {'activation': 'elu', 'nb_layers': 1, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [256, 256, 64, 256, 128, 256]}
+2024-04-17 18:56:17,025 - INFO - Acc: 0.00%
+2024-04-17 18:56:17,025 - INFO - UniID: 194
+2024-04-17 18:56:17,025 - INFO - Mom and Dad: 148 160
+2024-04-17 18:56:17,025 - INFO - Gen: 9
+2024-04-17 18:56:17,025 - INFO - Hash: b6558d8ab0ef39ed900270bc57262dbc
+2024-04-17 18:56:17,025 - INFO - {'activation': 'elu', 'nb_layers': 4, 'optimizer': 'adagrad', 'regulizer': 0.0, 'nb_neurons': [64, 64, 256, 256, 128, 256]}
+2024-04-17 18:56:17,025 - INFO - Acc: 0.00%
+2024-04-17 18:56:17,025 - INFO - UniID: 178
+2024-04-17 18:56:17,025 - INFO - Mom and Dad: 115 148
+2024-04-17 18:56:17,025 - INFO - Gen: 9
+2024-04-17 18:56:17,025 - INFO - Hash: ad9562d6e3544f47537bb0e2b5680ba0
+2024-04-17 18:56:17,025 - INFO - {'activation': 'sigmoid', 'nb_layers': 4, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [512, 256, 256, 256, 128, 256]}
+2024-04-17 18:56:17,025 - INFO - Acc: 0.00%
+2024-04-17 18:56:17,025 - INFO - UniID: 186
+2024-04-17 18:56:17,025 - INFO - Mom and Dad: 148 160
+2024-04-17 18:56:17,025 - INFO - Gen: 9
+2024-04-17 18:56:17,025 - INFO - Hash: 55697d745b9ea6506436b8b7b5238143
+2024-04-17 18:56:17,025 - INFO - {'activation': 'relu', 'nb_layers': 3, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 256, 256, 256, 128, 256]}
+2024-04-17 18:56:17,025 - INFO - Acc: 0.00%
+2024-04-17 18:56:17,025 - INFO - UniID: 195
+2024-04-17 18:56:17,025 - INFO - Mom and Dad: 171 160
+2024-04-17 18:56:17,025 - INFO - Gen: 9
+2024-04-17 18:56:17,025 - INFO - Hash: 42c4771551791645abfbd21f961d8ba9
+2024-04-17 18:56:17,025 - INFO - {'activation': 'tanh', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.0001, 'nb_neurons': [256, 256, 256, 256, 128, 256]}
+2024-04-17 18:56:17,025 - INFO - Acc: 0.00%
+2024-04-17 18:56:17,025 - INFO - UniID: 196
+2024-04-17 18:56:17,025 - INFO - Mom and Dad: 171 160
+2024-04-17 18:56:17,025 - INFO - Gen: 9
+2024-04-17 18:56:17,025 - INFO - Hash: 7a4b0c503042c0cbf82ac3ff4ae5d394
+2024-04-17 18:56:17,025 - INFO - {'activation': 'relu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 256, 256, 256, 64, 256]}
+2024-04-17 18:56:17,025 - INFO - Acc: 0.00%
+2024-04-17 18:56:17,025 - INFO - UniID: 197
+2024-04-17 18:56:17,025 - INFO - Mom and Dad: 171 185
+2024-04-17 18:56:17,025 - INFO - Gen: 9
+2024-04-17 18:56:17,025 - INFO - Hash: 3a0c22445f8a906a97dbad64ece27401
+2024-04-17 18:56:17,025 - INFO - {'activation': 'elu', 'nb_layers': 4, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 512, 64, 256, 128, 256]}
+2024-04-17 18:56:17,025 - INFO - Acc: 0.00%
+2024-04-17 18:56:17,025 - INFO - UniID: 198
+2024-04-17 18:56:17,025 - INFO - Mom and Dad: 171 185
+2024-04-17 18:56:17,025 - INFO - Gen: 9
+2024-04-17 18:56:17,025 - INFO - Hash: 0869ac997797a64d1b21cf350b9dd232
+2024-04-17 18:56:17,025 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.0001, 'nb_neurons': [512, 256, 256, 256, 512, 256]}
+2024-04-17 18:56:17,025 - INFO - Acc: 0.00%
+2024-04-17 18:56:17,025 - INFO - UniID: 199
+2024-04-17 18:56:17,025 - INFO - Mom and Dad: 115 160
+2024-04-17 18:56:17,025 - INFO - Gen: 9
+2024-04-17 18:56:17,025 - INFO - Hash: 4337811ab1956b0af667953b7698f926
+2024-04-17 18:56:17,025 - INFO - {'activation': 'elu', 'nb_layers': 4, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [256, 256, 512, 256, 128, 256]}
+2024-04-17 18:56:17,025 - INFO - Acc: 0.00%
+2024-04-17 18:56:17,025 - INFO - UniID: 200
+2024-04-17 18:56:17,025 - INFO - Mom and Dad: 115 160
+2024-04-17 18:56:17,025 - INFO - Gen: 9
+2024-04-17 18:56:17,025 - INFO - Hash: 2b236989874df01d09e89511c7edbba2
+2024-04-17 18:56:17,025 - INFO - {'activation': 'linear', 'nb_layers': 4, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [256, 256, 64, 256, 128, 256]}
+2024-04-17 18:56:17,025 - INFO - Acc: 0.00%
+2024-04-17 18:56:17,025 - INFO - UniID: 201
+2024-04-17 18:56:17,025 - INFO - Mom and Dad: 160 194
+2024-04-17 18:56:17,025 - INFO - Gen: 9
+2024-04-17 18:56:17,025 - INFO - Hash: 78a8ef49f39510eb52ca9feb863a6b15
+2024-04-17 18:56:17,025 - INFO - {'activation': 'elu', 'nb_layers': 1, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [512, 256, 256, 256, 128, 256]}
+2024-04-17 18:56:17,025 - INFO - Acc: 0.00%
+2024-04-17 18:56:17,025 - INFO - UniID: 202
+2024-04-17 18:56:17,025 - INFO - Mom and Dad: 160 194
+2024-04-17 18:56:17,025 - INFO - Gen: 9
+2024-04-17 18:56:17,025 - INFO - Hash: f03deb532524632adcaf9d96ac0df88e
+2024-04-17 18:56:17,025 - INFO - {'activation': 'elu', 'nb_layers': 4, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [256, 512, 256, 256, 128, 256]}
+2024-04-17 18:56:17,025 - INFO - Acc: 0.00%
+2024-04-17 18:56:17,025 - INFO - UniID: 203
+2024-04-17 18:56:17,025 - INFO - Mom and Dad: 160 185
+2024-04-17 18:56:17,025 - INFO - Gen: 9
+2024-04-17 18:56:17,025 - INFO - Hash: fe4cb04521863f3775dda573df5ca837
+2024-04-17 18:56:17,025 - INFO - {'activation': 'elu', 'nb_layers': 1, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 256, 256, 256, 128, 256]}
+2024-04-17 18:56:17,025 - INFO - Acc: 0.00%
+2024-04-17 18:56:17,025 - INFO - UniID: 204
+2024-04-17 18:56:17,025 - INFO - Mom and Dad: 160 185
+2024-04-17 18:56:17,025 - INFO - Gen: 9
+2024-04-17 18:56:17,025 - INFO - Hash: c111fbe2a37210986e596b7d13284559
+2024-04-17 18:56:17,025 - INFO - {'activation': 'elu', 'nb_layers': 4, 'optimizer': 'adam', 'regulizer': 0.01, 'nb_neurons': [64, 512, 256, 256, 128, 256]}
+2024-04-17 18:56:17,025 - INFO - Acc: 0.00%
+2024-04-17 18:56:17,025 - INFO - UniID: 205
+2024-04-17 18:56:17,025 - INFO - Mom and Dad: 185 115
+2024-04-17 18:56:17,025 - INFO - Gen: 9
+2024-04-17 18:56:17,025 - INFO - Hash: 3dd9b5fdfda5d135128426d43da58585
+2024-04-17 18:56:17,025 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'nadam', 'regulizer': 0.01, 'nb_neurons': [128, 256, 256, 256, 128, 256]}
+2024-04-17 18:56:17,025 - INFO - Acc: 0.00%
+2024-04-17 18:56:17,025 - INFO - UniID: 206
+2024-04-17 18:56:17,025 - INFO - Mom and Dad: 185 115
+2024-04-17 18:56:17,025 - INFO - Gen: 9
+2024-04-17 18:56:17,025 - INFO - Hash: 035237d85a7c63b0ae120bb215069928
+2024-04-17 18:56:17,025 - INFO - {'activation': 'elu', 'nb_layers': 4, 'optimizer': 'adagrad', 'regulizer': 0.0, 'nb_neurons': [256, 256, 256, 256, 128, 256]}
+2024-04-17 18:56:17,025 - INFO - Acc: 0.00%
+2024-04-17 18:56:17,025 - INFO - UniID: 207
+2024-04-17 18:56:17,025 - INFO - Mom and Dad: 160 178
+2024-04-17 18:56:17,025 - INFO - Gen: 9
+2024-04-17 18:56:17,025 - INFO - Hash: 55628a01da66654a1d14564b3017cdea
+2024-04-17 18:56:17,025 - INFO - {'activation': 'elu', 'nb_layers': 4, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 64, 256, 256, 128, 256]}
+2024-04-17 18:56:17,025 - INFO - Acc: 0.00%
+2024-04-17 18:56:17,025 - INFO - UniID: 208
+2024-04-17 18:56:17,025 - INFO - Mom and Dad: 160 178
+2024-04-17 18:56:17,025 - INFO - Gen: 9
+2024-04-17 18:56:17,025 - INFO - Hash: fc5aaa5286d4b888323833d1f1ad7057
+2024-04-17 18:56:17,025 - INFO - {'activation': 'hard_sigmoid', 'nb_layers': 4, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [256, 256, 256, 256, 128, 256]}
+2024-04-17 18:56:17,025 - INFO - Acc: 0.00%
+2024-04-17 18:56:17,025 - INFO - UniID: 209
+2024-04-17 18:56:17,025 - INFO - Mom and Dad: 160 185
+2024-04-17 18:56:17,025 - INFO - Gen: 9
+2024-04-17 18:56:17,025 - INFO - Hash: 988847f91279851b9d30ad48a5e3e527
+2024-04-17 18:56:17,025 - INFO - {'activation': 'elu', 'nb_layers': 4, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [512, 512, 256, 256, 128, 256]}
+2024-04-17 18:56:17,025 - INFO - Acc: 0.00%
+2024-04-17 18:56:17,025 - INFO - UniID: 210
+2024-04-17 18:56:17,025 - INFO - Mom and Dad: 160 185
+2024-04-17 18:56:17,025 - INFO - Gen: 9
+2024-04-17 18:56:17,025 - INFO - Hash: 1f0738499f50dfebfec9986f85036bee
+2024-04-17 18:56:17,025 - INFO - {'activation': 'elu', 'nb_layers': 4, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [64, 64, 512, 256, 128, 256]}
+2024-04-17 18:56:17,025 - INFO - Acc: 0.00%
+2024-04-17 18:56:17,025 - INFO - UniID: 211
+2024-04-17 18:56:17,025 - INFO - Mom and Dad: 185 194
+2024-04-17 18:56:17,025 - INFO - Gen: 9
+2024-04-17 18:56:17,025 - INFO - Hash: d897341c6207dbd263e39e83ebbafdab
+2024-04-17 18:56:17,025 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [256, 256, 64, 256, 128, 256]}
+2024-04-17 18:56:17,025 - INFO - Acc: 0.00%
+2024-04-17 18:56:17,025 - INFO - UniID: 212
+2024-04-17 18:56:17,025 - INFO - Mom and Dad: 185 194
+2024-04-17 18:56:17,025 - INFO - Gen: 9
+2024-04-17 18:56:17,025 - INFO - Hash: 2242a7bbc94dad4446f4105ead2dae64
+2024-04-17 18:56:17,025 - INFO - {'activation': 'elu', 'nb_layers': 1, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [256, 256, 64, 256, 512, 256]}
+2024-04-17 18:56:17,025 - INFO - Acc: 0.00%
+2024-04-17 18:56:17,025 - INFO - UniID: 213
+2024-04-17 18:56:17,025 - INFO - Mom and Dad: 194 160
+2024-04-17 18:56:17,026 - INFO - Gen: 9
+2024-04-17 18:56:17,026 - INFO - Hash: 02b1e2641ab9b3b9b5ea2bb3b4f1422e
+2024-04-17 18:56:17,026 - INFO - {'activation': 'elu', 'nb_layers': 4, 'optimizer': 'adamax', 'regulizer': 0.0, 'nb_neurons': [256, 256, 256, 256, 128, 128]}
+2024-04-17 18:56:17,026 - INFO - Acc: 0.00%
+2024-04-17 18:56:17,026 - INFO - UniID: 214
+2024-04-17 18:56:17,026 - INFO - Mom and Dad: 194 160
+2024-04-17 18:56:17,026 - INFO - Gen: 9
+2024-04-17 18:56:17,026 - INFO - Hash: 492ce804915fd7d746ed3606bc47dea8
+2024-04-17 18:56:17,026 - INFO - {'activation': 'elu', 'nb_layers': 4, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [256, 256, 256, 256, 128, 512]}
+2024-04-17 18:56:17,026 - INFO - Acc: 0.00%
+2024-04-17 18:56:17,026 - INFO - UniID: 215
+2024-04-17 18:56:17,026 - INFO - Mom and Dad: 160 115
+2024-04-17 18:56:17,026 - INFO - Gen: 9
+2024-04-17 18:56:17,026 - INFO - Hash: 388258b3ae86ef2265cb78236a42f6a0
+2024-04-17 18:56:17,026 - INFO - {'activation': 'elu', 'nb_layers': 5, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [256, 512, 256, 256, 128, 256]}
+2024-04-17 18:56:17,026 - INFO - Acc: 0.00%
+2024-04-17 18:56:17,026 - INFO - UniID: 216
+2024-04-17 18:56:17,026 - INFO - Mom and Dad: 160 115
+2024-04-17 18:56:17,026 - INFO - Gen: 9
+2024-04-17 18:56:17,026 - INFO - Hash: 703a3a8bbc8458c3b255ad7d849ac132
+2024-04-17 18:56:17,026 - INFO - {'activation': 'elu', 'nb_layers': 4, 'optimizer': 'adamax', 'regulizer': 0.01, 'nb_neurons': [256, 64, 256, 256, 128, 256]}
+2024-04-17 18:56:17,026 - INFO - Acc: 0.00%
+2024-04-17 18:56:17,026 - INFO - UniID: 217
+2024-04-17 18:56:17,026 - INFO - Mom and Dad: 178 160
+2024-04-17 18:56:17,026 - INFO - Gen: 9
+2024-04-17 18:56:17,026 - INFO - Hash: 6b005f0ebb2b7cd81e806d6d8dfd0f74
+2024-04-17 18:56:17,026 - INFO - {'activation': 'elu', 'nb_layers': 4, 'optimizer': 'adagrad', 'regulizer': 0.0, 'nb_neurons': [256, 64, 256, 256, 128, 256]}
+2024-04-17 18:56:17,026 - INFO - Acc: 0.00%
+2024-04-17 18:56:17,026 - INFO - UniID: 218
+2024-04-17 18:56:17,026 - INFO - Mom and Dad: 178 160
+2024-04-17 18:56:17,026 - INFO - Gen: 9
+2024-04-17 18:56:17,026 - INFO - Hash: a75caf5a4049ce59c4f6a5a843094f8d
+2024-04-17 18:56:17,026 - INFO - ***train_networks(networks, dataset)***
+2024-04-17 18:56:17,045 - INFO - Getting Keras datasets
+2024-04-17 18:56:17,339 - INFO - Compling Keras model
+2024-04-17 18:56:17,339 - INFO - Architecture:[256, 256, 64, 256, 128, 256],elu,adamax,1
+2024-04-17 18:56:27,840 - INFO - Getting Keras datasets
+2024-04-17 18:56:28,138 - INFO - Compling Keras model
+2024-04-17 18:56:28,138 - INFO - Architecture:[64, 64, 256, 256, 128, 256],elu,adagrad,4
+2024-04-17 18:56:34,033 - INFO - Getting Keras datasets
+2024-04-17 18:56:34,327 - INFO - Compling Keras model
+2024-04-17 18:56:34,327 - INFO - Architecture:[512, 256, 256, 256, 128, 256],sigmoid,adamax,4

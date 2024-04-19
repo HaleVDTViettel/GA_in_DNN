@@ -1,113 +1,205 @@
 """Entry point to evolving the neural network. Start here."""
-import logging
-from optimizer import Optimizer
+from __future__ import print_function
+from evolver import Evolver
 from tqdm import tqdm
+import logging
+import sys
 
 # Setup logging.
 logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s',
-    datefmt='%m/%d/%Y %I:%M:%S %p',
-    level=logging.DEBUG,
+    # datefmt='%m/%d/%Y %I:%M:%S %p',
+    level=logging.INFO,
     filename='log.txt'
 )
 
-def train_networks(networks, dataset):
-    """Train each network.
+def train_genomes(genomes, dataset):
+    """Train each genome.
 
     Args:
-        networks (list): Current population of networks
+        networks (list): Current population of genomes
         dataset (str): Dataset to use for training/evaluating
+
     """
-    pbar = tqdm(total=len(networks))
-    for network in networks:
-        network.train(dataset)
+    logging.info("***train_networks(networks, dataset)***")
+
+    pbar = tqdm(total=len(genomes))
+
+    for genome in genomes:
+        genome.train(dataset)
         pbar.update(1)
+    
     pbar.close()
 
-def get_average_accuracy(networks):
-    """Get the average accuracy for a group of networks.
+def get_average_accuracy(genomes):
+    """Get the average accuracy for a group of networks/genomes.
 
     Args:
-        networks (list): List of networks
+        networks (list): List of networks/genomes
 
     Returns:
-        float: The average accuracy of a population of networks.
+        float: The average accuracy of a population of networks/genomes.
 
     """
     total_accuracy = 0
-    for network in networks:
-        total_accuracy += network.accuracy
 
-    return total_accuracy / len(networks)
+    for genome in genomes:
+        total_accuracy += genome.accuracy
 
-def generate(generations, population, nn_param_choices, dataset):
+    return total_accuracy / len(genomes)
+
+def generate(generations, population, all_possible_genes, dataset):
     """Generate a network with the genetic algorithm.
 
     Args:
-        generations (int): Number of times to evole the population
+        generations (int): Number of times to evolve the population
         population (int): Number of networks in each generation
-        nn_param_choices (dict): Parameter choices for networks
+        all_possible_genes (dict): Parameter choices for networks
         dataset (str): Dataset to use for training/evaluating
 
     """
-    optimizer = Optimizer(nn_param_choices)
-    networks = optimizer.create_population(population)
+    logging.info("***generate(generations, population, all_possible_genes, dataset)***")
+    
+    evolver = Evolver(all_possible_genes)
+    
+    genomes = evolver.create_population(population)
 
     # Evolve the generation.
-    for i in range(generations):
-        logging.info("***Doing generation %d of %d***" %
-                     (i + 1, generations))
+    for i in range( generations ):
 
-        # Train and get accuracy for networks.
-        train_networks(networks, dataset)
+        logging.info("***Now in generation %d of %d***" % (i + 1, generations))
+
+        print_genomes(genomes)
+        
+        # Train and get accuracy for networks/genomes.
+        train_genomes(genomes, dataset)
 
         # Get the average accuracy for this generation.
-        average_accuracy = get_average_accuracy(networks)
+        average_accuracy = get_average_accuracy(genomes)
 
         # Print out the average accuracy each generation.
         logging.info("Generation average: %.2f%%" % (average_accuracy * 100))
-        logging.info('-'*80)
+        logging.info('-'*80) #-----------
 
         # Evolve, except on the last iteration.
         if i != generations - 1:
-            # Do the evolution.
-            networks = optimizer.evolve(networks)
+            # Evolve!
+            genomes = evolver.evolve(genomes)
 
-    # Sort our final population.
-    networks = sorted(networks, key=lambda x: x.accuracy, reverse=True)
+    # Sort our final population according to performance.
+    genomes = sorted(genomes, key=lambda x: x.accuracy, reverse=True)
 
-    # Print out the top 5 networks.
-    print_networks(networks[:5])
+    # Print out the top 5 networks/genomes.
+    print_genomes(genomes[:5])
 
-def print_networks(networks):
-    """Print a list of networks.
+    #save_path = saver.save(sess, '/output/model.ckpt')
+    #print("Model saved in file: %s" % save_path)
+
+def print_genomes(genomes):
+    """Print a list of genomes.
 
     Args:
-        networks (list): The population of networks
+        genomes (list): The population of networks/genomes
 
     """
     logging.info('-'*80)
-    for network in networks:
-        network.print_network()
 
-def main():
-    """Evolve a network."""
-    generations = 10  # Number of times to evole the population.
-    population = 32  # Number of networks in each generation.
-    dataset = 'cifar10'
+    for genome in genomes:
+        genome.print_genome()
 
-    nn_param_choices = {
-        'nb_neurons': [64, 128, 256, 512, 1024],
-        'nb_layers': [1, 2, 3, 4, 5, 6],
-        'activation': ['relu', 'elu', 'tanh', 'sigmoid'],
-        'optimizer': ['rmsprop', 'adam', 'sgd', 'adagrad',
-                      'adadelta', 'adamax', 'nadam'],
-    }
+def main(population = 30,   # Number of networks/genomes in each generation.
+         ds = 2,
+         generations = 20): # Number of times to evolve the population.
+    """Evolve a genome."""
+    # we only need to train the new ones....
 
-    logging.info("***Evolving %d generations with population %d***" %
-                 (generations, population))
+    if(   ds == 1):
+        dataset = 'mnist_mlp'
+    elif (ds == 2):
+        dataset = 'mnist_cnn'
+    elif (ds == 3):
+        dataset = 'cifar10_mlp'
+    elif (ds == 4):
+        dataset = 'cifar10_cnn'
+    elif (ds == 5):
+        dataset = 'cifar100_mlp'
+    elif (ds == 6):
+        dataset = 'cifar100_cnn'
+    else:
+        dataset = 'mnist_mlp'
 
-    generate(generations, population, nn_param_choices, dataset)
+    print("***Dataset:", dataset)
+
+    if dataset == 'mnist_cnn':
+        all_possible_genes = {
+            'nb_neurons': [16, 32, 64, 128],
+            'nb_layers':  [1, 2, 3, 4 ,5],
+            'regulizer':  [0.0, 0.01, 0.001, 0.0001],
+            'activation': ['relu', 'elu', 'tanh', 'sigmoid', 'hard_sigmoid','softplus','linear'],
+            'optimizer':  ['rmsprop', 'adam', 'sgd', 'adagrad','adadelta', 'adamax', 'nadam']
+        }
+    elif dataset == 'mnist_mlp':
+        all_possible_genes = {
+            'nb_neurons': [64, 128], #, 256, 512, 768, 1024],
+            'nb_layers':  [1, 2, 3, 4, 5],
+            'regulizer':  [0.0, 0.01, 0.001, 0.0001],
+            'activation': ['relu', 'elu', 'tanh', 'sigmoid', 'hard_sigmoid','softplus','linear'],
+            'optimizer':  ['rmsprop', 'adam', 'sgd', 'adagrad','adadelta', 'adamax', 'nadam']
+        }
+    elif dataset == 'cifar10_mlp':
+        all_possible_genes = {
+            'nb_neurons': [64, 128, 256, 512, 768, 1024],
+            'nb_layers':  [1, 2, 3, 4, 5],
+            'regulizer':  [0.0, 0.01, 0.001, 0.0001],
+            'activation': ['relu', 'elu', 'tanh', 'sigmoid', 'hard_sigmoid','softplus','linear'],
+            'optimizer':  ['rmsprop', 'adam', 'sgd', 'adagrad','adadelta', 'adamax', 'nadam']
+        }
+    elif dataset == 'cifar10_cnn':
+        all_possible_genes = {
+            'nb_neurons': [16, 32, 64, 128],
+            'nb_layers':  [1, 2, 3, 4, 5],
+            'regulizer':  [0.0, 0.01, 0.001, 0.0001],
+            'activation': ['relu', 'elu', 'tanh', 'sigmoid', 'hard_sigmoid','softplus','linear'],
+            'optimizer':  ['rmsprop', 'adam', 'sgd', 'adagrad','adadelta', 'adamax', 'nadam']
+        }
+    elif dataset == 'cifar100_mlp':
+        all_possible_genes = {
+            'nb_neurons': [16, 32, 64, 128],
+            'nb_layers':  [1, 2, 3, 4, 5],
+            'regulizer':  [0.0, 0.01, 0.001, 0.0001],
+            'activation': ['relu', 'elu', 'tanh', 'sigmoid', 'hard_sigmoid','softplus','linear'],
+            'optimizer':  ['rmsprop', 'adam', 'sgd', 'adagrad','adadelta', 'adamax', 'nadam']
+        }
+    elif dataset == 'cifar100_cnn':
+        all_possible_genes = {
+            'nb_neurons': [64, 128, 256, 512],
+            'nb_layers':  [1, 2, 3, 4, 5],
+            'regulizer':  [0.0, 0.01, 0.001, 0.0001],
+            'activation': ['relu', 'elu', 'tanh', 'sigmoid', 'hard_sigmoid','softplus','linear'],
+            'optimizer':  ['rmsprop', 'adam', 'sgd', 'adagrad','adadelta', 'adamax', 'nadam']
+        }
+    else:
+        all_possible_genes = {
+            'nb_neurons': [64, 128, 256, 512, 768, 1024],
+            'nb_layers':  [1, 2, 3, 4, 5],
+            'regulizer':  [0.0, 0.01, 0.001, 0.0001],
+            'activation': ['relu', 'elu', 'tanh', 'sigmoid', 'hard_sigmoid','softplus','linear'],
+            'optimizer':  ['rmsprop', 'adam', 'sgd', 'adagrad','adadelta', 'adamax', 'nadam']
+        }
+
+    # replace nb_neurons with 1 unique value for each layer
+    # 6th value reserved for dense layer
+    nb_neurons = all_possible_genes['nb_neurons']
+    for i in range(1,7):
+        all_possible_genes['nb_neurons_' + str(i)] = nb_neurons
+    # remove old value from dict
+    all_possible_genes.pop('nb_neurons')
+            
+    print("***Evolving for %d generations with population size = %d***" % (generations, population))
+
+    generate(generations, population, all_possible_genes, dataset)
 
 if __name__ == '__main__':
-    main()
+    main(population  = 30,   # Number of networks/genomes in each generation.
+         ds          = 6,
+         generations = 10)
